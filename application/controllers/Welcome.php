@@ -38,7 +38,25 @@ class Welcome extends CI_Controller {
 		'passout_year' => $this->input->post('pout'),
 		'no_of_mentees' => $this->input->post('mentee') 
 		);
-		$this->insert_model->form_insert($data);
+		$data1 = array(
+				'phone' => $this->input->post('phone'),
+				'firm' => $this->input->post('firm'),
+				'designation' => $this->input->post('des'),
+				'field_of_work' => $this->input->post('work'),
+				'email' => $this->input->post('email') );
+		$data2 = array(
+				'pref1' => $this->input->post('pref1'),
+				'pref2' => $this->input->post('pref2'),
+				'pref3' => $this->input->post('pref3'),
+				'email' => $this->input->post('email') );
+
+
+			
+
+
+
+
+		$this->insert_model->form_insert($data,$data1,$data2);
 
 
 
