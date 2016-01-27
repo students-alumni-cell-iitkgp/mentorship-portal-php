@@ -22,6 +22,11 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');	
 	}
+	public function dashboard() {
+		$this->load->database();
+		$this->load->model('insert_model');
+		$this->insert_model->form_insert($_POST);
+	}
 
 
 }
