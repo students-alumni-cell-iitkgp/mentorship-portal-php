@@ -73,13 +73,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<!--
 			<div class="form-group">
 				<div class="col-sm-12">
-					<?php
+					<?php/*
 					$fp = array('name' => 'password1' ,
 						'class' => 'form-control',
 						'placeholder' => 'Enter Your Password Again',
 						'type' => 'password' );
 					echo form_input($fp);
-					?>
+					*/?>
 				</div>
 			</div>
 		-->
@@ -307,7 +307,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					?>
 				</div>
 			</div>
-			
+
 	</div>
 	<div class="form-group"	>	
 			<div class="col-sm-12">		

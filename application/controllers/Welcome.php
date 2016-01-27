@@ -25,18 +25,20 @@ class Welcome extends CI_Controller {
 	public function dashboard() {
 		$this->load->database();
 		$this->load->model('insert_model');
-		//$this->insert_model->form_insert($data);
-	}
- public	function i() {
-
-		$data = array(
+			$data = array(
 		'name' => $this->input->post('name'),
 		'email' => $this->input->post('email'),
 		'password' => $this->input->post('password'),
 		'department' => $this->input->post('department'),
 		'hall' => $this->input->post('hall')
 		);
+		$this->insert_model->form_insert($data);
+			
 
 
-}
+
+		$this->load->view('dashboard', $_POST);
+
+	}
+ 
 }
