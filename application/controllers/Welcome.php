@@ -30,10 +30,16 @@ class Welcome extends CI_Controller {
 		'email' => $this->input->post('email'),
 		'password' => $this->input->post('password'),
 		'department' => $this->input->post('department'),
-		'hall' => $this->input->post('hall')
+		'hall' => $this->input->post('hall'),
+		'roll' => $this->input->post('roll'),
+		'cgpa' => $this->input->post('cgpa'),
+		'current_acad_year' => $this->input->post('current'),
+		'join_year' => $this->input->post('join'),
+		'passout_year' => $this->input->post('pout'),
+		'no_of_mentees' => $this->input->post('mentee') 
 		);
 		$this->insert_model->form_insert($data);
-			
+
 
 
 
