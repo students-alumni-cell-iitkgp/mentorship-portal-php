@@ -181,7 +181,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="form-group">
 				<div class="col-sm-12">
 					<?php 
-					$fpref1 = array('name' => 'pref1',
+					$fpref1 = array('name' => 'pref11',
 						'class' => 'form-control',
 						'placeholder' => 'Enter Your 1st Preference');
 					echo form_input($fpref1);
@@ -191,7 +191,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="form-group">
 				<div class="col-sm-12">
 					<?php 
-					$fpref2 = array('name' => 'pref2',
+					$fpref2 = array('name' => 'pref22',
 						'class' => 'form-control',
 						'placeholder' => 'Enter Your 2nd Preference');
 					echo form_input($fpref2);
@@ -201,7 +201,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="form-group">
 				<div class="col-sm-12">
 					<?php 
-					$fpref3 = array('name' => 'pref3',
+					$fpref3 = array('name' => 'pref33',
 						'class' => 'form-control',
 						'placeholder' => 'Enter Your 3rd Preference');
 					echo form_input($fpref3);
