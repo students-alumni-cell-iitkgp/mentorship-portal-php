@@ -79,5 +79,31 @@ class Welcome extends CI_Controller {
 		$this->load->view('member_area',$_POST);
 
 	}
+
+
+	function validate_credentials()
+	{			
+				$this->load->database();
+
+				$this->load->model('member_area');
+				$query=$this->membership_model->validate();
+
+				if($query)
+				{
+
+					$data=array(
+						'email'=>$this->input->post('email1'),
+						'is_logged_in'=>true
+						);
+					$this->session->set_userdata($data);
+						//$this->load->view('member_area');
+					redirect(member_area);
+				}
+				else
+				{
+					$this->index();
+				}
+
+	}
  
 }
