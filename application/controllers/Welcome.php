@@ -100,8 +100,9 @@ class Welcome extends CI_Controller {
 public function member_area()
 {
 	$this->load->database();
-	$this->load->model('member_area');
-	$this->load->view('member_area',$_POST);
+	$row=$this->load->model('member_area');
+	session_start();
+	$this->load->view('home',$row);
 
 }
 
