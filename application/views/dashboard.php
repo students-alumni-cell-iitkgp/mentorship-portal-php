@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 </head>
 <body>
-<h2>Your data has been saved</h2>
-
+	<h2>Your data has been saved</h2>
+	<p>We Will Soon Allot Your (Mentor/Mentee)</p>
 </body>
 </html>

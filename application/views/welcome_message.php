@@ -18,7 +18,45 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 	<div class="container">
+		
+		<div style="float:right;position:relative;top:20px;">
+ 	<?php 
+ 	$this->load->helper('form');
+ 	$for=array('class' => 'form-inline',
+ 				'method' => 'post',
+ 				'role' => 'form',
+
+ 			  );		
+ 	echo form_open('welcome/member_area',$for);
+ 	?>
+		  <div class="form-group">
+		   <?php
+				$email1 = array('name' => 'eid' ,
+								'class' => 'form-control',
+								'placeholder' => 'Enter Your Email' );
+				echo form_input($email1);
+				?>
+		    
+		  </div>
+		  <div class="form-group">
+		    <?php
+				$pwd = array('name' => 'pass' ,
+								'type' => 'password',
+								'class' => 'form-control',
+								'placeholder' => 'Enter Your Password' );
+				echo form_input($pwd);
+				?>
+
+		   
+		  </div>
+
+
+		  <button type="submit" class="btn btn-success">Submit</button>
+	</form>
+	</div>
+	<div class="jumbotron">
 		<h2 style="text-align:center">Welcome To Mentorship Portal  </h2>
+	</div>
 		<div >
 
 			<h2 style="text-align:center;">Register Here</h2>
@@ -181,7 +219,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="form-group">
 				<div class="col-sm-12">
 					<?php 
-					$fpref1 = array('name' => 'pref1',
+					$fpref1 = array('name' => 'pref11',
 						'class' => 'form-control',
 						'placeholder' => 'Enter Your 1st Preference');
 					echo form_input($fpref1);
@@ -191,7 +229,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="form-group">
 				<div class="col-sm-12">
 					<?php 
-					$fpref2 = array('name' => 'pref2',
+					$fpref2 = array('name' => 'pref22',
 						'class' => 'form-control',
 						'placeholder' => 'Enter Your 2nd Preference');
 					echo form_input($fpref2);
@@ -201,7 +239,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="form-group">
 				<div class="col-sm-12">
 					<?php 
-					$fpref3 = array('name' => 'pref3',
+					$fpref3 = array('name' => 'pref33',
 						'class' => 'form-control',
 						'placeholder' => 'Enter Your 3rd Preference');
 					echo form_input($fpref3);

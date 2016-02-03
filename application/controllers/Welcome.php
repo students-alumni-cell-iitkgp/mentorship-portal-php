@@ -40,6 +40,7 @@ class Welcome extends CI_Controller {
 			'no_of_mentees' => $this->input->post('mentee') 
 			);
 		$data1 = array(
+<<<<<<< HEAD
 			'phone' => $this->input->post('phone'),
 			'firm' => $this->input->post('firm'),
 			'designation' => $this->input->post('des'),
@@ -53,6 +54,29 @@ class Welcome extends CI_Controller {
 
 
 		
+=======
+				'phone' => $this->input->post('phone'),
+				'firm' => $this->input->post('firm'),
+				'designation' => $this->input->post('des'),
+				'field_of_work' => $this->input->post('work'),
+				'email' => $this->input->post('email') );
+		if($this->input->post('pref1')==''){
+		$data2 = array(
+				'pref1' => $this->input->post('pref11'),
+				'pref2' => $this->input->post('pref22'),
+				'pref3' => $this->input->post('pref33'),
+				'email' => $this->input->post('email') );
+
+			}
+			else{
+					$data2 = array(
+				'pref1' => $this->input->post('pref1'),
+				'pref2' => $this->input->post('pref2'),
+				'pref3' => $this->input->post('pref3'),
+				'email' => $this->input->post('email') );
+				
+			}
+>>>>>>> f3b493f6a9022d7939ea9c7fc2092ac507d78af8
 
 
 
