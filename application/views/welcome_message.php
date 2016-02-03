@@ -65,7 +65,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$a = array('class'=>'form-horizontal',
 				'method'=>'post',
 				'role'=>'form');
-			echo form_open('welcome/dashboard',$a);					
+			echo form_open('welcome/users',$a);					
 			?>
 			<div class="form-group">
 				<div class="col-sm-12">
