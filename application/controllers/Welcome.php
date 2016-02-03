@@ -81,9 +81,8 @@ class Welcome extends CI_Controller {
 		$this->load->view('dashboard', $_POST);
 
 	}
-<<<<<<< HEAD
 
-	public function member_area() {
+	/*public function member_area() {
 		$email=$_POST['eid'];
 		$query = $this->db->query("SELECT * FROM users WHERE email=$email");
 		if ($query->num_rows() > 0) {
@@ -97,41 +96,39 @@ class Welcome extends CI_Controller {
 
 		}
 	}
+}*/
+public function member_area()
+{
+	$this->load->database();
+	$this->load->model('member_area');
+	$this->load->view('member_area',$_POST);
+
 }
-=======
-	public function member_area()
+
+
+function validate_credentials()
+{			
+	$this->load->database();
+
+	$this->load->model('member_area');
+	$query=$this->membership_model->validate();
+
+	if($query)
 	{
-		$this->load->database();
-		$this->load->model('member_area');
-		$this->load->view('member_area',$_POST);
 
-	}
-
-
-	function validate_credentials()
-	{			
-				$this->load->database();
-
-				$this->load->model('member_area');
-				$query=$this->membership_model->validate();
-
-				if($query)
-				{
-
-					$data=array(
-						'email'=>$this->input->post('email1'),
-						'is_logged_in'=>true
-						);
-					$this->session->set_userdata($data);
+		$data=array(
+			'email'=>$this->input->post('email1'),
+			'is_logged_in'=>true
+			);
+		$this->session->set_userdata($data);
 						//$this->load->view('member_area');
-					redirect(member_area);
-				}
-				else
-				{
-					$this->index();
-				}
-
+		redirect(member_area);
 	}
- 
+	else
+	{
+		$this->index();
+	}
+
 }
->>>>>>> 3741929e697b62e5e6ee8f0ee85a2b5b40392c44
+
+}
