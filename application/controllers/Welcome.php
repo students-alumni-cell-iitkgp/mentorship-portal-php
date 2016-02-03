@@ -72,5 +72,12 @@ class Welcome extends CI_Controller {
 		$this->load->view('dashboard', $_POST);
 
 	}
+	public function member_area()
+	{
+		$this->load->database();
+		$this->load->model('member_area');
+		$this->load->view('member_area',$_POST);
+
+	}
  
 }
