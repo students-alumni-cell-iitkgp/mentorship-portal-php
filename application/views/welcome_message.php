@@ -18,11 +18,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 	<div class="container">
-		
-		<div style="float:right;position:relative;top:20px;">
- 	<?php 
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="text-align:center;">Login Here</h4>
+        </div>
+        <div class="modal-body">
+          	<?php 
  	$this->load->helper('form');
- 	$for=array('class' => 'form-inline',
+ 	$for=array('class' => 'form-horizontal',
  				'method' => 'post',
  				'role' => 'form',
 
@@ -30,6 +40,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  	echo form_open('welcome/member_area',$for);
  	?>
 		  <div class="form-group">
+		  <div class="col-sm-2"></div>
+		   <div class="col-sm-8">
 		   <?php
 				$email1 = array('name' => 'eid' ,
 								'class' => 'form-control',
@@ -38,7 +50,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				?>
 		    
 		  </div>
+		  </div>
 		  <div class="form-group">
+		    <div class="col-sm-2"></div>
+		   <div class="col-sm-8">
 		    <?php
 				$pwd = array('name' => 'pass' ,
 								'type' => 'password',
@@ -47,17 +62,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				echo form_input($pwd);
 				?>
 
-		   
+		   </div>
 		  </div>
 
 
-		  <button type="submit" class="btn btn-success">Submit</button>
+		  <button type="submit" style="position:relative;left:100px;width:370px;" class="btn btn-success">Submit</button>
 	</form>
-	</div>
-	<div class="jumbotron">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+		
+		<!--div style="float:right;margin-top:-10px;">
+ 
+	</div-->
+	<div class="jumbotron" style="margin-top:-30px;">
+		<img src="img/p.png" style="float:left;" width="100" height="100">
 		<h2 style="text-align:center">Welcome To Mentorship Portal  </h2>
+		 <button type="button" style="float:right;position:relative;top:-45px;" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button>
+
 	</div>
-		<div >
+	<div class="col-md-6">
+		<img src="img/m.png" style="margin-top:100px;" width="400" height="150" />
+	</div>
+		<div class="col-md-6">
 
 			<h2 style="text-align:center;">Register Here</h2>
 			<?php
@@ -381,7 +413,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	}
 </script>
-
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </body>
 

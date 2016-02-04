@@ -16,7 +16,7 @@ class Member_area extends CI_Model{
 		if($query->num_rows()>=1)
 		{
 			//echo "1";
-			return $row;
+			return true;
 		}
 		else
 		{
