@@ -82,29 +82,13 @@ class Welcome extends CI_Controller {
 
 	}
 
-	/*public function member_area() {
-		$email=$_POST['eid'];
-		$query = $this->db->query("SELECT * FROM users WHERE email=$email");
-		if ($query->num_rows() > 0) {
-			$row = $query->row_array();
-			if($row['password']==$_POST['pass']){
-				session_start();
-				$_SESSION['name']=$row['name'];
-				$_SESSION['email']=$_POST['eid'];
-				$this->load->view('home', $row);
-			}
-
-		}
-	}
-}*/
+	
 public function member_area()
 {
 	$this->load->database();
-	$row=$this->load->model('member_area');
-	session_start();
-	$this->load->view('home',$row);
-
+	$this->load->view('member_area',$_POST);
 }
+
 
 
 function validate_credentials()
@@ -118,7 +102,7 @@ function validate_credentials()
 	{
 
 		$data=array(
-			'email'=>$this->input->post('email1'),
+			'email'=>$this->input->post('eid'),
 			'is_logged_in'=>true
 			);
 		$this->session->set_userdata($data);
