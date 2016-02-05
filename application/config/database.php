@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => $_ENV["DB_HOST"],
-	'username' => $_ENV["MENTOR_DB_USERNAME"],
-	'password' => $_ENV["MENTOR_DB_PASSWORD"],
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
 	'database' => 'mentorship',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

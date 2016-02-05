@@ -85,8 +85,21 @@ class Welcome extends CI_Controller {
 	
 public function member_area()
 {
+	session_destroy();
 	$this->load->database();
-	$this->load->view('member_area',$_POST);
+	$email=$_POST['eid'];
+		$query = $this->db->get_where('users', array('email' => $email));
+		$row=$query->row_array();		
+		if ($query->num_rows()>0) {
+			$row = $query->row_array();
+			if($row['password']==$_POST['pass']){
+				$this->load->view('home', $row);
+			}
+			else header('Location:index');
+
+		}
+		else header('Location:index');
+
 }
 
 

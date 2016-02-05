@@ -44,6 +44,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		   <div class="col-sm-8">
 		   <?php
 				$email1 = array('name' => 'eid' ,
+								'type' => 'email',
 								'class' => 'form-control',
 								'placeholder' => 'Enter Your Email' );
 				echo form_input($email1);
@@ -117,6 +118,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-sm-12">
 					<?php
 					$femail = array('name' => 'email' ,
+						'type' => 'email',
 						'class' => 'form-control',
 						'placeholder' => 'Enter Your Email' );
 					echo form_input($femail);
