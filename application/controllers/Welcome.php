@@ -78,7 +78,7 @@ class Welcome extends CI_Controller {
 
 
 
-		$this->load->view('dashboard', $_POST);
+		$this->load->view('home', $_POST);
 
 	}
 
@@ -87,6 +87,7 @@ public function member_area()
 {
 	session_destroy();
 	$this->load->database();
+
 	$email=$_POST['eid'];
 		$query = $this->db->get_where('users', array('email' => $email));
 		$row=$query->row_array();		
@@ -100,6 +101,9 @@ public function member_area()
 		}
 		else header('Location:index');
 
+
+	$this->load->model('member_area');
+	//$this->load->view('member_area',$_POST);
 }
 
 

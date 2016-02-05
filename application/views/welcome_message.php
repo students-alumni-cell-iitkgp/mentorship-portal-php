@@ -88,7 +88,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	</div>
 	<div class="col-md-6">
-		<img src="img/m.png" style="margin-top:100px;" width="400" height="150" />
+		<img src="img/m.png" style="margin-top:100px;" width="480" height="150" />
 	</div>
 		<div class="col-md-6">
 
