@@ -58,32 +58,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<h3>Feel Free to get in touch with your Mentor</h3>
 						
+
+						
+						
+						
 						
 					</a>
+				</div>
+			</div>
+			<div class="col-md-3" >
+				<form action="" method="post">
 
-					
-					<p>You can also fill in the form by copying the URL <a href="https://goo.gl/CgCYiW">https://goo.gl/CgCYiW</a> in your web browser.</p>
-					
-					
-					
-				</a>
+					<button class="btn btn-danger btn-lg" style="float:right;position:relative;top:10px;" name="logout"> Logout</button>
+				</form>
+				
+				<?php 
+				if (isset($_POST['logout'])) {
+					# code...
+					session_destroy();
+					header('location:index');
+				}
+				?>
 			</div>
 		</div>
-		<div class="col-md-3" >
-			<form action="" method="post">
-
-				<button class="btn btn-danger btn-lg" style="float:right;position:relative;top:10px;" name="logout"> Logout</button>
-			</form>
-			
-			<?php 
-			if (isset($_POST['logout'])) {
-					# code...
-				session_destroy();
-				header('location:index');
-			}
-			?>
-		</div>
-	</div>
-</div>		
+	</div>		
 </body>
 </html>
