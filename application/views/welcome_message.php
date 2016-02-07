@@ -311,32 +311,98 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 			<div class="form-group">
 				<div class="col-sm-12">
-					<?php 
-					$fpref1 = array('name' => 'pref11',
-						'class' => 'form-control',
-						'placeholder' => 'Enter Your 1st Preference');
-					echo form_input($fpref1);
-					?>
+					<select name='pref1' class='form-control'>
+						<option value='-1'>Choose your 1st Preference</option>
+						<option value='1'>Aerospace Engineering</option>
+						<option value='2'>Agricultural & Food Engineering</option>
+						<option value='3'>Architecture & Regional Planning</option>
+						<option value='4'>Banking</option>
+						<option value='5'>Biotechnology</option>
+						<option value='6'>Civil Engineering</option>
+						<option value='7'>Chemical Engineering</option>
+						<option value='8'>Civil Services</option>
+						<option value='9'>Computer Science & Engineering</option>
+						<option value='10'>Consultancy</option>
+						<option value='11'>Chemistry</option>
+						<option value='12'>Electrical Engineering</option>
+						<option value='13'>Electronics & Electrical Communication Engineering</option>
+						<option value='14'>Finance</option>
+						<option value='15'>Geology & Geophysics</option>
+						<option value='16'>Humanities & Social Sciences</option>
+						<option value='17'>Industrial & Systems Engineering</option>
+						<option value='18'>Marketing</option>
+						<option value='19'>Mathematics</option>
+						<option value='20'>Mechanical Engineering</option>
+						<option value='21'>Metallurgical & Materials Engineering</option>
+						<option value='22'>Mining Engineering</option>
+						<option value='23'>Music</option>
+						<option value='24'>Ocean Engineering & Naval Architecture</option>
+						<option value='25'>Physics</option>
+					</select>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="col-sm-12">
-					<?php 
-					$fpref2 = array('name' => 'pref22',
-						'class' => 'form-control',
-						'placeholder' => 'Enter Your 2nd Preference');
-					echo form_input($fpref2);
-					?>
+					<select name='pref2' class='form-control'>
+						<option value='-1'>Choose your 2nd Preference</option>
+						<option value='1'>Aerospace Engineering</option>
+						<option value='2'>Agricultural & Food Engineering</option>
+						<option value='3'>Architecture & Regional Planning</option>
+						<option value='4'>Banking</option>
+						<option value='5'>Biotechnology</option>
+						<option value='6'>Civil Engineering</option>
+						<option value='7'>Chemical Engineering</option>
+						<option value='8'>Civil Services</option>
+						<option value='9'>Computer Science & Engineering</option>
+						<option value='10'>Consultancy</option>
+						<option value='11'>Chemistry</option>
+						<option value='12'>Electrical Engineering</option>
+						<option value='13'>Electronics & Electrical Communication Engineering</option>
+						<option value='14'>Finance</option>
+						<option value='15'>Geology & Geophysics</option>
+						<option value='16'>Humanities & Social Sciences</option>
+						<option value='17'>Industrial & Systems Engineering</option>
+						<option value='18'>Marketing</option>
+						<option value='19'>Mathematics</option>
+						<option value='20'>Mechanical Engineering</option>
+						<option value='21'>Metallurgical & Materials Engineering</option>
+						<option value='22'>Mining Engineering</option>
+						<option value='23'>Music</option>
+						<option value='24'>Ocean Engineering & Naval Architecture</option>
+						<option value='25'>Physics</option>
+					</select>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="col-sm-12">
-					<?php 
-					$fpref3 = array('name' => 'pref33',
-						'class' => 'form-control',
-						'placeholder' => 'Enter Your 3rd Preference');
-					echo form_input($fpref3);
-					?>
+					<select name='pref3' class='form-control'>
+						<option value='-1'>Choose your 3rd Preference</option>
+						<option value='1'>Aerospace Engineering</option>
+						<option value='2'>Agricultural & Food Engineering</option>
+						<option value='3'>Architecture & Regional Planning</option>
+						<option value='4'>Banking</option>
+						<option value='5'>Biotechnology</option>
+						<option value='6'>Civil Engineering</option>
+						<option value='7'>Chemical Engineering</option>
+						<option value='8'>Civil Services</option>
+						<option value='9'>Computer Science & Engineering</option>
+						<option value='10'>Consultancy</option>
+						<option value='11'>Chemistry</option>
+						<option value='12'>Electrical Engineering</option>
+						<option value='13'>Electronics & Electrical Communication Engineering</option>
+						<option value='14'>Finance</option>
+						<option value='15'>Geology & Geophysics</option>
+						<option value='16'>Humanities & Social Sciences</option>
+						<option value='17'>Industrial & Systems Engineering</option>
+						<option value='18'>Marketing</option>
+						<option value='19'>Mathematics</option>
+						<option value='20'>Mechanical Engineering</option>
+						<option value='21'>Metallurgical & Materials Engineering</option>
+						<option value='22'>Mining Engineering</option>
+						<option value='23'>Music</option>
+						<option value='24'>Ocean Engineering & Naval Architecture</option>
+						<option value='25'>Physics</option>
+					</select>
 				</div>
 			</div>
 		</div>
@@ -486,44 +552,109 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<h5>Select No. Of Mentees</h5>
 				</div>
 				<div class="col-sm-4">
-					<?php 
-					$option = array('1' => 'one',
-						'2' => 'two',
-						'3' => 'three',
-						'4' => 'four');
-					echo form_dropdown('mentee',$option,'1');
-					?>
+					<select class="form-control">
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+						<option value="4">Four</option>
+					</select>
 				</div>
 			</div>
 			<h4>In which field do you want to Mentor in?</h4>
 			<div class="form-group">
 				<div class="col-sm-12">
-					<?php 
-					$fpref1 = array('name' => 'pref1',
-						'class' => 'form-control',
-						'placeholder' => 'Enter Your 1st Preference');
-					echo form_input($fpref1);
-					?>
+					<select name='pref1' class='form-control'>
+						<option value='-1'>Choose your 1st Preference</option>
+						<option value='1'>Aerospace Engineering</option>
+						<option value='2'>Agricultural & Food Engineering</option>
+						<option value='3'>Architecture & Regional Planning</option>
+						<option value='4'>Banking</option>
+						<option value='5'>Biotechnology</option>
+						<option value='6'>Civil Engineering</option>
+						<option value='7'>Chemical Engineering</option>
+						<option value='8'>Civil Services</option>
+						<option value='9'>Computer Science & Engineering</option>
+						<option value='10'>Consultancy</option>
+						<option value='11'>Chemistry</option>
+						<option value='12'>Electrical Engineering</option>
+						<option value='13'>Electronics & Electrical Communication Engineering</option>
+						<option value='14'>Finance</option>
+						<option value='15'>Geology & Geophysics</option>
+						<option value='16'>Humanities & Social Sciences</option>
+						<option value='17'>Industrial & Systems Engineering</option>
+						<option value='18'>Marketing</option>
+						<option value='19'>Mathematics</option>
+						<option value='20'>Mechanical Engineering</option>
+						<option value='21'>Metallurgical & Materials Engineering</option>
+						<option value='22'>Mining Engineering</option>
+						<option value='23'>Music</option>
+						<option value='24'>Ocean Engineering & Naval Architecture</option>
+						<option value='25'>Physics</option>
+					</select>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="col-sm-12">
-					<?php 
-					$fpref2 = array('name' => 'pref2',
-						'class' => 'form-control',
-						'placeholder' => 'Enter Your 2nd Preference');
-					echo form_input($fpref2);
-					?>
+					<select name='pref2' class='form-control'>
+						<option value='-1'>Choose your 2nd Preference</option>
+						<option value='1'>Aerospace Engineering</option>
+						<option value='2'>Agricultural & Food Engineering</option>
+						<option value='3'>Architecture & Regional Planning</option>
+						<option value='4'>Banking</option>
+						<option value='5'>Biotechnology</option>
+						<option value='6'>Civil Engineering</option>
+						<option value='7'>Chemical Engineering</option>
+						<option value='8'>Civil Services</option>
+						<option value='9'>Computer Science & Engineering</option>
+						<option value='10'>Consultancy</option>
+						<option value='11'>Chemistry</option>
+						<option value='12'>Electrical Engineering</option>
+						<option value='13'>Electronics & Electrical Communication Engineering</option>
+						<option value='14'>Finance</option>
+						<option value='15'>Geology & Geophysics</option>
+						<option value='16'>Humanities & Social Sciences</option>
+						<option value='17'>Industrial & Systems Engineering</option>
+						<option value='18'>Marketing</option>
+						<option value='19'>Mathematics</option>
+						<option value='20'>Mechanical Engineering</option>
+						<option value='21'>Metallurgical & Materials Engineering</option>
+						<option value='22'>Mining Engineering</option>
+						<option value='23'>Music</option>
+						<option value='24'>Ocean Engineering & Naval Architecture</option>
+						<option value='25'>Physics</option>
+					</select>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="col-sm-12">
-					<?php 
-					$fpref3 = array('name' => 'pref3',
-						'class' => 'form-control',
-						'placeholder' => 'Enter Your 3rd Preference');
-					echo form_input($fpref3);
-					?>
+					<select name='pref3' class='form-control'>
+						<option value='-1'>Choose your 3rd Preference</option>
+						<option value='1'>Aerospace Engineering</option>
+						<option value='2'>Agricultural & Food Engineering</option>
+						<option value='3'>Architecture & Regional Planning</option>
+						<option value='4'>Banking</option>
+						<option value='5'>Biotechnology</option>
+						<option value='6'>Civil Engineering</option>
+						<option value='7'>Chemical Engineering</option>
+						<option value='8'>Civil Services</option>
+						<option value='9'>Computer Science & Engineering</option>
+						<option value='10'>Consultancy</option>
+						<option value='11'>Chemistry</option>
+						<option value='12'>Electrical Engineering</option>
+						<option value='13'>Electronics & Electrical Communication Engineering</option>
+						<option value='14'>Finance</option>
+						<option value='15'>Geology & Geophysics</option>
+						<option value='16'>Humanities & Social Sciences</option>
+						<option value='17'>Industrial & Systems Engineering</option>
+						<option value='18'>Marketing</option>
+						<option value='19'>Mathematics</option>
+						<option value='20'>Mechanical Engineering</option>
+						<option value='21'>Metallurgical & Materials Engineering</option>
+						<option value='22'>Mining Engineering</option>
+						<option value='23'>Music</option>
+						<option value='24'>Ocean Engineering & Naval Architecture</option>
+						<option value='25'>Physics</option>
+					</select>
 				</div>
 			</div>
 			<h3 class="center"> Contact Details </h3>
