@@ -367,7 +367,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<select class="form-control" name="no_of_mentees">
 						<option value='-1'>Choose no of Mentees to be allotted</option>
 						<option value='1'>One</option>
-						<option value='2'>Two/option>
+						<option value='2'>Two</option>
 						<option value='3'>Three</option>
 						<option value='4'>Four</option>
 					</select>
