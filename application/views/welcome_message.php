@@ -76,7 +76,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							'role' => 'form',
 
 							);		
-						echo form_open('welcome/member_area',$for);
+						echo form_open('index.php/welcome/member_area',$for);
 						?>
 						<div class="form-group">
 							<div class="col-sm-2"></div>
@@ -163,7 +163,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					$a = array('class'=>'form-horizontal',
 						'method'=>'post',
 						'role'=>'form');
-					echo form_open('welcome/member_area',$a);					
+					echo form_open('index.php/welcome/users',$a);					
 					?>
 					<div class="form-group">
 						<div class="col-sm-12">
@@ -438,7 +438,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				$a = array('class'=>'form-horizontal',
 					'method'=>'post',
 					'role'=>'form');
-				echo form_open('welcome/member_area',$a);					
+				echo form_open('index.php/welcome/users',$a);					
 				?>
 				<div class="form-group">
 					<div class="col-sm-12">
@@ -753,6 +753,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+
+</html>
+	c="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </body>
 
