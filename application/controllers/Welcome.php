@@ -78,10 +78,11 @@ class Welcome extends CI_Controller {
 
 
 
-		$this->load->view('dashboard', $_POST);
+		$this->load->view('home', $_POST);
 
 	}
 
+<<<<<<< HEAD
 	/*public function member_area() {
 		$email=$_POST['eid'];
 		$query = $this->db->query("SELECT * FROM users WHERE email=$email");
@@ -119,6 +120,46 @@ function validate_credentials()
 
 		$data=array(
 			'email'=>$this->input->post('email1'),
+=======
+	
+public function member_area()
+{
+	session_destroy();
+	$this->load->database();
+
+	$email=$_POST['eid'];
+		$query = $this->db->get_where('users', array('email' => $email));
+		$row=$query->row_array();		
+		if ($query->num_rows()>0) {
+			$row = $query->row_array();
+			if($row['password']==$_POST['pass']){
+				$this->load->view('home', $row);
+			}
+			else header('Location:index');
+
+		}
+		else header('Location:index');
+
+
+	$this->load->model('member_area');
+	//$this->load->view('member_area',$_POST);
+}
+
+
+
+function validate_credentials()
+{			
+	$this->load->database();
+
+	$this->load->model('member_area');
+	$query=$this->membership_model->validate();
+
+	if($query)
+	{
+
+		$data=array(
+			'email'=>$this->input->post('eid'),
+>>>>>>> 0f42444c8afa6505c426a3eb0a37c5034bf1182b
 			'is_logged_in'=>true
 			);
 		$this->session->set_userdata($data);
