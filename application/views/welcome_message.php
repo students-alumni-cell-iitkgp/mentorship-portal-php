@@ -14,6 +14,45 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		::-moz-selection { background-color: #E13300; color: white; }
 
 
+		
+		#logo
+		{
+			margin: 0 0 0 0 ;
+			padding: 0 0 0 0 ;
+
+		}
+
+		#register
+		{
+			padding: 0 0 10px 0;
+			width: 100%;
+		}
+
+		#register-btn
+		{
+			width: 100%;
+			line-height: 40px;
+			font-size: 20px;
+			color:black;
+			border-color: black;
+
+		}
+
+		#register-form
+		{
+			position: relative;
+			top: -20px;
+		}
+
+		.logo{
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		.white{
+			color: white;
+		}
+
 	</style>
 </head>
 <body>
@@ -80,68 +119,94 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<!--div style="float:right;margin-top:-10px;">
  
-	</div-->
-	<div class="jumbotron" style="margin-top:-30px;">
-		<img src="img/p.png" style="float:left;" width="100" height="100">
-		<h2 style="text-align:center">Welcome To Mentorship Portal  </h2>
-		<button type="button" style="float:right;position:relative;top:-45px;" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button>
+	</div--><div class="row">
+	<div class="jumbotron" style="margin-top:-30px;height:140px;">
+		<img src="img/p.jpg" class="img img-rounded" style="float:left;position:relative;top:-25px;" width="750" height="100">
+		<!--h2 style="position:relative;left:20px;">Mentorship Portal  </h2-->
+		<button type="button" style="float:right;position:relative;top:-10px;" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button>
 
 	</div>
-	<div class="col-md-6">
-		<img src="img/m.png" style="margin-top:100px;" width="480" height="150" />
+</div>
+<div class="col-md-3">
+
+	<!--h2 style="text-align:center;">Register Here</h2-->
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#registermentor">
+		I want to be a Mentor
+	</button>
+
+	<hr/>
+
+
+
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#registerstudent">
+		I want to be a Mentee
+	</button><hr/>
+	<div class="jumbotron" >
+		<div class="" style="">
+			The Student Alumni Mentorship programme was started in session 2010-11 by the Students’ Alumni Cell as an initiative to create a platform for the exchange of ideas and experience between the alumni and the current students of IIT Kharagpur.<br><br>
+
+			<!--With an ocean of possibilities available, students often find it difficult to decide their way out into the future. There are lots of instances where students need  a mentor who can counsel and guide them through. The alumni can improve students' insight into various aspects of life.  Their journey and personal experiences can help the students and motivate them through this pivotal phase of life. Under this programme, we invite our alumni from across the world and from different fields to interact with the students and help them build their network and gain new perspective on the possibilities open to them after graduation.-->
+		</div>
 	</div>
-	<div class="col-md-6">
+	<div class="modal fade" id="registerstudent" role="dialog">
+		<div class="modal-dialog">
 
-		<h2 style="text-align:center;">Register Here</h2>
-		<?php
-		$this->load->helper('form');
-		$a = array('class'=>'form-horizontal',
-			'method'=>'post',
-			'role'=>'form');
-		echo form_open('welcome/users',$a);					
-		?>
-		<div class="form-group">
-			<div class="col-sm-12">
-				<?php
-				$fname = array('name' => 'name' ,
-					'class' => 'form-control',
-					'placeholder' => 'Enter Your Name' );
-				echo form_input($fname);
-				?>
-			</div>
-
-
-
-		</div>
-
-		<div class="form-group">
-			<div class="col-sm-12">
-				<?php
-				$femail = array('name' => 'email' ,
-					'type' => 'email',
-					'class' => 'form-control',
-					'placeholder' => 'Enter Your Email' );
-				echo form_input($femail);
-				?>
-			</div>
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title" style="text-align:center;">Register Here</h4>
+				</div>
+				<div class="modal-body">
+					<?php
+					$this->load->helper('form');
+					$a = array('class'=>'form-horizontal',
+						'method'=>'post',
+						'role'=>'form');
+					echo form_open('welcome/member_area',$a);					
+					?>
+					<div class="form-group">
+						<div class="col-sm-12">
+							<?php
+							$fname = array('name' => 'name' ,
+								'class' => 'form-control',
+								'placeholder' => 'Enter Your Name' );
+							echo form_input($fname);
+							?>
+						</div>
 
 
 
-		</div>
-		<div class="form-group">
-			<div class="col-sm-12">
-				<?php
-				$fpass = array('name' => 'password' ,
-					'class' => 'form-control',
-					'placeholder' => 'Enter Your password',
-					'type' => 'password' );
-				echo form_input($fpass);
-				?>
-			</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-12">
+							<?php
+							$femail = array('name' => 'email' ,
+								'type' => 'email',
+								'class' => 'form-control',
+								'placeholder' => 'Enter Your Email' );
+							echo form_input($femail);
+							?>
+						</div>
 
 
 
-		</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-12">
+							<?php
+							$fpass = array('name' => 'password' ,
+								'class' => 'form-control',
+								'placeholder' => 'Enter Your password',
+								'type' => 'password' );
+							echo form_input($fpass);
+							?>
+						</div>
+
+
+
+					</div>
 			<!--
 			<div class="form-group">
 				<div class="col-sm-12">
@@ -194,14 +259,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<?php //echo form_close(); 
 			?>
 
-		</div> <h4>Choose Your Category(Mentor/Student)</h4>
-		<select name="select" class="form-control" onchange="f1(this);f2(this);">
-			<option>---</option>
-			<option>mentor</option>
-			<option>student</option>
-
-		</select><br/>
-		<div id="f1" style="display:none">
+		</div> 
+		<div id="f1">
 			<div class="form-group">
 				<div class="col-sm-12">
 					<?php
@@ -252,102 +311,165 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 			<div class="form-group">
 				<div class="col-sm-12">
-					<select name='pref1' class='form-control'>
-						<option value='-1'>Choose your 1st Preference</option>
-						<option value='1'>Aerospace Engineering</option>
-						<option value='2'>Agricultural & Food Engineering</option>
-						<option value='3'>Architecture & Regional Planning</option>
-						<option value='4'>Banking</option>
-						<option value='5'>Biotechnology</option>
-						<option value='6'>Civil Engineering</option>
-						<option value='7'>Chemical Engineering</option>
-						<option value='8'>Civil Services</option>
-						<option value='9'>Computer Science & Engineering</option>
-						<option value='10'>Consultancy</option>
-						<option value='11'>Chemistry</option>
-						<option value='12'>Electrical Engineering</option>
-						<option value='13'>Electronics & Electrical Communication Engineering</option>
-						<option value='14'>Finance</option>
-						<option value='15'>Geology & Geophysics</option>
-						<option value='16'>Humanities & Social Sciences</option>
-						<option value='17'>Industrial & Systems Engineering</option>
-						<option value='18'>Marketing</option>
-						<option value='19'>Mathematics</option>
-						<option value='20'>Mechanical Engineering</option>
-						<option value='21'>Metallurgical & Materials Engineering</option>
-						<option value='22'>Mining Engineering</option>
-						<option value='23'>Music</option>
-						<option value='24'>Ocean Engineering & Naval Architecture</option>
-						<option value='25'>Physics</option>
-					</select>
+					<?php 
+					$fpref1 = array('name' => 'pref11',
+						'class' => 'form-control',
+						'placeholder' => 'Enter Your 1st Preference');
+					echo form_input($fpref1);
+					?>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="col-sm-12">
-					<select name='pref2' class='form-control'>
-						<option value='-1'>Choose your 2nd Preference</option>
-						<option value='1'>Aerospace Engineering</option>
-						<option value='2'>Agricultural & Food Engineering</option>
-						<option value='3'>Architecture & Regional Planning</option>
-						<option value='4'>Banking</option>
-						<option value='5'>Biotechnology</option>
-						<option value='6'>Civil Engineering</option>
-						<option value='7'>Chemical Engineering</option>
-						<option value='8'>Civil Services</option>
-						<option value='9'>Computer Science & Engineering</option>
-						<option value='10'>Consultancy</option>
-						<option value='11'>Chemistry</option>
-						<option value='12'>Electrical Engineering</option>
-						<option value='13'>Electronics & Electrical Communication Engineering</option>
-						<option value='14'>Finance</option>
-						<option value='15'>Geology & Geophysics</option>
-						<option value='16'>Humanities & Social Sciences</option>
-						<option value='17'>Industrial & Systems Engineering</option>
-						<option value='18'>Marketing</option>
-						<option value='19'>Mathematics</option>
-						<option value='20'>Mechanical Engineering</option>
-						<option value='21'>Metallurgical & Materials Engineering</option>
-						<option value='22'>Mining Engineering</option>
-						<option value='23'>Music</option>
-						<option value='24'>Ocean Engineering & Naval Architecture</option>
-						<option value='25'>Physics</option>
-					</select>
+					<?php 
+					$fpref2 = array('name' => 'pref22',
+						'class' => 'form-control',
+						'placeholder' => 'Enter Your 2nd Preference');
+					echo form_input($fpref2);
+					?>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="col-sm-12">
-					<select name='pref3' class='form-control'>
-						<option value='-1'>Choose your 3rd Preference</option>
-						<option value='1'>Aerospace Engineering</option>
-						<option value='2'>Agricultural & Food Engineering</option>
-						<option value='3'>Architecture & Regional Planning</option>
-						<option value='4'>Banking</option>
-						<option value='5'>Biotechnology</option>
-						<option value='6'>Civil Engineering</option>
-						<option value='7'>Chemical Engineering</option>
-						<option value='8'>Civil Services</option>
-						<option value='9'>Computer Science & Engineering</option>
-						<option value='10'>Consultancy</option>
-						<option value='11'>Chemistry</option>
-						<option value='12'>Electrical Engineering</option>
-						<option value='13'>Electronics & Electrical Communication Engineering</option>
-						<option value='14'>Finance</option>
-						<option value='15'>Geology & Geophysics</option>
-						<option value='16'>Humanities & Social Sciences</option>
-						<option value='17'>Industrial & Systems Engineering</option>
-						<option value='18'>Marketing</option>
-						<option value='19'>Mathematics</option>
-						<option value='20'>Mechanical Engineering</option>
-						<option value='21'>Metallurgical & Materials Engineering</option>
-						<option value='22'>Mining Engineering</option>
-						<option value='23'>Music</option>
-						<option value='24'>Ocean Engineering & Naval Architecture</option>
-						<option value='25'>Physics</option>
-					</select>
+					<?php 
+					$fpref3 = array('name' => 'pref33',
+						'class' => 'form-control',
+						'placeholder' => 'Enter Your 3rd Preference');
+					echo form_input($fpref3);
+					?>
 				</div>
 			</div>
 		</div>
-		<div id="f2" style="display:none">
+		
+		<div class="form-group"	>	
+			<div class="col-sm-12">		
+				<button   name="sub" style="width:100%" class="btn btn-lg btn-success" >Submit</button>		
+			</div>			
+		</div>
+
+	</form>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+</div>
+
+</div>
+</div>
+<div class="modal fade" id="registermentor" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title" style="text-align:center;">Register  Here</h4>
+			</div>
+			<div class="modal-body">
+
+				<?php
+				$this->load->helper('form');
+				$a = array('class'=>'form-horizontal',
+					'method'=>'post',
+					'role'=>'form');
+				echo form_open('welcome/users',$a);					
+				?>
+				<div class="form-group">
+					<div class="col-sm-12">
+						<?php
+						$fname = array('name' => 'name' ,
+							'class' => 'form-control',
+							'placeholder' => 'Enter Your Name' );
+						echo form_input($fname);
+						?>
+					</div>
+
+
+
+				</div>
+
+				<div class="form-group">
+					<div class="col-sm-12">
+						<?php
+						$femail = array('name' => 'email' ,
+							'type' => 'email',
+							'class' => 'form-control',
+							'placeholder' => 'Enter Your Email' );
+						echo form_input($femail);
+						?>
+					</div>
+
+
+
+				</div>
+				<div class="form-group">
+					<div class="col-sm-12">
+						<?php
+						$fpass = array('name' => 'password' ,
+							'class' => 'form-control',
+							'placeholder' => 'Enter Your password',
+							'type' => 'password' );
+						echo form_input($fpass);
+						?>
+					</div>
+
+
+
+				</div>
+			<!--
+			<div class="form-group">
+				<div class="col-sm-12">
+					<?php/*
+					$fp = array('name' => 'password1' ,
+						'class' => 'form-control',
+						'placeholder' => 'Enter Your Password Again',
+						'type' => 'password' );
+					echo form_input($fp);
+					*/?>
+				</div>
+			</div>
+		-->
+		<div class="form-group">
+			<div class="col-sm-12">
+				<?php
+				$fdep = array('name' => 'department' ,
+					'class' => 'form-control',
+					'placeholder' => 'Enter Your Department' );
+				echo form_input($fdep);
+				?>
+			</div>
+
+
+
+		</div>
+		<div class="form-group">
+			<div class="col-sm-12">
+				<?php
+				$fhall = array('name' => 'hall' ,
+					'class' => 'form-control',
+					'placeholder' => 'Enter Your Hall' );
+				echo form_input($fhall);
+				?>
+			</div>
+
+			<!--div class="form-group">
+				<div class="col-sm-12">
+					<?php
+					$fb = array(
+						'name' => '',
+						'class' => 'form-control',
+						'type' => 'submit',
+						'value' => 'Submit'
+						 );
+					echo form_button($fb);
+					?>
+				</div>	
+			</div-->
+			<?php //echo form_close(); 
+			?>
+
+		</div>
+		<div id="f2" style="">
 			<div class="form-group">
 				<div class="col-sm-12">
 					<?php 
@@ -364,110 +486,44 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<h5>Select No. Of Mentees</h5>
 				</div>
 				<div class="col-sm-4">
-					<select class="form-control" name="no_of_mentees">
-						<option value='-1'>Choose no of Mentees to be allotted</option>
-						<option value='1'>One</option>
-						<option value='2'>Two</option>
-						<option value='3'>Three</option>
-						<option value='4'>Four</option>
-					</select>
+					<?php 
+					$option = array('1' => 'one',
+						'2' => 'two',
+						'3' => 'three',
+						'4' => 'four');
+					echo form_dropdown('mentee',$option,'1');
+					?>
 				</div>
 			</div>
 			<h4>In which field do you want to Mentor in?</h4>
 			<div class="form-group">
 				<div class="col-sm-12">
-					<select name='pref1' class='form-control'>
-						<option value='-1'>Choose your 1st Preference</option>
-						<option value='1'>Aerospace Engineering</option>
-						<option value='2'>Agricultural & Food Engineering</option>
-						<option value='3'>Architecture & Regional Planning</option>
-						<option value='4'>Banking</option>
-						<option value='5'>Biotechnology</option>
-						<option value='6'>Civil Engineering</option>
-						<option value='7'>Chemical Engineering</option>
-						<option value='8'>Civil Services</option>
-						<option value='9'>Computer Science & Engineering</option>
-						<option value='10'>Consultancy</option>
-						<option value='11'>Chemistry</option>
-						<option value='12'>Electrical Engineering</option>
-						<option value='13'>Electronics & Electrical Communication Engineering</option>
-						<option value='14'>Finance</option>
-						<option value='15'>Geology & Geophysics</option>
-						<option value='16'>Humanities & Social Sciences</option>
-						<option value='17'>Industrial & Systems Engineering</option>
-						<option value='18'>Marketing</option>
-						<option value='19'>Mathematics</option>
-						<option value='20'>Mechanical Engineering</option>
-						<option value='21'>Metallurgical & Materials Engineering</option>
-						<option value='22'>Mining Engineering</option>
-						<option value='23'>Music</option>
-						<option value='24'>Ocean Engineering & Naval Architecture</option>
-						<option value='25'>Physics</option>
-					</select>
+					<?php 
+					$fpref1 = array('name' => 'pref1',
+						'class' => 'form-control',
+						'placeholder' => 'Enter Your 1st Preference');
+					echo form_input($fpref1);
+					?>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="col-sm-12">
-					<select name='pref2' class='form-control'>
-						<option value='-1'>Choose your 2nd Preference</option>
-						<option value='1'>Aerospace Engineering</option>
-						<option value='2'>Agricultural & Food Engineering</option>
-						<option value='3'>Architecture & Regional Planning</option>
-						<option value='4'>Banking</option>
-						<option value='5'>Biotechnology</option>
-						<option value='6'>Civil Engineering</option>
-						<option value='7'>Chemical Engineering</option>
-						<option value='8'>Civil Services</option>
-						<option value='9'>Computer Science & Engineering</option>
-						<option value='10'>Consultancy</option>
-						<option value='11'>Chemistry</option>
-						<option value='12'>Electrical Engineering</option>
-						<option value='13'>Electronics & Electrical Communication Engineering</option>
-						<option value='14'>Finance</option>
-						<option value='15'>Geology & Geophysics</option>
-						<option value='16'>Humanities & Social Sciences</option>
-						<option value='17'>Industrial & Systems Engineering</option>
-						<option value='18'>Marketing</option>
-						<option value='19'>Mathematics</option>
-						<option value='20'>Mechanical Engineering</option>
-						<option value='21'>Metallurgical & Materials Engineering</option>
-						<option value='22'>Mining Engineering</option>
-						<option value='23'>Music</option>
-						<option value='24'>Ocean Engineering & Naval Architecture</option>
-						<option value='25'>Physics</option>
-					</select>
+					<?php 
+					$fpref2 = array('name' => 'pref2',
+						'class' => 'form-control',
+						'placeholder' => 'Enter Your 2nd Preference');
+					echo form_input($fpref2);
+					?>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="col-sm-12">
-					<select name='pref3' class='form-control'>
-						<option value='-1'>Choose your 3rd Preference</option>
-						<option value='1'>Aerospace Engineering</option>
-						<option value='2'>Agricultural & Food Engineering</option>
-						<option value='3'>Architecture & Regional Planning</option>
-						<option value='4'>Banking</option>
-						<option value='5'>Biotechnology</option>
-						<option value='6'>Civil Engineering</option>
-						<option value='7'>Chemical Engineering</option>
-						<option value='8'>Civil Services</option>
-						<option value='9'>Computer Science & Engineering</option>
-						<option value='10'>Consultancy</option>
-						<option value='11'>Chemistry</option>
-						<option value='12'>Electrical Engineering</option>
-						<option value='13'>Electronics & Electrical Communication Engineering</option>
-						<option value='14'>Finance</option>
-						<option value='15'>Geology & Geophysics</option>
-						<option value='16'>Humanities & Social Sciences</option>
-						<option value='17'>Industrial & Systems Engineering</option>
-						<option value='18'>Marketing</option>
-						<option value='19'>Mathematics</option>
-						<option value='20'>Mechanical Engineering</option>
-						<option value='21'>Metallurgical & Materials Engineering</option>
-						<option value='22'>Mining Engineering</option>
-						<option value='23'>Music</option>
-						<option value='24'>Ocean Engineering & Naval Architecture</option>
-						<option value='25'>Physics</option>
-					</select>
+					<?php 
+					$fpref3 = array('name' => 'pref3',
+						'class' => 'form-control',
+						'placeholder' => 'Enter Your 3rd Preference');
+					echo form_input($fpref3);
+					?>
 				</div>
 			</div>
 			<h3 class="center"> Contact Details </h3>
@@ -519,12 +575,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>			
 		</div>
 
+	</form>
+
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+</div>
+
+</div>
+</div>
 
 
 
 
 
-	</div>	
+
+
+</div>	
+<div class="col-md-9">
+	<img src="img/gym.jpg" class="img img-rounded" style="width:880px;" height="480" / >
+	<hr>
+
+</div>
 </div>
 
 <script type="text/javascript">
@@ -554,3 +627,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 </html>
+	
