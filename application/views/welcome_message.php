@@ -371,6 +371,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						'4' => 'four');
 					echo form_dropdown('mentee',$option,'1');
 					?>
+					<select class="form-control" name="no_of_mentees">
+						<option value='-1'>Choose no of Mentees to be allotted</option>
+						<option value='1'>One</option>
+						<option value='2'>Two/option>
+						<option value='3'>Three</option>
+						<option value='4'>Four</option>
+					</select>
 				</div>
 			</div>
 			<h4>In which field do you want to Mentor in?</h4>
