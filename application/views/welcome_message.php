@@ -438,7 +438,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				$a = array('class'=>'form-horizontal',
 					'method'=>'post',
 					'role'=>'form');
-				echo form_open('welcome/users',$a);					
+				echo form_open('welcome/member_area',$a);					
 				?>
 				<div class="form-group">
 					<div class="col-sm-12">
