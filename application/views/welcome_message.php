@@ -121,7 +121,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  
 	</div--><div class="row">
 	<div class="jumbotron" style="margin-top:-30px;height:140px;">
-		<img src="img/p.jpg" class="img img-rounded" style="float:left;position:relative;top:-25px;" width="750" height="100">
+		<img src="http://alumnimeet.iitkgp.ernet.in/other/mentorship/img/p.jpg" class="img img-rounded" style="float:left;position:relative;top:-25px;" width="750" height="100">
 		<!--h2 style="position:relative;left:20px;">Mentorship Portal  </h2-->
 		<button type="button" style="float:right;position:relative;top:-10px;" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button>
 
@@ -725,7 +725,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 </div>	
 <div class="col-md-9">
-	<img src="img/gym.jpg" class="img img-rounded" style="width:880px;" height="480" / >
+	<img src="http://alumnimeet.iitkgp.ernet.in/other/mentorship/img/gym.jpg" class="img img-rounded" style="width:880px; margin:0 auto" height="400" / >
 	<hr>
 
 </div>
