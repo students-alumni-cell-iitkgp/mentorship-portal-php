@@ -285,7 +285,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="form-group">
 				<div class="col-sm-12">
 					<select name='pref2' class='form-control'>
-						<option value='-1'>Choose your 1st Preference</option>
+						<option value='-1'>Choose your 2nd Preference</option>
 						<option value='1'>Aerospace Engineering</option>
 						<option value='2'>Agricultural & Food Engineering</option>
 						<option value='3'>Architecture & Regional Planning</option>
@@ -317,7 +317,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="form-group">
 				<div class="col-sm-12">
 					<select name='pref3' class='form-control'>
-						<option value='-1'>Choose your 1st Preference</option>
+						<option value='-1'>Choose your 3rd Preference</option>
 						<option value='1'>Aerospace Engineering</option>
 						<option value='2'>Agricultural & Food Engineering</option>
 						<option value='3'>Architecture & Regional Planning</option>
@@ -409,7 +409,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="form-group">
 				<div class="col-sm-12">
 					<select name='pref2' class='form-control'>
-						<option value='-1'>Choose your 1st Preference</option>
+						<option value='-1'>Choose your 2nd Preference</option>
 						<option value='1'>Aerospace Engineering</option>
 						<option value='2'>Agricultural & Food Engineering</option>
 						<option value='3'>Architecture & Regional Planning</option>
@@ -441,7 +441,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="form-group">
 				<div class="col-sm-12">
 					<select name='pref3' class='form-control'>
-						<option value='-1'>Choose your 1st Preference</option>
+						<option value='-1'>Choose your 3rd Preference</option>
 						<option value='1'>Aerospace Engineering</option>
 						<option value='2'>Agricultural & Food Engineering</option>
 						<option value='3'>Architecture & Regional Planning</option>
