@@ -364,13 +364,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<h5>Select No. Of Mentees</h5>
 				</div>
 				<div class="col-sm-4">
-					<?php 
-					$option = array('1' => 'one',
-						'2' => 'two',
-						'3' => 'three',
-						'4' => 'four');
-					echo form_dropdown('mentee',$option,'1');
-					?>
 					<select class="form-control" name="no_of_mentees">
 						<option value='-1'>Choose no of Mentees to be allotted</option>
 						<option value='1'>One</option>
