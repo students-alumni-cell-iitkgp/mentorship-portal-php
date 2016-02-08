@@ -304,6 +304,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					$fphone = array('name' => 'phone',
 						'class' => 'form-control',
 						'placeholder' => 'Enter Your Phone No.',
+						'type' => 'text',
 						'required' => 'required');
 					echo form_input($fphone);
 					?>
@@ -442,7 +443,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		
 		<div class="form-group"	>	
 			<div class="col-sm-12">		
-				<button   name="sub" style="width:100%" class="btn btn-lg btn-success" >Submit</button>		
+				<button   name="sub1" style="width:100%" class="btn btn-lg btn-success" >Submit</button>		
 			</div>			
 		</div>
 
@@ -741,7 +742,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<div class="form-group"	>	
 			<div class="col-sm-12">		
-				<button   name="sub" style="width:100%" class="btn btn-lg btn-success" >Submit</button>		
+				<button   name="sub2" style="width:100%" class="btn btn-lg btn-success" >Submit</button>		
 			</div>			
 		</div>
 
@@ -783,4 +784,3 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 </html>
-	
