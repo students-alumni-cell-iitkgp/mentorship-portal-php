@@ -88,6 +88,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</style>
 </head>
 <body>
+<<<<<<< HEAD
 	
 	<div id="bg">
 		<div class="row" id="box" style="width:100%;float:right;margin-top:5px">
@@ -109,6 +110,66 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					'placeholder' => 'Enter Your Email' );
 				echo form_input($email1);
 				?>
+=======
+	<div class="container">
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title" style="text-align:center;">Login Here</h4>
+					</div>
+					<div class="modal-body">
+						<?php 
+						$this->load->helper('form');
+						$for=array('class' => 'form-horizontal',
+							'method' => 'post',
+							'role' => 'form',
+
+							);		
+						echo form_open('index.php/welcome/member_area',$for);
+						?>
+						<div class="form-group">
+							<div class="col-sm-2"></div>
+							<div class="col-sm-8">
+								<?php
+								$email1 = array('name' => 'eid' ,
+									'type' => 'email',
+									'class' => 'form-control',
+									'placeholder' => 'Enter Your Email',
+									'required' => 'required' );
+								echo form_input($email1);
+								?>
+
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-2"></div>
+							<div class="col-sm-8">
+								<?php
+								$pwd = array('name' => 'pass' ,
+									'type' => 'password',
+									'class' => 'form-control',
+									'placeholder' => 'Enter Your Password',
+									'required' => 'required' );
+								echo form_input($pwd);
+								?>
+
+							</div>
+						</div>
+
+
+						<button type="submit" style="position:relative;left:100px;width:370px;" class="btn btn-success">Submit</button>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+>>>>>>> 53da844d6e4e1be1604dd383416db2e8141319f5
 			</div>
 			<div class="col-md-3">
 				<?php
@@ -172,7 +233,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<?php
 							$fname = array('name' => 'name' ,
 								'class' => 'form-control',
-								'placeholder' => 'Enter Your Name' );
+								'placeholder' => 'Enter Your Name',
+								'required' => 'required' );
 							echo form_input($fname);
 							?>
 						</div>
@@ -187,7 +249,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							$femail = array('name' => 'email' ,
 								'type' => 'email',
 								'class' => 'form-control',
-								'placeholder' => 'Enter Your Email' );
+								'placeholder' => 'Enter Your Email',
+								'required' => 'required' );
 							echo form_input($femail);
 							?>
 						</div>
@@ -201,7 +264,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							$fpass = array('name' => 'password' ,
 								'class' => 'form-control',
 								'placeholder' => 'Enter Your password',
-								'type' => 'password' );
+								'type' => 'password',
+								'required' => 'required' );
 							echo form_input($fpass);
 							?>
 						</div>
@@ -227,7 +291,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<?php
 				$fdep = array('name' => 'department' ,
 					'class' => 'form-control',
-					'placeholder' => 'Enter Your Department' );
+					'placeholder' => 'Enter Your Department',
+					'required' => 'required' );
 				echo form_input($fdep);
 				?>
 			</div>
@@ -240,7 +305,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<?php
 				$fhall = array('name' => 'hall' ,
 					'class' => 'form-control',
-					'placeholder' => 'Enter Your Hall' );
+					'placeholder' => 'Enter Your Hall',
+					'required' => 'required' );
 				echo form_input($fhall);
 				?>
 			</div>
@@ -268,7 +334,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<?php
 					$froll = array('name' => 'roll' ,
 						'class' => 'form-control',
-						'placeholder' => 'Enter Your Roll' );
+						'placeholder' => 'Enter Your Roll',
+						'required' => 'required' );
 					echo form_input($froll);
 					?>
 				</div>
@@ -281,7 +348,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<?php
 					$fcg = array('name' => 'cgpa' ,
 						'class' => 'form-control',
-						'placeholder' => 'Enter Your Cgpa' );
+						'placeholder' => 'Enter Your Cgpa',
+						'required' => 'required' );
 					echo form_input($fcg);
 					?>
 				</div>
@@ -294,7 +362,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<?php 
 					$fphone = array('name' => 'phone',
 						'class' => 'form-control',
-						'placeholder' => 'Enter Your Phone No.');
+						'placeholder' => 'Enter Your Phone No.',
+						'required' => 'required');
 					echo form_input($fphone);
 					?>
 				</div>
@@ -325,14 +394,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<?php 
 					$fjoin = array('name' => 'join',
 						'class' => 'form-control',
-						'placeholder' => 'Enter Your Joining Year');
+						'placeholder' => 'Enter Your Joining Year',
+						'required' => 'required');
 					echo form_input($fjoin);
 					?>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="col-sm-12">
-					<h4>In which field do you want to  be Mentored ?</h4>
+				<h4>In which field do you want to  be Mentored ?</h4>
 					<select name='pref1' class='form-control'>
 						<option value='-1'>Choose your 1st Preference</option>
 						<option value='1'>Aerospace Engineering</option>
@@ -467,7 +537,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<?php
 						$fname = array('name' => 'name' ,
 							'class' => 'form-control',
-							'placeholder' => 'Enter Your Name' );
+							'placeholder' => 'Enter Your Name',
+							'required' => 'required' );
 						echo form_input($fname);
 						?>
 					</div>
@@ -482,7 +553,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						$femail = array('name' => 'email' ,
 							'type' => 'email',
 							'class' => 'form-control',
-							'placeholder' => 'Enter Your Email' );
+							'placeholder' => 'Enter Your Email',
+							'required' => 'required' );
 						echo form_input($femail);
 						?>
 					</div>
@@ -496,7 +568,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						$fpass = array('name' => 'password' ,
 							'class' => 'form-control',
 							'placeholder' => 'Enter Your password',
-							'type' => 'password' );
+							'type' => 'password',
+							'required' => 'required' );
 						echo form_input($fpass);
 						?>
 					</div>
@@ -522,7 +595,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<?php
 				$fdep = array('name' => 'department' ,
 					'class' => 'form-control',
-					'placeholder' => 'Enter Your Department' );
+					'placeholder' => 'Enter Your Department',
+					'required' => 'required' );
 				echo form_input($fdep);
 				?>
 			</div>
@@ -563,7 +637,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<?php 
 					$fpasout = array('name' => 'pout',
 						'class' => 'form-control',
-						'placeholder' => 'Enter Your PassOut Year');
+						'placeholder' => 'Enter Your PassOut Year',
+						'required' => 'required');
 					echo form_input($fpasout);
 					?>
 				</div>
@@ -685,7 +760,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<?php 
 					$fphone = array('name' => 'phone',
 						'class' => 'form-control',
-						'placeholder' => 'Enter Your Phone No.');
+						'placeholder' => 'Enter Your Phone No.',
+						'required' => 'required');
 					echo form_input($fphone);
 					?>
 				</div>
@@ -695,7 +771,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<?php 
 					$firm = array('name' => 'firm',
 						'class' => 'form-control',
-						'placeholder' => 'Enter Your Firm');
+						'placeholder' => 'Enter Your Firm',
+						'required' => 'required');
 					echo form_input($firm);
 					?>
 				</div>
@@ -705,7 +782,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<?php 
 					$fd = array('name' => 'des',
 						'class' => 'form-control',
-						'placeholder' => 'Enter Your Designation');
+						'placeholder' => 'Enter Your Designation',
+						'required' => 'required');
 					echo form_input($fd);
 					?>
 				</div>
@@ -715,7 +793,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<?php 
 					$fw = array('name' => 'work',
 						'class' => 'form-control',
-						'placeholder' => 'Enter Your Field Of Work');
+						'placeholder' => 'Enter Your Field Of Work',
+						'required' => 'required');
 					echo form_input($fw);
 					?>
 				</div>
