@@ -7,14 +7,46 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<title>Welcome to Mentorship-Portal</title>
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<!-- Generic page styles -->
-	<link rel="stylesheet" href="css/style.css">
 	<style type="text/css">
 
 		::selection { background-color: #E13300; color: white; }
 		::-moz-selection { background-color: #E13300; color: white; }
 
+		#bg {
+			height: 400px;
+			width: 100%;
+			background-image: url('http://alumnimeet.iitkgp.ernet.in/other/mentorship/img/gymk.jpg');
+			background-size:100% 100%;
+		}
+		#box {
+			padding: 10px;
+			width: 100%;
+			background:rgba(0,0,0,.5);
+			position: relative;
+			margin:2px auto;
+			text-align:justify;
+			box-shadow: 0px 0px 4px #777;
+		}
 
-		
+		#box2 {
+			padding: 10px;
+			min-height: 240px;
+			text-align: center;
+			background:rgba(255,255,255,.5);
+			position: relative;
+			margin-left:10px;
+			box-shadow: 0px 0px 4px #777;
+		}
+
+		#al {
+			padding: 10px;
+			background:rgba(255,255,255,.75);
+			position: relative;
+			margin:2px auto;
+			text-align:justify;
+			box-shadow: 0px 0px 4px #777;
+		}
+
 		#logo
 		{
 			margin: 0 0 0 0 ;
@@ -56,98 +88,68 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</style>
 </head>
 <body>
-	<div class="container">
+	
+	<div id="bg">
+		<div class="row" id="box" style="width:100%;float:right;margin-top:5px">
+			<div class="col-md-4"></div>
+			<?php 
+			$this->load->helper('form');
+			$for=array('class' => 'form-horizontal',
+				'method' => 'post',
+				'role' => 'form',
 
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" role="dialog">
-			<div class="modal-dialog">
-
-				<!-- Modal content-->
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h4 class="modal-title" style="text-align:center;">Login Here</h4>
-					</div>
-					<div class="modal-body">
-						<?php 
-						$this->load->helper('form');
-						$for=array('class' => 'form-horizontal',
-							'method' => 'post',
-							'role' => 'form',
-
-							);		
-						echo form_open('index.php/welcome/member_area',$for);
-						?>
-						<div class="form-group">
-							<div class="col-sm-2"></div>
-							<div class="col-sm-8">
-								<?php
-								$email1 = array('name' => 'eid' ,
-									'type' => 'email',
-									'class' => 'form-control',
-									'placeholder' => 'Enter Your Email' );
-								echo form_input($email1);
-								?>
-
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-2"></div>
-							<div class="col-sm-8">
-								<?php
-								$pwd = array('name' => 'pass' ,
-									'type' => 'password',
-									'class' => 'form-control',
-									'placeholder' => 'Enter Your Password' );
-								echo form_input($pwd);
-								?>
-
-							</div>
-						</div>
-
-
-						<button type="submit" style="position:relative;left:100px;width:370px;" class="btn btn-success">Submit</button>
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
+				);		
+			echo form_open('index.php/welcome/member_area',$for);
+			?>
+			<div class="col-md-3">
+				<?php
+				$email1 = array('name' => 'eid' ,
+					'type' => 'email',
+					'class' => 'form-control',
+					'placeholder' => 'Enter Your Email' );
+				echo form_input($email1);
+				?>
 			</div>
-
+			<div class="col-md-3">
+				<?php
+				$pwd = array('name' => 'pass' ,
+					'type' => 'password',
+					'class' => 'form-control',
+					'placeholder' => 'Enter Your Password' );
+				echo form_input($pwd);
+				?>
+			</div>
+			<div class="col-md-2">
+				<button type="submit" class="btn btn-success">Log In</button>
+			</form>
 		</div>
-	</div>
-
-		<!--div style="float:right;margin-top:-10px;">
- 
-	</div--><div class="row">
-	<div class="jumbotron" style="margin-top:-30px;height:140px;">
-		<img src="http://alumnimeet.iitkgp.ernet.in/other/mentorship/img/p.jpg" class="img img-rounded" style="float:left;position:relative;top:-25px;" width="750" height="100">
-		<!--h2 style="position:relative;left:20px;">Mentorship Portal  </h2-->
-		<button type="button" style="float:right;position:relative;top:-10px;" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button>
-
 	</div>
 </div>
-<div class="col-md-3">
-
-	<!--h2 style="text-align:center;">Register Here</h2-->
-	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#registermentor">
-		I want to be a Mentor
-	</button>
-
-	<hr/>
-
-
-
-	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#registerstudent">
-		I want to be a Mentee
-	</button><hr/>
-	<div class="jumbotron" >
-		<div class="" style="">
+<br>
+<div class="container-fluid">
+	<!--h2 style="position:relative;left:20px;">Mentorship Portal  </h2-->
+	<hr>
+	<div class="row">
+		<div class="col-md-3" id="box2">
+		<br><br>
+			<!--h2 style="text-align:center;">Register Here</h2-->
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#registermentor">
+				I want to be a Mentor
+			</button>
+			<br><hr><br>
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#registerstudent">
+				I want to be a Mentee
+			</button>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-6" id="al">
 			The Student Alumni Mentorship programme was started in session 2010-11 by the Students’ Alumni Cell as an initiative to create a platform for the exchange of ideas and experience between the alumni and the current students of IIT Kharagpur.<br><br>
-
-			<!--With an ocean of possibilities available, students often find it difficult to decide their way out into the future. There are lots of instances where students need  a mentor who can counsel and guide them through. The alumni can improve students' insight into various aspects of life.  Their journey and personal experiences can help the students and motivate them through this pivotal phase of life. Under this programme, we invite our alumni from across the world and from different fields to interact with the students and help them build their network and gain new perspective on the possibilities open to them after graduation.-->
+			With an ocean of possibilities available, students often find it difficult to decide their way out into the future. There are lots of instances where students need  a mentor who can counsel and guide them through. The alumni can improve students' insight into various aspects of life.  Their journey and personal experiences can help the students and motivate them through this pivotal phase of life. Under this programme, we invite our alumni from across the world and from different fields to interact with the students and help them build their network and gain new perspective on the possibilities open to them after graduation.
 		</div>
 	</div>
+	</div>
+	<br>
+	<footer id="box" style="background-color:black; color:white; text-align:center">&copy; Students' Alumni Cell</footer>
 	<div class="modal fade" id="registerstudent" role="dialog">
 		<div class="modal-dialog">
 
@@ -733,20 +735,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 </div>
 </div>
-
-</div>
-</div>
-
-
-
-
-
-
-
-</div>	
-<div class="col-md-9">
-	<img src="http://alumnimeet.iitkgp.ernet.in/other/mentorship/img/gym.jpg" class="img img-rounded" style="width:880px; margin:0 auto" height="400" / >
-	<hr>
 
 </div>
 </div>
