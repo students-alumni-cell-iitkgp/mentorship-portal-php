@@ -53,10 +53,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</h3>
 
 						<h4>
-							Thank you for registering! We will allot a mentor to you soon.
+							Thank you for registering! We will allot a <?php if($cgpa ==''){echo "Mentee ";}
+																		else { echo "Mentor "; }?>to you soon.
 						</h4>
 
-						<h3>Feel Free to get in touch with your Mentor</h3>
+						<h3>Feel Free to get in touch with your <?php if($cgpa ==''){echo "Mentee ";}
+																		else { echo "Mentor "; }?></h3>
 						
 
 						
