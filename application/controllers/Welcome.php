@@ -108,10 +108,10 @@ public function member_area()
 
 
 
-function validate_credentials()
+public function validate_credentials()
 {			
 	$this->load->database();
-
+	//$this->form_validation->set_rules('password', 'Password', 'required|min_length[8]|max_length[20]');
 	$this->load->model('member_area');
 	$query=$this->membership_model->validate();
 
