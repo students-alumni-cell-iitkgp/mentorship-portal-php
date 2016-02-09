@@ -89,12 +89,15 @@ public function member_area()
 	$this->load->database();
 
 	$email=$_POST['eid'];
+		//var $query1,$query2;
 		$query = $this->db->get_where('users', array('email' => $email));
+		$query1 = $this->db->get_where('contact', array('email' => $email));
+		$query2 = $this->db->get_where('preferences', array('email' => $email));
 		$row=$query->row_array();		
 		if ($query->num_rows()>0) {
-			$row = $query->row_array();
+			$row = $query->row_array();	$row1 = $query1->row_array();
 			if($row['password']==$_POST['pass']){
-				$this->load->view('home', $row);
+				$this->load->view('users', $row );
 			}
 			else header('Location:index');
 

@@ -204,7 +204,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<?php
 							$fpass = array('name' => 'password' ,
 								'class' => 'form-control',
-								'placeholder' => 'Enter Your password',
+								'placeholder' => 'Enter Your Password',
 								'type' => 'password',
 								'required' => 'required' );
 							echo form_input($fpass);
@@ -509,7 +509,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<?php
 						$fpass = array('name' => 'password' ,
 							'class' => 'form-control',
-							'placeholder' => 'Enter Your password',
+							'placeholder' => 'Enter Your Password',
 							'type' => 'password',
 							'required' => 'required' );
 						echo form_input($fpass);
