@@ -579,7 +579,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<?php 
 					$fpasout = array('name' => 'pout',
 						'class' => 'form-control',
-						'placeholder' => 'Enter Your PassOut Year',
+						'placeholder' => 'Enter Your Year Of Graduation',
 						'required' => 'required');
 					echo form_input($fpasout);
 					?>
