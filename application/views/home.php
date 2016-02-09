@@ -36,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						if($this->input->post('cgpa')==''){
 								echo '<li class="list-group-item">'.'<strong>Email </strong>'.'<span class="pull-right">' .$email .'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Phone Number </strong>'.'<span class="pull-right">'. $phone .'</span>'.'</li>';
-							echo '<li class="list-group-item">'.'<strong>Passout Year </strong>'.'<span class="pull-right">'.$pout .'</span>'.'</li>';
+							echo '<li class="list-group-item">'.'<strong>Year Of Graduation</strong>'.'<span class="pull-right">'.$pout .'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Department  </strong>'.'<span class="pull-right">' .$department.'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Hall </strong>'.'<span class="pull-right">'. $hall .'</span>'.'</li>';			
 					
