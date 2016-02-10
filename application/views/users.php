@@ -33,46 +33,46 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div style="">
 					<div class="list-group"><?php
 						$query = $this->db->get_where('contact', array('email' => $email));
-						$row=$query->row_array();		
-						if($cgpa == '') {
+									$row=$query->row_array();		
+							if($cgpa == '') {
 							echo '<li class="list-group-item">'.'<strong>Email </strong>'.'<span class="pull-right">'. $email .'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Phone Number </strong>'.'<span class="pull-right">'. $row['phone'] .'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Year Of Graduation</strong>'.'<span class="pull-right">' .$passout_year .'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Department  </strong>'.'<span class="pull-right">'. $department.'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Hall </strong>'.'<span class="pull-right">'. $hall .'</span>'.'</li>';			
-							
-						}
-						else {
-							echo '<li class="list-group-item">'.'<strong>Email </strong>'.'<span class="pull-right">'. $email .'</span>'.'</li>';
+					
+							}
+							else {
+								echo '<li class="list-group-item">'.'<strong>Email </strong>'.'<span class="pull-right">'. $email .'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Roll Number </strong>'.'<span class="pull-right">'. $roll .'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Joining Year </strong>'.'<span class="pull-right">' .$join_year .'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Department  </strong>'.'<span class="pull-right">'. $department.'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Hall </strong>'.'<span class="pull-right">'. $hall .'</span>'.'</li>';			
-							
-						}
-						?>
+					
+							}
+							?>
+							</div>
 					</div>
-				</div>
-			</div><!--col-md-3 ends -->
+				</div><!--col-md-3 ends -->
 
-			<div class="col-md-6">
-				<br/>
-				
-				<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/p.jpg" width="560" height="140" class="img img-rounded" />
-				<br/>
-				<div style="margin:30px 0px 5px 0px" class="well">
-					<h3>
-						Welcome to the Student-Alumni Mentorship Programme!
-					</h3>
+				<div class="col-md-6">
+					<br/>
+					
+					<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/p.jpg" width="560" height="100" class="img img-rounded" />
+					<br/><br/><br/>
+					<div style="margin:30px 0px 5px 0px" class="well">
+						<h3>
+							Welcome to the Student-Alumni Mentorship Programme!
+						</h3>
 
 					
-					<h4>
-						Thank you for registering! We will allot a  <?php if($cgpa == ''){ echo  "Mentee" ;} 
-						else { echo "Mentor"  ; }?> to you soon.
-					</h4>
+						<h4>
+							Thank you for registering! We will allot a  <?php if($cgpa == ''){ echo  "Mentee" ;} 
+																		else { echo "Mentor"  ; }?> to you soon.
+						</h4>
 
-					<h3>Feel Free to get in touch with your  <?php if($cgpa == ''){ echo  "Mentee" ;} 
-						else { echo "Mentor" ;  }?>  </h3>
+						<h3>Feel Free to get in touch with your  <?php if($cgpa == ''){ echo  "Mentee" ;} 
+																		else { echo "Mentor" ;  }?>  </h3>
 						
 
 
