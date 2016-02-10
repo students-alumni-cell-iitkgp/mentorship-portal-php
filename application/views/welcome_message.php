@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			padding: 10px;
 			width: 100%;
 			background:rgba(0,0,0,.5);
-			position: relative;
+			position: absolute;
 			top:0px;
  +			margin:0px auto;
 			text-align:justify;
