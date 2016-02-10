@@ -8,10 +8,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<!-- Generic page styles -->
 	<style type="text/css">
-
 		::selection { background-color: #E13300; color: white; }
 		::-moz-selection { background-color: #E13300; color: white; }
-
 		#bg {
 			height: 400px;
 			width: 100%;
@@ -23,12 +21,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			width: 100%;
 			background:rgba(0,0,0,.5);
 			position: relative;
-			top:0px;
-			margin:0px auto;
+			margin:2px auto;
 			text-align:justify;
 			box-shadow: 0px 0px 4px #777;
 		}
-
 		#box2 {
 			padding: 10px;
 			min-height: 240px;
@@ -38,7 +34,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			margin-left:10px;
 			box-shadow: 0px 0px 4px #777;
 		}
-
 		#al {
 			padding: 10px;
 			background:rgba(255,255,255,.75);
@@ -47,20 +42,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			text-align:justify;
 			box-shadow: 0px 0px 4px #777;
 		}
-
 		#logo
 		{
 			margin: 0 0 0 0 ;
 			padding: 0 0 0 0 ;
-
 		}
-
 		#register
 		{
 			padding: 0 0 10px 0;
 			width: 100%;
 		}
-
 		#register-btn
 		{
 			width: 100%;
@@ -68,24 +59,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			font-size: 20px;
 			color:black;
 			border-color: black;
-
 		}
-
 		#register-form
 		{
 			position: relative;
 			top: -20px;
 		}
-
 		.logo{
 			margin-top: 10px;
 			margin-bottom: 10px;
 		}
-
 		.white{
 			color: white;
 		}
-
 	</style>
 </head>
 <body>
@@ -98,7 +84,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$for=array('class' => 'form-horizontal',
 				'method' => 'post',
 				'role' => 'form',
-
 				);		
 			echo form_open('index.php/welcome/member_area',$for);
 			?>
@@ -152,7 +137,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 	</div>
 	<br>
-	<footer style="background-color:black; color:white; text-align:center; padding:10px; position:relative; bottom:0px; width:100%">&copy; Students' Alumni Cell</footer>
+	<footer id="box" style="background-color:black; color:white; text-align:center">&copy; Students' Alumni Cell</footer>
 	<div class="modal fade" id="registerstudent" role="dialog">
 		<div class="modal-dialog">
 
@@ -766,7 +751,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		else {
 			document.getElementById("f1").style.display="none";
 		}
-
 	}
 	function f2(x){
 		if(x.options[x.selectedIndex].text=="mentor") {
@@ -775,7 +759,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		else {
 			document.getElementById("f2").style.display="none";
 		}
-
 	}
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>

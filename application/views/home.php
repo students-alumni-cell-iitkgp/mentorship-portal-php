@@ -10,10 +10,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- Generic page styles -->
 	<link rel="stylesheet" href="css/style.css">
 	<style type="text/css">
-
 		::selection { background-color: #E13300; color: white; }
 		::-moz-selection { background-color: #E13300; color: white; }
-
 	</style>
 </head>
 <body>
@@ -34,48 +32,45 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div style="">
 					<div class="list-group"><?php
 						if($this->input->post('cgpa')==''){
-								echo '<li class="list-group-item">'.'<strong>Email </strong>'.'<span class="pull-right">' .$email .'</span>'.'</li>';
+							echo '<li class="list-group-item">'.'<strong>Email </strong>'.'<span class="pull-right">' .$email .'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Phone Number </strong>'.'<span class="pull-right">'. $phone .'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Year Of Graduation</strong>'.'<span class="pull-right">'.$pout .'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Department  </strong>'.'<span class="pull-right">' .$department.'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Hall </strong>'.'<span class="pull-right">'. $hall .'</span>'.'</li>';			
-					
-
-					
-							}
-								else {
-						echo '<li class="list-group-item">'.'<strong>Email </strong>'.'<span class="pull-right">'. $email .'</span>'.'</li>';
+							
+							
+						}
+						else {
+							echo '<li class="list-group-item">'.'<strong>Email </strong>'.'<span class="pull-right">'. $email .'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Roll Number </strong>'.'<span class="pull-right">'. $roll .'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Joining Year </strong>'.'<span class="pull-right">' .$join .'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Department  </strong>'.'<span class="pull-right">'. $department.'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Hall </strong>'.'<span class="pull-right">'. $hall .'</span>'.'</li>';			
-					
-							}
 							
-
-
-							?>
-							</div>
+						}
+						
+						?>
 					</div>
-				</div><!--col-md-3 ends -->
+				</div>
+			</div><!--col-md-3 ends -->
 
-				<div class="col-md-6">
-					<br/>
-					<br/>
-					<br/>
-					<div style="margin:30px 0px 5px 0px" class="well">
-						<h3>
-							Welcome to the Student-Alumni Mentorship Programme!
-						</h3>
+			<div class="col-md-6">
+				<br/>
+				<img src="http://alumnimeet.iitkgp.ernet.in/other/mentorship/img/p.jpg" width="560" height="140" class="img img-rounded" />
+				<br/>
+				<div style="margin:30px 0px 5px 0px" class="well">
+					<h3>
+						Welcome to the Student-Alumni Mentorship Programme!
+					</h3>
 
 					
-						<h4>
-							Thank you for registering! We will allot a  <?php if($this->input->post('cgpa')==''){ echo  "Mentee" ;} 
-																		else { echo "Mentor" ;  }?> to you soon.
-						</h4>
+					<h4>
+						Thank you for registering! We will allot a  <?php if($this->input->post('cgpa')==''){ echo  "Mentee" ;} 
+						else { echo "Mentor" ;  }?> to you soon.
+					</h4>
 
-						<h3>Feel Free to get in touch with your  <?php if($this->input->post('cgpa')==''){ echo  "Mentee" ;} 
-																		else { echo "Mentor" ;  }?>  </h3>
+					<h3>Feel Free to get in touch with your  <?php if($this->input->post('cgpa')==''){ echo  "Mentee" ;} 
+						else { echo "Mentor" ;  }?>  </h3>
 						
 
 
@@ -89,7 +84,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="col-md-3" >
 				<form action="" method="post">
 
-					<button class="btn btn-danger btn-lg" style="float:right;position:relative;top:10px;" name="logout"> Logout</button>
+					<button class="btn btn-danger btn-lg" style="float:right;position:relative;top:20px;" name="logout"> Logout</button>
 				</form>
 				
 				<?php 
