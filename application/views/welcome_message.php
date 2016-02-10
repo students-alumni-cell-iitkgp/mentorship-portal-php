@@ -21,7 +21,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			width: 100%;
 			background:rgba(0,0,0,.5);
 			position: relative;
-			margin:2px auto;
+			top:0px;
+ +			margin:0px auto;
 			text-align:justify;
 			box-shadow: 0px 0px 4px #777;
 		}
@@ -137,7 +138,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 	</div>
 	<br>
-	<footer id="box" style="background-color:black; color:white; text-align:center">&copy; Students' Alumni Cell</footer>
+	<footer style="background-color:black; color:white; text-align:center; padding:10px; position:relative; bottom:0px; width:100%">&copy; Students' Alumni Cell</footer>
 	<div class="modal fade" id="registerstudent" role="dialog">
 		<div class="modal-dialog">
 
