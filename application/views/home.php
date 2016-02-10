@@ -56,7 +56,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			<div class="col-md-6">
 				<br/>
-				<img src="http://alumnimeet.iitkgp.ernet.in/other/mentorship/img/p.jpg" width="560" height="140" class="img img-rounded" />
+				<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/p.jpg" width="560" height="140" class="img img-rounded" />
 				<br/>
 				<div style="margin:30px 0px 5px 0px" class="well">
 					<h3>

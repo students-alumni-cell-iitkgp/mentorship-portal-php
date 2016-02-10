@@ -13,7 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		#bg {
 			height: 400px;
 			width: 100%;
-			background-image: url('http://alumnimeet.iitkgp.ernet.in/other/mentorship/img/gymk.jpg');
+			background-image: url('http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/gymk.jpg');
 			background-size:100% 100%;
 		}
 		#box {
