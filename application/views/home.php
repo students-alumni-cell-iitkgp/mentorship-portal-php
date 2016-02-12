@@ -111,7 +111,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 
 	</div>	
-		<footer style="background-color:black; color:white; text-align:center; padding:10px; position:relative; bottom:0px; width:100%">&copy; Students' Alumni Cell</footer>
+		<footer style="background-color:black; color:white; text-align:center; padding:10px; position:absolute; bottom:0px; width:100%">&copy; Students' Alumni Cell</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	
