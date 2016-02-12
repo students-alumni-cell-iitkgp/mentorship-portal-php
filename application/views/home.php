@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</li><li>
 					<form action="" method="post">
 
-						<button class="" style="position:relative;top:10px;" name="logout"> <img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/logout.jpg" class="img img-rounded" /></button>
+						<button class="" style="position:relative;top:10px;" name="logout"> Logout</button>
 					</form></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
