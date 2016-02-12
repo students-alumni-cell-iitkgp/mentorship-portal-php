@@ -38,7 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
-	<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/gymk.jpg" style="position:relative;top:-20px;" width="100%" height="400" class="img img-rounded" />
+	<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/gym1.jpg" style="position:relative;top:-20px;" width="100%" height="400" class="img img-rounded" />
 
 	<div class="container">
 		<div class="row">
