@@ -683,7 +683,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<h5>Select No. Of Mentees</h5>
 				</div>
 				<div class="col-sm-4">
-					<select class="form-control">
+					<select name='mentee' class="form-control">
 						<option value="1">One</option>
 						<option value="2">Two</option>
 						<option value="3">Three</option>
