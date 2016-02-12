@@ -623,12 +623,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<div class="form-group">
 			<div class="col-sm-12">
-				<?php
-				$fhall = array('name' => 'hall' ,
-					'class' => 'form-control',
-					'placeholder' => 'Enter Your Hall' );
-				echo form_input($fhall);
-				?>
+				<select name='hall' class='form-control'>
+					<option value='0'>Select Your Hall</option>
+					<option value="SAM">Ashutosh Mukherjee  Hall</option>
+					<option value="AZ">Azad  Hall</option>
+					<option value="BCR">B C Roy  Hall</option>
+					<option value="BRAH">B R Ambedkar  Hall</option>
+					<option value="GH">Gokhale  Hall</option>
+					<option value="HJB">Homi Bhabha  Hall</option>
+					<option value="JCB">J C Bose  Hall</option>
+					<option value="LLR">Lala Lajpat Rai  Hall</option>
+					<option value="LBS">Lalbahadur Sastry  Hall</option>
+					<option value="MMM">Madan Mohan Malviya  Hall</option>
+					<option value="MS">Megnad Saha  Hall</option>
+					<option value="MT">Mother Teresa  Hall</option>
+					<option value="NH">Nehru  Hall</option>
+					<option value="PT">Patel  Hall</option>
+					<option value="RK">Radha Krishnan  Hall</option>
+					<option value="RP">Rajendra Prasad  Hall</option>
+					<option value="RLB">Rani Laxmibai  Hall</option>
+					<option value="SN">Sarojini Naidu / Indira Gandhi  Hall</option>
+					<option value="VS">Vidyasagar  Hall</option>
+					<option value="ZH">Zakir Hussain  Hall</option>
+				</select>					
 			</div>
 
 			<!--div class="form-group">
