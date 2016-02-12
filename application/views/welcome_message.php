@@ -22,7 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			background:rgba(0,0,0,.5);
 			position: absolute;
 			top:0px;
- +			margin:0px auto;
+			margin:0px auto;
 			text-align:justify;
 			box-shadow: 0px 0px 4px #777;
 		}
@@ -120,7 +120,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<hr>
 	<div class="row">
 		<div class="col-md-3" id="box2">
-		<br><br>
+			<br><br>
 			<!--h2 style="text-align:center;">Register Here</h2-->
 			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#registermentor">
 				I want to be a Mentor
@@ -136,71 +136,71 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			With an ocean of possibilities available, students often find it difficult to decide their way out into the future. There are lots of instances where students need  a mentor who can counsel and guide them through. The alumni can improve students' insight into various aspects of life.  Their journey and personal experiences can help the students and motivate them through this pivotal phase of life. Under this programme, we invite our alumni from across the world and from different fields to interact with the students and help them build their network and gain new perspective on the possibilities open to them after graduation.
 		</div>
 	</div>
-	</div>
-	<br>
-	<footer style="background-color:black; color:white; text-align:center; padding:10px; position:relative; bottom:0px; width:100%">&copy; Students' Alumni Cell</footer>
-	<div class="modal fade" id="registerstudent" role="dialog">
-		<div class="modal-dialog">
+</div>
+<br>
+<footer style="background-color:black; color:white; text-align:center; padding:10px; position:relative; bottom:0px; width:100%">&copy; Students' Alumni Cell</footer>
+<div class="modal fade" id="registerstudent" role="dialog">
+	<div class="modal-dialog">
 
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title" style="text-align:center;">Register Here</h4>
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title" style="text-align:center;">Register Here</h4>
+			</div>
+			<div class="modal-body">
+				<?php
+				$this->load->helper('form');
+				$a = array('class'=>'form-horizontal',
+					'method'=>'post',
+					'role'=>'form');
+				echo form_open('index.php/welcome/users',$a);					
+				?>
+				<div class="form-group">
+					<div class="col-sm-12">
+						<?php
+						$fname = array('name' => 'name' ,
+							'class' => 'form-control',
+							'placeholder' => 'Enter Your Name',
+							'required' => 'required' );
+						echo form_input($fname);
+						?>
+					</div>
+
+
+
 				</div>
-				<div class="modal-body">
-					<?php
-					$this->load->helper('form');
-					$a = array('class'=>'form-horizontal',
-						'method'=>'post',
-						'role'=>'form');
-					echo form_open('index.php/welcome/users',$a);					
-					?>
-					<div class="form-group">
-						<div class="col-sm-12">
-							<?php
-							$fname = array('name' => 'name' ,
-								'class' => 'form-control',
-								'placeholder' => 'Enter Your Name',
-								'required' => 'required' );
-							echo form_input($fname);
-							?>
-						</div>
 
-
-
+				<div class="form-group">
+					<div class="col-sm-12">
+						<?php
+						$femail = array('name' => 'email' ,
+							'type' => 'email',
+							'class' => 'form-control',
+							'placeholder' => 'Enter Your Email',
+							'required' => 'required' );
+						echo form_input($femail);
+						?>
 					</div>
 
-					<div class="form-group">
-						<div class="col-sm-12">
-							<?php
-							$femail = array('name' => 'email' ,
-								'type' => 'email',
-								'class' => 'form-control',
-								'placeholder' => 'Enter Your Email',
-								'required' => 'required' );
-							echo form_input($femail);
-							?>
-						</div>
 
 
-
+				</div>
+				<div class="form-group">
+					<div class="col-sm-12">
+						<?php
+						$fpass = array('name' => 'password' ,
+							'class' => 'form-control',
+							'placeholder' => 'Enter Your Password',
+							'type' => 'password',
+							'required' => 'required' );
+						echo form_input($fpass);
+						?>
 					</div>
-					<div class="form-group">
-						<div class="col-sm-12">
-							<?php
-							$fpass = array('name' => 'password' ,
-								'class' => 'form-control',
-								'placeholder' => 'Enter Your Password',
-								'type' => 'password',
-								'required' => 'required' );
-							echo form_input($fpass);
-							?>
-						</div>
 
 
 
-					</div>
+				</div>
 			<!--
 			<div class="form-group">
 				<div class="col-sm-12">
@@ -216,13 +216,49 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		-->
 		<div class="form-group">
 			<div class="col-sm-12">
-				<?php
-				$fdep = array('name' => 'department' ,
-					'class' => 'form-control',
-					'placeholder' => 'Enter Your Department',
-					'required' => 'required' );
-				echo form_input($fdep);
-				?>
+				<select name='department' class='form-control' >
+					<option value='0'>Select Your Department</option>
+					<option value="AE">Aerospace Engineering</option>
+					<option value="AG">Agricultural & Food Engineering</option>
+					<option value="AR">Architecture & Regional Planning</option>
+					<option value="BT">Biotechnology</option>
+					<option value="CE">Civil Engineering</option>
+					<option value="CH">Chemical Engineering</option>
+					<option value="CS">Computer Science & Engineering</option>
+					<option value="CY">Chemistry</option>
+					<option value="EE">Electrical Engineering</option>
+					<option value="EC">Electronics & Electrical Communication Engineering</option>
+					<option value="GG">Geology & Geophysics</option>
+					<option value="HS">Humanities & Social Sciences</option>
+					<option value="IM">Industrial & Systems Engineering</option>
+					<option value="MA">Mathematics</option>
+					<option value="ME">Mechanical Engineering</option>
+					<option value="MT">Metallurgical & Materials Engineering</option>
+					<option value="MI">Mining Engineering</option>
+					<option value="NA">Ocean Engineering & Naval Architecture</option>
+					<option value="PH">Physics</option>
+					<option value="ATDC">Advanced Techology Development Center</option>
+					<option value="CET">Center for Educational Technology</option>
+					<option value=CYE"">Cryogenic Engineering</option>
+					<option value="MS">Materials Science</option>
+					<option value="ORALS">Oceans, Rivers, Atmosphere and Land Sciences</option>
+					<option value="CBE">P K Sinha Centre for Bio Energy</option>
+					<option value="REC">Reliability Engineering Centre</option>
+					<option value="RTC">Rubber Technology Centre</option>
+					<option value="RDC">Rural Development Centre</option>
+					<option value="GSSST">G S Sanyal School of Telecommunications</option>
+					<option value="IT">Information Technology</option>
+					<option value="RMSEE">Rajendra Mishra School of Engineering Entrepreneurship</option>
+					<option value="RGSIPL">Rajiv Gandhi School of Intellectual Property Law</option>
+					<option value="MST">Medical Science & Technology</option>
+					<option value="SB">School of Bioscience</option>
+					<option value="SEST">School of Environment Science and Technology</option>
+					<option value="SES">School of Energy Science</option>
+					<option value="SNST">School of Nano-Science and Technology</option>
+					<option value="SWS">School of Water Resources</option>
+					<option value="VGSOM">Vinod Gupta School of Management</option>
+
+				</select>	
 			</div>
 
 
@@ -230,13 +266,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<div class="form-group">
 			<div class="col-sm-12">
-				<?php
-				$fhall = array('name' => 'hall' ,
-					'class' => 'form-control',
-					'placeholder' => 'Enter Your Hall',
-					'required' => 'required' );
-				echo form_input($fhall);
-				?>
+				<select name='hall' class='form-control'>
+					<option value='0'>Select Your Hall</option>
+					<option value="SAM">Ashutosh Mukherjee  Hall</option>
+					<option value="AZ">Azad  Hall</option>
+					<option value="BCR">B C Roy  Hall</option>
+					<option value="BRAH">B R Ambedkar  Hall</option>
+					<option value="GH">Gokhale  Hall</option>
+					<option value="HJB">Homi Bhabha  Hall</option>
+					<option value="JCB">J C Bose  Hall</option>
+					<option value="LLR">Lala Lajpat Rai  Hall</option>
+					<option value="LBS">Lalbahadur Sastry  Hall</option>
+					<option value="MMM">Madan Mohan Malviya  Hall</option>
+					<option value="MS">Megnad Saha  Hall</option>
+					<option value="MT">Mother Teresa  Hall</option>
+					<option value="NH">Nehru  Hall</option>
+					<option value="PT">Patel  Hall</option>
+					<option value="RK">Radha Krishnan  Hall</option>
+					<option value="RP">Rajendra Prasad  Hall</option>
+					<option value="RLB">Rani Laxmibai  Hall</option>
+					<option value="SN">Sarojini Naidu / Indira Gandhi  Hall</option>
+					<option value="VS">Vidyasagar  Hall</option>
+					<option value="ZH">Zakir Hussain  Hall</option>
+				</select>					
 			</div>
 
 			<!--div class="form-group">
@@ -521,13 +573,49 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		-->
 		<div class="form-group">
 			<div class="col-sm-12">
-				<?php
-				$fdep = array('name' => 'department' ,
-					'class' => 'form-control',
-					'placeholder' => 'Enter Your Department',
-					'required' => 'required' );
-				echo form_input($fdep);
-				?>
+				<select name='department' class='form-control'>
+					<option value='0'>Select Your Department</option>
+					<option value="AE">Aerospace Engineering</option>
+					<option value="AG">Agricultural & Food Engineering</option>
+					<option value="AR">Architecture & Regional Planning</option>
+					<option value="BT">Biotechnology</option>
+					<option value="CE">Civil Engineering</option>
+					<option value="CH">Chemical Engineering</option>
+					<option value="CS">Computer Science & Engineering</option>
+					<option value="CY">Chemistry</option>
+					<option value="EE">Electrical Engineering</option>
+					<option value="EC">Electronics & Electrical Communication Engineering</option>
+					<option value="GG">Geology & Geophysics</option>
+					<option value="HS">Humanities & Social Sciences</option>
+					<option value="IM">Industrial & Systems Engineering</option>
+					<option value="MA">Mathematics</option>
+					<option value="ME">Mechanical Engineering</option>
+					<option value="MT">Metallurgical & Materials Engineering</option>
+					<option value="MI">Mining Engineering</option>
+					<option value="NA">Ocean Engineering & Naval Architecture</option>
+					<option value="PH">Physics</option>
+					<option value="ATDC">Advanced Techology Development Center</option>
+					<option value="CET">Center for Educational Technology</option>
+					<option value=CYE"">Cryogenic Engineering</option>
+					<option value="MS">Materials Science</option>
+					<option value="ORALS">Oceans, Rivers, Atmosphere and Land Sciences</option>
+					<option value="CBE">P K Sinha Centre for Bio Energy</option>
+					<option value="REC">Reliability Engineering Centre</option>
+					<option value="RTC">Rubber Technology Centre</option>
+					<option value="RDC">Rural Development Centre</option>
+					<option value="GSSST">G S Sanyal School of Telecommunications</option>
+					<option value="IT">Information Technology</option>
+					<option value="RMSEE">Rajendra Mishra School of Engineering Entrepreneurship</option>
+					<option value="RGSIPL">Rajiv Gandhi School of Intellectual Property Law</option>
+					<option value="MST">Medical Science & Technology</option>
+					<option value="SB">School of Bioscience</option>
+					<option value="SEST">School of Environment Science and Technology</option>
+					<option value="SES">School of Energy Science</option>
+					<option value="SNST">School of Nano-Science and Technology</option>
+					<option value="SWS">School of Water Resources</option>
+					<option value="VGSOM">Vinod Gupta School of Management</option>
+
+				</select>	
 			</div>
 
 
