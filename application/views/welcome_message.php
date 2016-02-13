@@ -130,10 +130,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				I want to be a Mentee
 			</button>
 		</div>
-		<div class="col-md-1"></div>
-		<div class="col-md-6" id="al">
+	
+		<div class="col-md-6" style="position:relative;left:25px;">
+				<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/p.jpg" style="position:relative;" width="100%" height="120" class="img img-rounded" />
+					<br/><br/>
+			<div id ="al">
 			The Student Alumni Mentorship programme was started in session 2010-11 by the Students’ Alumni Cell as an initiative to create a platform for the exchange of ideas and experience between the alumni and the current students of IIT Kharagpur.<br><br>
 			With an ocean of possibilities available, students often find it difficult to decide their way out into the future. There are lots of instances where students need  a mentor who can counsel and guide them through. The alumni can improve students' insight into various aspects of life.  Their journey and personal experiences can help the students and motivate them through this pivotal phase of life. Under this programme, we invite our alumni from across the world and from different fields to interact with the students and help them build their network and gain new perspective on the possibilities open to them after graduation.
+			</div>
 		</div>
 	</div>
 </div>
