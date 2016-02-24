@@ -41,7 +41,7 @@ class Welcome extends CI_Controller {
 			);
 		$data1 = array(
 			'phone' => $this->input->post('phone'),
-			'firm' => $this->input->post('firm'),
+			'organisation' => $this->input->post('firm'),
 			'designation' => $this->input->post('des'),
 			'email' => $this->input->post('email') );
 		$data2 = array(
