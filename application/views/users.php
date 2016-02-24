@@ -99,7 +99,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						
 						
 						
-					</a>
 				</div>
 			</div>
 			<div class="col-md-3" >
