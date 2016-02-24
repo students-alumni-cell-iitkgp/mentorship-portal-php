@@ -86,7 +86,7 @@ public function member_area()
 {
 	session_destroy();
 	$this->load->database();
-
+if(!isset($_POST['logout'])){
 	$email=$_POST['eid'];
 		//var $query1,$query2;
 		$query = $this->db->get_where('users', array('email' => $email));
@@ -102,7 +102,8 @@ public function member_area()
 
 		}
 		else header('Location:index/?err=user');
-
+	}
+	else header('Location:index');
 
 	$this->load->model('member_area');
 	//$this->load->view('member_area',$_POST);
