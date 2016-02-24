@@ -98,10 +98,10 @@ public function member_area()
 			if($row['password']==$_POST['pass']){
 				$this->load->view('users', $row );
 			}
-			else header('Location:index');
+			else header('Location:index/?err=pass');
 
 		}
-		else header('Location:index');
+		else header('Location:index/?err=user');
 
 
 	$this->load->model('member_area');

@@ -844,6 +844,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 </div>
 
+<?php
+if(isset($_GET['err'])) {
+	if($_GET['err']=='user') {
+		echo "<script> alert('Incorrect Username'); </script>";
+	}
+	else if($_GET['err']=='pass') {
+		echo "<script> alert('Incorrect Password'); </script>";
+	}
+}
+?>
+
 <script type="text/javascript">
 	function f1(x){
 		if(x.options[x.selectedIndex].text=="student") {
