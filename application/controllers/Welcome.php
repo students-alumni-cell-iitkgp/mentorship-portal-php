@@ -43,7 +43,6 @@ class Welcome extends CI_Controller {
 			'phone' => $this->input->post('phone'),
 			'firm' => $this->input->post('firm'),
 			'designation' => $this->input->post('des'),
-			'field_of_work' => $this->input->post('work'),
 			'email' => $this->input->post('email') );
 		$data2 = array(
 			'pref1' => $this->input->post('pref1'),

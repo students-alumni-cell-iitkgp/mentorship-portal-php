@@ -809,7 +809,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<?php 
 					$firm = array('name' => 'firm',
 						'class' => 'form-control',
-						'placeholder' => 'Enter Your Firm');
+						'placeholder' => 'Enter Your Organisation');
 					echo form_input($firm);
 					?>
 				</div>
@@ -824,16 +824,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					?>
 				</div>
 			</div>
-			<div class="form-group">
-				<div class="col-sm-12">
-					<?php 
-					$fw = array('name' => 'work',
-						'class' => 'form-control',
-						'placeholder' => 'Enter Your Field Of Work');
-					echo form_input($fw);
-					?>
-				</div>
-			</div>
+		
 
 		</div>
 		<div class="form-group"	>	
