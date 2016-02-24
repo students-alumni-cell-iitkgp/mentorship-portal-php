@@ -16,6 +16,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			background-image: url('http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/gymk.jpg');
 			background-size:100% 100%;
 		}
+		#nav {
+			position: relative;
+			top: 20px;
+
+		}
 		#box {
 			padding: 10px;
 			width: 100%;
@@ -78,6 +83,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 	
 	<div id="bg">
+		<div id="nav">
+		
+		</div>
 		<div class="row" id="box" style="width:100%;float:right;margin-top:5px">
 			<div class="col-md-4"></div>
 			<?php 
@@ -132,7 +140,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 	
 		<div class="col-md-6" style="position:relative;left:25px;">
-				<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/p.jpg" style="position:relative;" width="100%" height="120" class="img img-rounded" />
+				<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/p.jpg" style="position:relative;" width="100%" height="100" class="img img-rounded" />
 					<br/><br/>
 			<div id ="al">
 			The Student Alumni Mentorship programme was started in session 2010-11 by the Students’ Alumni Cell as an initiative to create a platform for the exchange of ideas and experience between the alumni and the current students of IIT Kharagpur.<br><br>
@@ -312,7 +320,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			?>
 
 		</div> 
-		<div id="f1">
+		<div id="">
 			<div class="form-group">
 				<div class="col-sm-12">
 					<?php
@@ -393,28 +401,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<option value='1'>Aerospace Engineering</option>
 						<option value='2'>Agricultural & Food Engineering</option>
 						<option value='3'>Architecture & Regional Planning</option>
-						<option value='4'>Banking</option>
+						<option value='4'>Banking & Finance</option>
 						<option value='5'>Biotechnology</option>
 						<option value='6'>Civil Engineering</option>
 						<option value='7'>Chemical Engineering</option>
 						<option value='8'>Civil Services</option>
 						<option value='9'>Computer Science & Engineering</option>
-						<option value='10'>Consultancy</option>
+						<option value='10'>Management Consultancy</option>
 						<option value='11'>Chemistry</option>
 						<option value='12'>Electrical Engineering</option>
 						<option value='13'>Electronics & Electrical Communication Engineering</option>
-						<option value='14'>Finance</option>
-						<option value='15'>Geology & Geophysics</option>
-						<option value='16'>Humanities & Social Sciences</option>
-						<option value='17'>Industrial & Systems Engineering</option>
-						<option value='18'>Marketing</option>
-						<option value='19'>Mathematics</option>
-						<option value='20'>Mechanical Engineering</option>
-						<option value='21'>Metallurgical & Materials Engineering</option>
-						<option value='22'>Mining Engineering</option>
-						<option value='23'>Music</option>
-						<option value='24'>Ocean Engineering & Naval Architecture</option>
-						<option value='25'>Physics</option>
+						<option value='14'>Geology & Geophysics</option>
+						<option value='15'>Humanities & Social Sciences</option>
+						<option value='16'>Industrial & Systems Engineering</option>
+						<option value='17'>Mathematics</option>
+						<option value='18'>Mechanical Engineering</option>
+						<option value='19'>Metallurgical & Materials Engineering</option>
+						<option value='20'>Mining Engineering</option>
+						<option value='21'>Ocean Engineering & Naval Architecture</option>
+						<option value='22'>Physics</option>
 					</select>
 				</div>
 			</div>
@@ -425,28 +430,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<option value='1'>Aerospace Engineering</option>
 						<option value='2'>Agricultural & Food Engineering</option>
 						<option value='3'>Architecture & Regional Planning</option>
-						<option value='4'>Banking</option>
+						<option value='4'>Banking & Finance</option>
 						<option value='5'>Biotechnology</option>
 						<option value='6'>Civil Engineering</option>
 						<option value='7'>Chemical Engineering</option>
 						<option value='8'>Civil Services</option>
 						<option value='9'>Computer Science & Engineering</option>
-						<option value='10'>Consultancy</option>
+						<option value='10'>Management Consultancy</option>
 						<option value='11'>Chemistry</option>
 						<option value='12'>Electrical Engineering</option>
 						<option value='13'>Electronics & Electrical Communication Engineering</option>
-						<option value='14'>Finance</option>
-						<option value='15'>Geology & Geophysics</option>
-						<option value='16'>Humanities & Social Sciences</option>
-						<option value='17'>Industrial & Systems Engineering</option>
-						<option value='18'>Marketing</option>
-						<option value='19'>Mathematics</option>
-						<option value='20'>Mechanical Engineering</option>
-						<option value='21'>Metallurgical & Materials Engineering</option>
-						<option value='22'>Mining Engineering</option>
-						<option value='23'>Music</option>
-						<option value='24'>Ocean Engineering & Naval Architecture</option>
-						<option value='25'>Physics</option>
+						<option value='14'>Geology & Geophysics</option>
+						<option value='15'>Humanities & Social Sciences</option>
+						<option value='16'>Industrial & Systems Engineering</option>
+						<option value='17'>Mathematics</option>
+						<option value='18'>Mechanical Engineering</option>
+						<option value='19'>Metallurgical & Materials Engineering</option>
+						<option value='20'>Mining Engineering</option>
+						<option value='21'>Ocean Engineering & Naval Architecture</option>
+						<option value='22'>Physics</option>
 					</select>
 				</div>
 			</div>
@@ -457,28 +459,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<option value='1'>Aerospace Engineering</option>
 						<option value='2'>Agricultural & Food Engineering</option>
 						<option value='3'>Architecture & Regional Planning</option>
-						<option value='4'>Banking</option>
+						<option value='4'>Banking & Finance</option>
 						<option value='5'>Biotechnology</option>
 						<option value='6'>Civil Engineering</option>
 						<option value='7'>Chemical Engineering</option>
 						<option value='8'>Civil Services</option>
 						<option value='9'>Computer Science & Engineering</option>
-						<option value='10'>Consultancy</option>
+						<option value='10'>Management Consultancy</option>
 						<option value='11'>Chemistry</option>
 						<option value='12'>Electrical Engineering</option>
 						<option value='13'>Electronics & Electrical Communication Engineering</option>
-						<option value='14'>Finance</option>
-						<option value='15'>Geology & Geophysics</option>
-						<option value='16'>Humanities & Social Sciences</option>
-						<option value='17'>Industrial & Systems Engineering</option>
-						<option value='18'>Marketing</option>
-						<option value='19'>Mathematics</option>
-						<option value='20'>Mechanical Engineering</option>
-						<option value='21'>Metallurgical & Materials Engineering</option>
-						<option value='22'>Mining Engineering</option>
-						<option value='23'>Music</option>
-						<option value='24'>Ocean Engineering & Naval Architecture</option>
-						<option value='25'>Physics</option>
+						<option value='14'>Geology & Geophysics</option>
+						<option value='15'>Humanities & Social Sciences</option>
+						<option value='16'>Industrial & Systems Engineering</option>
+						<option value='17'>Mathematics</option>
+						<option value='18'>Mechanical Engineering</option>
+						<option value='19'>Metallurgical & Materials Engineering</option>
+						<option value='20'>Mining Engineering</option>
+						<option value='21'>Ocean Engineering & Naval Architecture</option>
+						<option value='22'>Physics</option>
 					</select>
 				</div>
 			</div>
@@ -625,50 +624,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 		</div>
-		<div class="form-group">
-			<div class="col-sm-12">
-				<select name='hall' class='form-control'>
-					<option value='0'>Select Your Hall</option>
-					<option value="SAM">Ashutosh Mukherjee  Hall</option>
-					<option value="AZ">Azad  Hall</option>
-					<option value="BCR">B C Roy  Hall</option>
-					<option value="BRAH">B R Ambedkar  Hall</option>
-					<option value="GH">Gokhale  Hall</option>
-					<option value="HJB">Homi Bhabha  Hall</option>
-					<option value="JCB">J C Bose  Hall</option>
-					<option value="LLR">Lala Lajpat Rai  Hall</option>
-					<option value="LBS">Lalbahadur Sastry  Hall</option>
-					<option value="MMM">Madan Mohan Malviya  Hall</option>
-					<option value="MS">Megnad Saha  Hall</option>
-					<option value="MT">Mother Teresa  Hall</option>
-					<option value="NH">Nehru  Hall</option>
-					<option value="PT">Patel  Hall</option>
-					<option value="RK">Radha Krishnan  Hall</option>
-					<option value="RP">Rajendra Prasad  Hall</option>
-					<option value="RLB">Rani Laxmibai  Hall</option>
-					<option value="SN">Sarojini Naidu / Indira Gandhi  Hall</option>
-					<option value="VS">Vidyasagar  Hall</option>
-					<option value="ZH">Zakir Hussain  Hall</option>
-				</select>					
-			</div>
 
-			<!--div class="form-group">
-				<div class="col-sm-12">
-					<?php
-					$fb = array(
-						'name' => '',
-						'class' => 'form-control',
-						'type' => 'submit',
-						'value' => 'Submit'
-						 );
-					echo form_button($fb);
-					?>
-				</div>	
-			</div-->
-			<?php //echo form_close(); 
-			?>
-
-		</div>
 		<div id="f2" style="">
 			<div class="form-group">
 				<div class="col-sm-12">
@@ -703,31 +659,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<option value='1'>Aerospace Engineering</option>
 						<option value='2'>Agricultural & Food Engineering</option>
 						<option value='3'>Architecture & Regional Planning</option>
-						<option value='4'>Banking</option>
+						<option value='4'>Banking & Finance</option>
 						<option value='5'>Biotechnology</option>
 						<option value='6'>Civil Engineering</option>
 						<option value='7'>Chemical Engineering</option>
 						<option value='8'>Civil Services</option>
 						<option value='9'>Computer Science & Engineering</option>
-						<option value='10'>Consultancy</option>
+						<option value='10'>Management Consultancy</option>
 						<option value='11'>Chemistry</option>
 						<option value='12'>Electrical Engineering</option>
 						<option value='13'>Electronics & Electrical Communication Engineering</option>
-						<option value='14'>Finance</option>
-						<option value='15'>Geology & Geophysics</option>
-						<option value='16'>Humanities & Social Sciences</option>
-						<option value='17'>Industrial & Systems Engineering</option>
-						<option value='18'>Marketing</option>
-						<option value='19'>Mathematics</option>
-						<option value='20'>Mechanical Engineering</option>
-						<option value='21'>Metallurgical & Materials Engineering</option>
-						<option value='22'>Mining Engineering</option>
-						<option value='23'>Music</option>
-						<option value='24'>Ocean Engineering & Naval Architecture</option>
-						<option value='25'>Physics</option>
+						<option value='14'>Geology & Geophysics</option>
+						<option value='15'>Humanities & Social Sciences</option>
+						<option value='16'>Industrial & Systems Engineering</option>
+						<option value='17'>Mathematics</option>
+						<option value='18'>Mechanical Engineering</option>
+						<option value='19'>Metallurgical & Materials Engineering</option>
+						<option value='20'>Mining Engineering</option>
+						<option value='21'>Ocean Engineering & Naval Architecture</option>
+						<option value='22'>Physics</option>
 					</select>
 				</div>
 			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<select  onchange="f1(this)" class='form-control'>
+						<option value='-1'>Do You Waant More Preferences</option>
+								<option >Yes</option>
+									<option>No</option>
+					</select>
+				</div>
+			</div>
+			
+			
+			<div id="f1" style="display:none;">
 			<div class="form-group">
 				<div class="col-sm-12">
 					<select name='pref2' class='form-control'>
@@ -735,28 +700,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<option value='1'>Aerospace Engineering</option>
 						<option value='2'>Agricultural & Food Engineering</option>
 						<option value='3'>Architecture & Regional Planning</option>
-						<option value='4'>Banking</option>
+						<option value='4'>Banking & Finance</option>
 						<option value='5'>Biotechnology</option>
 						<option value='6'>Civil Engineering</option>
 						<option value='7'>Chemical Engineering</option>
 						<option value='8'>Civil Services</option>
 						<option value='9'>Computer Science & Engineering</option>
-						<option value='10'>Consultancy</option>
+						<option value='10'>Management Consultancy</option>
 						<option value='11'>Chemistry</option>
 						<option value='12'>Electrical Engineering</option>
 						<option value='13'>Electronics & Electrical Communication Engineering</option>
-						<option value='14'>Finance</option>
-						<option value='15'>Geology & Geophysics</option>
-						<option value='16'>Humanities & Social Sciences</option>
-						<option value='17'>Industrial & Systems Engineering</option>
-						<option value='18'>Marketing</option>
-						<option value='19'>Mathematics</option>
-						<option value='20'>Mechanical Engineering</option>
-						<option value='21'>Metallurgical & Materials Engineering</option>
-						<option value='22'>Mining Engineering</option>
-						<option value='23'>Music</option>
-						<option value='24'>Ocean Engineering & Naval Architecture</option>
-						<option value='25'>Physics</option>
+						<option value='14'>Geology & Geophysics</option>
+						<option value='15'>Humanities & Social Sciences</option>
+						<option value='16'>Industrial & Systems Engineering</option>
+						<option value='17'>Mathematics</option>
+						<option value='18'>Mechanical Engineering</option>
+						<option value='19'>Metallurgical & Materials Engineering</option>
+						<option value='20'>Mining Engineering</option>
+						<option value='21'>Ocean Engineering & Naval Architecture</option>
+						<option value='22'>Physics</option>
 					</select>
 				</div>
 			</div>
@@ -767,30 +729,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<option value='1'>Aerospace Engineering</option>
 						<option value='2'>Agricultural & Food Engineering</option>
 						<option value='3'>Architecture & Regional Planning</option>
-						<option value='4'>Banking</option>
+						<option value='4'>Banking & Finance</option>
 						<option value='5'>Biotechnology</option>
 						<option value='6'>Civil Engineering</option>
 						<option value='7'>Chemical Engineering</option>
 						<option value='8'>Civil Services</option>
 						<option value='9'>Computer Science & Engineering</option>
-						<option value='10'>Consultancy</option>
+						<option value='10'>Management Consultancy</option>
 						<option value='11'>Chemistry</option>
 						<option value='12'>Electrical Engineering</option>
 						<option value='13'>Electronics & Electrical Communication Engineering</option>
-						<option value='14'>Finance</option>
-						<option value='15'>Geology & Geophysics</option>
-						<option value='16'>Humanities & Social Sciences</option>
-						<option value='17'>Industrial & Systems Engineering</option>
-						<option value='18'>Marketing</option>
-						<option value='19'>Mathematics</option>
-						<option value='20'>Mechanical Engineering</option>
-						<option value='21'>Metallurgical & Materials Engineering</option>
-						<option value='22'>Mining Engineering</option>
-						<option value='23'>Music</option>
-						<option value='24'>Ocean Engineering & Naval Architecture</option>
-						<option value='25'>Physics</option>
+						<option value='14'>Geology & Geophysics</option>
+						<option value='15'>Humanities & Social Sciences</option>
+						<option value='16'>Industrial & Systems Engineering</option>
+						<option value='17'>Mathematics</option>
+						<option value='18'>Mechanical Engineering</option>
+						<option value='19'>Metallurgical & Materials Engineering</option>
+						<option value='20'>Mining Engineering</option>
+						<option value='21'>Ocean Engineering & Naval Architecture</option>
+						<option value='22'>Physics</option>
 					</select>
 				</div>
+			</div>
 			</div>
 			<h3 class="center"> Contact Details </h3>
 			<div class="form-group">
@@ -857,7 +817,7 @@ if(isset($_GET['err'])) {
 
 <script type="text/javascript">
 	function f1(x){
-		if(x.options[x.selectedIndex].text=="student") {
+		if(x.options[x.selectedIndex].text=="Yes") {
 			document.getElementById("f1").style.display="block";
 		}
 		else {
