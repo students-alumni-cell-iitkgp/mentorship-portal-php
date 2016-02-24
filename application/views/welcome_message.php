@@ -640,7 +640,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			<div class="form-group">
 				<div class="col-sm-3">
-					<h5>Select No. Of Mentees</h5>
+					<h5>Preferred No. Of Mentees</h5>
 				</div>
 				<div class="col-sm-4">
 					<select name='mentee' class="form-control">
