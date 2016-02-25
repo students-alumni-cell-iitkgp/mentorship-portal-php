@@ -13,7 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		#bg {
 			height: 400px;
 			width: 100%;
-			background-image: url('http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/gymk.jpg');
+			background-image: url('http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/gym1.jpg');
 			background-size:100% 100%;
 		}
 		#nav {
@@ -46,7 +46,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			position: relative;
 			margin:2px auto;
 			text-align:justify;
-			box-shadow: 0px 0px 4px #777;
+			box-shadow: 0px 0px 15px #777;
+			border-radius:7px; 
+		}
+		div.all {
+			padding: 10px;
+			background:rgba(255,255,255,.75);
+			position: relative;
+			margin:2px auto;
+			text-align:justify;
+			box-shadow: 0px 0px 10px #777; 
 		}
 		#logo
 		{
@@ -78,6 +87,41 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		.white{
 			color: white;
 		}
+		.jumbotron {
+			text-align: center;
+			background-color: transparent;
+		}
+		.container a{
+			color: black;
+		}
+		.collapse {
+			text-align: justify;
+		}
+		.well {
+			/*background-color: transparent;*/
+		}
+		.list-group-item {
+			/*background-color: transparent;*/
+		}
+		#menu3 {
+			background-color: orange;
+			border-radius:10px; 
+		}
+		.abc {
+			text-align: center;
+			min-height: 670px;
+
+		}
+		.abc a {
+			text-decoration: none;
+			color: white;
+			opacity:;
+
+		}
+		.abc hr{			
+			color: black;
+			opacity: 0.8;
+		} 	
 	</style>
 </head>
 <body>
@@ -86,7 +130,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div id="nav">
 
 		</div>
-		<div class="row" id="box" style="width:100%;float:right;margin-top:5px">
+		<div class="row" id="box" style="width:100%;float:right;margin-top:0px">
 			<div class="col-md-4"></div>
 			<?php 
 			$this->load->helper('form');
@@ -151,7 +195,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div id="home" class="tab-pane fade in active">
 					<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/p.jpg" style="position:relative;" width="100%" height="100" class="img img-rounded" />
 					<br/><br/>
-					<div class ="al">
+					<div class ="all">
 						The Student Alumni Mentorship programme was started in session 2010-11 by the Students’ Alumni Cell as an initiative to create a platform for the exchange of ideas and experience between the alumni and the current students of IIT Kharagpur.<br><br>
 						With an ocean of possibilities available, students often find it difficult to decide their way out into the future. There are lots of instances where students need  a mentor who can counsel and guide them through. The alumni can improve students' insight into various aspects of life.  Their journey and personal experiences can help the students and motivate them through this pivotal phase of life. Under this programme, we invite our alumni from across the world and from different fields to interact with the students and help them build their network and gain new perspective on the possibilities open to them after graduation.
 					</div>
@@ -171,23 +215,270 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 				<div id="menu3" class="tab-pane fade">
-					<div class ="al">
-						<h3>Menu 3</h3>
-						<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+					<div class="abc">
+						<div class="jumbotron" >
+							<!-- <h1>StaticPages#testimonial</h1> -->
+							<h1 style="color:white;">Frequently Asked Questions</h1>
+							<p style="opacity:.75;">Here are questions people who are new to Mentorship Programme often have. We're here to help you.</p>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6">
+								<div class="">
+									<a href="#collapseOne" data-toggle="collapse" aria-expanded="false" aria-controls="collapseOne">
+										Who is an Alumni Mentor?
+									</a>
+
+									<hr style="color:black;opacity:0.8;">
+
+									<div class="collapse well" id="collapseOne">
+										As an Alumni Mentor you are a guide, friend and resource who shares your Kgp education and professional experience to help pave the way for current students to succeed at Kgp and beyond. A Kgp Alumni Mentor derives satisfaction from helping Kgp students fulfill their potential.<br>
+					<!-- Role of A Mentor:
+					<div class="list-group">
+						<li class="list-group-item">
+							<span class="label label-primary">Motivator:</span> 
+							Expresses belief and confidence in the mentee’s abilities, and encourages the mentee to try new things.
+						</li>
+						<li class="list-group-item">
+							<span class="label label-info">Resource:</span>
+							Teaches and advises the mentee on how to make professional contacts, and introduces the mentee to new ideas and own experiences.
+						</li>
+						<li class="list-group-item">
+							<span class="label label-primary">Supporter:</span>
+							Encourages open and honest dialogue, and listens to and responds to the needs of the mentee.
+						</li>
+						<li class="list-group-item">
+							<span class="label label-success">Coach:</span>
+							Helps the mentee develop, and work to achieve, realistic and meaningful goals.
+						</li>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							The Mentoring Relationship
+						</div>
+						<div class="panel-body">
+							For mentoring to be successful there must be a reciprocal and comfortable relationship between the mentor and the mentee. Both parties must work to make the relationship successful by being open-minded, respectful and keeping to the expectations they have set for the relationship. Ideally, the mentor-mentee relationship will be a mutually beneficial one; as the mentor learns from the mentee and the mentee from the mentor.
+						</div>
+					</div> -->
+				</div><!--CollapseOne ends -->
+			</div><!--Container11 ends -->
+
+			<div class="">
+				<a href="#collapseTwo" data-toggle="collapse" aria-controls="collapseTwo" aria-expanded="false">
+					How Will I Benefit as a Mentor?
+				</a>
+
+				<hr>
+
+				<div class="well collapse" id="collapseTwo">
+					We believe that mentoring will be a positive and enriching experience for you. Specifically, we hope you will:
+
+					Refine your coaching and mentoring skills 
+					Develop meaningful connections with students 
+
+					Learn about the Kgp of today and the next generation<hr>
+
+					Experience a reconnection with your Alma Mater
+				</div>
+			</div><!--Container12 Ends -->
+
+			<div class="">
+				<a href="#collapseThree" data-toggle="collapse" aria-controls="collapseThree" aria-expanded="false">
+					How will the Mentee Benefit?
+				</a>
+
+				<hr>
+
+				<div class="well collapse" id="collapseThree">
+					Following are some general ways we hope the students will benefit from being in a mentoring relationship:
+					<div class="list-group">
+						<li class="list-group-item">
+							•	Build a professional network 
+						</li>
+						<li class="list-group-item">
+							•	Develop and enhance professional and communication skills 
+						</li>
+						<li class="list-group-item">
+							•	Connect academics and career; acquire advice on experiences and courses that would be of greatest benefit 
+						</li>
+						<li class="list-group-item">
+							•	Explore new ideas and areas of interest 
+						</li>
+						<li class="list-group-item">
+							•	Gain exposure to career options, advice and job search tips 
+						</li>
+					</div><!--list-group-item ends -->
+				</div>
+			</div><!--container13 ends -->
+
+			<div>
+				<a href="#oneFour" data-toggle="collapse" aria-controls="oneFour" aria-expanded="false">
+					Role of A Mentor?
+				</a>
+				<hr>
+				<div class="well collapse" id="oneFour">
+					<div class="list-group">
+						<li class="list-group-item">
+							<span class="label label-primary">Motivator:</span> 
+							Expresses belief and confidence in the mentee’s abilities, and encourages the mentee to try new things.
+						</li>
+						<li class="list-group-item">
+							<span class="label label-info">Resource:</span>
+							Teaches and advises the mentee on how to make professional contacts, and introduces the mentee to new ideas and own experiences.
+						</li>
+						<li class="list-group-item">
+							<span class="label label-primary">Supporter:</span>
+							Encourages open and honest dialogue, and listens to and responds to the needs of the mentee.
+						</li>
+						<li class="list-group-item">
+							<span class="label label-success">Coach:</span>
+							Helps the mentee develop, and work to achieve, realistic and meaningful goals.
+						</li>
+					</div><!--list-group ends -->
+				</div>
+			</div><!--container14 ends -->
+
+		</div><!--col-md-6 ends -->
+
+		<div class="col-md-6">
+			<div class="">
+				<a href="#collapseFour" data-toggle="collapse" aria-controls="collapseFour" aria-expanded="false">
+					What is Expected of the Mentee?
+				</a>
+				<hr>
+				<div class="well collapse" id="collapseFour">
+					Before a student can search for a mentor, they must attend a mandatory orientation in which they are instructed to think about what they want out of a mentoring relationship. They are informed of our expectations, which include:
+					<div class="list-group">
+						<li class="list-group-item">
+							•	Spend at least two hours per month building the mentoring relationship 
+						</li>
+						<li class="list-group-item">
+							•	Make the first contact with the selected mentor and respond to all communication 
+						</li>
+						<li class="list-group-item">
+							•	Set specific goals for the mentoring relationship with mentor 
+						</li>
+						<li class="list-group-item">
+							•	Agree and commit to expectations and goals set with the mentor 
+						</li>
+						<li class="list-group-item">
+							•	Be appropriate in their requests of their mentor, in particular, in NOT asking for a job or sponsorship
+						</li>
+						<li class="list-group-item">
+							•	Approach the mentoring relationship with an open mind, professionalism and respect 
+						</li>
+					</div>
+					<footer>Be receptive to suggestions and feedback</footer>
+				</div>
+			</div><!--container21 ends -->
+
+			<div class="">
+				<a href="#collapseFive" data-toggle="collapse" aria-controls="collapseFive" aria-expanded="false">
+					The Matching process
+				</a>
+				<hr>
+				<div class="well collapse" id="collapseFive">
+					<div class="list-group">
+						<li class="list-group-item">
+							•	Both the mentee and the mentor register for the program through an online form .
+						</li>
+						<li class="list-group-item">
+							•	Based on the preferences filled in the form and factors like place, year and grades, Mentors are allotted to the mentees on the basis of a predefined code.
+						</li>
+						<li class="list-group-item">
+							•	There can be situations where the mentor is not allotted any mentee or vice versa due to the preferences made, in such a case the mentor would be notified through an email and the allotment shall then be done manually.
+						</li>
 					</div>
 				</div>
-				<div id="menu4" class="tab-pane fade">
-					<div class ="al">
-						<h3>Menu 4</h3>
-						<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+			</div><!--container22 ends -->
+
+			<div class="">
+				<a href="#collapseSixth" data-toggle="collapse" aria-controls="collapseSixth" aria-expanded="false">
+					<!-- ONCE A MATCH IS MADE -->Once a Match is made
+				</a>
+				<hr>
+				<div class="well collapse" id="collapseSixth">
+					<div class="list-group">
+						<li class="list-group-item">
+							•	We advise you to connect with your mentee through social networking platforms.
+						</li>
+						<li class="list-group-item">
+							•	Have few informal sessions with your mentee for ice breaking.
+						</li>
+						<li class="list-group-item">
+							•	If the mentee does not respond to your conversations do write to us.
+						</li>
+						<li class="list-group-item">
+							•	Your feedback is our prime critic, do respond to our feedback forms to make this program a success.
+						</li>
 					</div>
 				</div>
+			</div><!--container23 -->
 
-
-			</div>
-		</div>
-
+			<div>
+				<a href="#twoFour" data-toggle="collapse" aria-controls="twoFour" aria-expanded="false">
+					The Mentoring Relationship
+				</a>
+				<hr>
+				<div class="well collapse" id="twoFour">
+					For mentoring to be successful there must be a reciprocal and comfortable relationship between the mentor and the mentee. Both parties must work to make the relationship successful by being open-minded, respectful and keeping to the expectations they have set for the relationship. Ideally, the mentor-mentee relationship will be a mutually beneficial one, as the mentor learns from the mentee and the mentee from the mentor.
+				</div>
+			</div><!--container24 ends -->
+		</div><!--col-md-6 ends -->
 	</div>
+
+</div>
+</div>
+<div id="menu4" class="tab-pane fade">
+	<div class ="al">
+		<div class="">
+	<!-- <div class="jumbotron">
+		<h1>StaticPages#contact</h1>
+		<p>Find me in app/views/static_pages/contact.html.erb</p>
+	</div> -->
+
+	<div class="jumbotron" align="center">
+		<h2>Students' Alumni Cell</h2>
+		<h3>Office of Alumni Affairs & International Relations</h3>
+		<p>Indian Institute of Technology, Kharagpur</p>
+		<p>West Bengal, India. Pin :- 721302</p>
+		<!-- <p>Email: aao@hijli.iitkgp.ernet.in</p> -->
+		<p>Phone: +91-3222-281860</p>
+		<!-- <p>Email: mentorship@adm.iitkgp.ernet.in</p> -->
+		<p>In case of any suggestions or query please feel free to write to us at <a href="mailto: mentorship@adm.iitkgp.ernet.in">mentorship@adm.iitkgp.ernet.in</a></p>
+	</div>
+
+	<div class="" style="text-align:center;">
+		<a href="http://alumnimeet.iitkgp.ernet.in/contact.php" class="btn btn-success btn-block">
+			View Complete Team
+		</a>
+	</div>
+	<br/>
+	<div class="row">
+		<div class="col-md-3" style="font:bold 20px Calibri; text-align:center">
+			Sanket <br> sanket0495@gmail.com<br>+918609267395</div>
+			<div class="col-md-4"></div>
+			<div class="col-md-3" style="font:bold 20px Calibri; text-align:center">
+				Akash Tulsani<br>akashtulsani08@gmail.com<br>+918967681614</div>
+			</div>
+	<!-- <div class="container">
+		<h2>Students' Alumni Cell</h2>
+		<h3>Office of Alumni Affairs & International Relations</h3>
+		<p>Indian Institute of Technology, Kharagpur</p>
+		<p>West Bengal, India. Pin :- 721302</p>
+		<p>Email: mentorship@adm.iitkgp.ernet.in</p>
+		<p>Email: aao@hijli.iitkgp.ernet.in</p>
+		<p>Phone: +91-3222-281860</p>
+	</div> -->
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+</div>
 </div>
 <br>
 <footer style="background-color:black; color:white; text-align:center; padding:10px; position:relative; bottom:0px; width:100%">&copy; Students' Alumni Cell</footer>
