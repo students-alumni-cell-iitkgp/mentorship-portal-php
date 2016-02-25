@@ -40,7 +40,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			margin-left:10px;
 			box-shadow: 0px 0px 4px #777;
 		}
-		#al {
+		div.al {
 			padding: 10px;
 			background:rgba(255,255,255,.75);
 			position: relative;
@@ -84,7 +84,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	
 	<div id="bg">
 		<div id="nav">
-		
+
 		</div>
 		<div class="row" id="box" style="width:100%;float:right;margin-top:5px">
 			<div class="col-md-4"></div>
@@ -138,15 +138,55 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				I want to be a Mentee
 			</button>
 		</div>
-	
-		<div class="col-md-6" style="position:relative;left:25px;">
-				<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/p.jpg" style="position:relative;" width="100%" height="100" class="img img-rounded" />
+		<div class="col-md-8" style="position:relative;left:25px;">
+			<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#home">About Mentorship Program</a></li>
+				<li><a data-toggle="tab" href="#menu1">Why choose this program</a></li>
+				<li><a data-toggle="tab" href="#menu2">Testimonials</a></li>
+				<li><a data-toggle="tab" href="#menu3">FAQs</a></li>
+				<li><a data-toggle="tab" href="#menu4">Contact Us</a></li>
+			</ul>
+			<br>
+			<div class="tab-content" style="width:80%">
+				<div id="home" class="tab-pane fade in active">
+					<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/p.jpg" style="position:relative;" width="100%" height="100" class="img img-rounded" />
 					<br/><br/>
-			<div id ="al">
-			The Student Alumni Mentorship programme was started in session 2010-11 by the Students’ Alumni Cell as an initiative to create a platform for the exchange of ideas and experience between the alumni and the current students of IIT Kharagpur.<br><br>
-			With an ocean of possibilities available, students often find it difficult to decide their way out into the future. There are lots of instances where students need  a mentor who can counsel and guide them through. The alumni can improve students' insight into various aspects of life.  Their journey and personal experiences can help the students and motivate them through this pivotal phase of life. Under this programme, we invite our alumni from across the world and from different fields to interact with the students and help them build their network and gain new perspective on the possibilities open to them after graduation.
+					<div class ="al">
+						The Student Alumni Mentorship programme was started in session 2010-11 by the Students’ Alumni Cell as an initiative to create a platform for the exchange of ideas and experience between the alumni and the current students of IIT Kharagpur.<br><br>
+						With an ocean of possibilities available, students often find it difficult to decide their way out into the future. There are lots of instances where students need  a mentor who can counsel and guide them through. The alumni can improve students' insight into various aspects of life.  Their journey and personal experiences can help the students and motivate them through this pivotal phase of life. Under this programme, we invite our alumni from across the world and from different fields to interact with the students and help them build their network and gain new perspective on the possibilities open to them after graduation.
+					</div>
+				</div>
+
+				<!-- Add tabs here-->
+				<div id="menu1" class="tab-pane fade">
+					<div class ="al">
+						<h3>Menu 1</h3>
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</div>
+				<div id="menu2" class="tab-pane fade">
+					<div class ="al">
+						<h3>Menu 2</h3>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					</div>
+				</div>
+				<div id="menu3" class="tab-pane fade">
+					<div class ="al">
+						<h3>Menu 3</h3>
+						<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+					</div>
+				</div>
+				<div id="menu4" class="tab-pane fade">
+					<div class ="al">
+						<h3>Menu 4</h3>
+						<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+					</div>
+				</div>
+
+
 			</div>
 		</div>
+
 	</div>
 </div>
 <br>
@@ -685,72 +725,72 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-sm-12">
 					<select  onchange="f1(this)" class='form-control'>
 						<option value='-1'>Do You Want More Preferences</option>
-								<option >Yes</option>
-									<option>No</option>
+						<option >Yes</option>
+						<option>No</option>
 					</select>
 				</div>
 			</div>
 			
 			
 			<div id="f1" style="display:none;">
-			<div class="form-group">
-				<div class="col-sm-12">
-					<select name='pref2' class='form-control'>
-						<option value='-1'>Choose your 2nd Preference</option>
-						<option value='1'>Aerospace Engineering</option>
-						<option value='2'>Agricultural & Food Engineering</option>
-						<option value='3'>Architecture & Regional Planning</option>
-						<option value='4'>Banking & Finance</option>
-						<option value='5'>Biotechnology</option>
-						<option value='6'>Civil Engineering</option>
-						<option value='7'>Chemical Engineering</option>
-						<option value='8'>Civil Services</option>
-						<option value='9'>Computer Science & Engineering</option>
-						<option value='10'>Management Consultancy</option>
-						<option value='11'>Chemistry</option>
-						<option value='12'>Electrical Engineering</option>
-						<option value='13'>Electronics & Electrical Communication Engineering</option>
-						<option value='14'>Geology & Geophysics</option>
-						<option value='15'>Humanities & Social Sciences</option>
-						<option value='16'>Industrial & Systems Engineering</option>
-						<option value='17'>Mathematics</option>
-						<option value='18'>Mechanical Engineering</option>
-						<option value='19'>Metallurgical & Materials Engineering</option>
-						<option value='20'>Mining Engineering</option>
-						<option value='21'>Ocean Engineering & Naval Architecture</option>
-						<option value='22'>Physics</option>
-					</select>
+				<div class="form-group">
+					<div class="col-sm-12">
+						<select name='pref2' class='form-control'>
+							<option value='-1'>Choose your 2nd Preference</option>
+							<option value='1'>Aerospace Engineering</option>
+							<option value='2'>Agricultural & Food Engineering</option>
+							<option value='3'>Architecture & Regional Planning</option>
+							<option value='4'>Banking & Finance</option>
+							<option value='5'>Biotechnology</option>
+							<option value='6'>Civil Engineering</option>
+							<option value='7'>Chemical Engineering</option>
+							<option value='8'>Civil Services</option>
+							<option value='9'>Computer Science & Engineering</option>
+							<option value='10'>Management Consultancy</option>
+							<option value='11'>Chemistry</option>
+							<option value='12'>Electrical Engineering</option>
+							<option value='13'>Electronics & Electrical Communication Engineering</option>
+							<option value='14'>Geology & Geophysics</option>
+							<option value='15'>Humanities & Social Sciences</option>
+							<option value='16'>Industrial & Systems Engineering</option>
+							<option value='17'>Mathematics</option>
+							<option value='18'>Mechanical Engineering</option>
+							<option value='19'>Metallurgical & Materials Engineering</option>
+							<option value='20'>Mining Engineering</option>
+							<option value='21'>Ocean Engineering & Naval Architecture</option>
+							<option value='22'>Physics</option>
+						</select>
+					</div>
 				</div>
-			</div>
-			<div class="form-group">
-				<div class="col-sm-12">
-					<select name='pref3' class='form-control'>
-						<option value='-1'>Choose your 3rd Preference</option>
-						<option value='1'>Aerospace Engineering</option>
-						<option value='2'>Agricultural & Food Engineering</option>
-						<option value='3'>Architecture & Regional Planning</option>
-						<option value='4'>Banking & Finance</option>
-						<option value='5'>Biotechnology</option>
-						<option value='6'>Civil Engineering</option>
-						<option value='7'>Chemical Engineering</option>
-						<option value='8'>Civil Services</option>
-						<option value='9'>Computer Science & Engineering</option>
-						<option value='10'>Management Consultancy</option>
-						<option value='11'>Chemistry</option>
-						<option value='12'>Electrical Engineering</option>
-						<option value='13'>Electronics & Electrical Communication Engineering</option>
-						<option value='14'>Geology & Geophysics</option>
-						<option value='15'>Humanities & Social Sciences</option>
-						<option value='16'>Industrial & Systems Engineering</option>
-						<option value='17'>Mathematics</option>
-						<option value='18'>Mechanical Engineering</option>
-						<option value='19'>Metallurgical & Materials Engineering</option>
-						<option value='20'>Mining Engineering</option>
-						<option value='21'>Ocean Engineering & Naval Architecture</option>
-						<option value='22'>Physics</option>
-					</select>
+				<div class="form-group">
+					<div class="col-sm-12">
+						<select name='pref3' class='form-control'>
+							<option value='-1'>Choose your 3rd Preference</option>
+							<option value='1'>Aerospace Engineering</option>
+							<option value='2'>Agricultural & Food Engineering</option>
+							<option value='3'>Architecture & Regional Planning</option>
+							<option value='4'>Banking & Finance</option>
+							<option value='5'>Biotechnology</option>
+							<option value='6'>Civil Engineering</option>
+							<option value='7'>Chemical Engineering</option>
+							<option value='8'>Civil Services</option>
+							<option value='9'>Computer Science & Engineering</option>
+							<option value='10'>Management Consultancy</option>
+							<option value='11'>Chemistry</option>
+							<option value='12'>Electrical Engineering</option>
+							<option value='13'>Electronics & Electrical Communication Engineering</option>
+							<option value='14'>Geology & Geophysics</option>
+							<option value='15'>Humanities & Social Sciences</option>
+							<option value='16'>Industrial & Systems Engineering</option>
+							<option value='17'>Mathematics</option>
+							<option value='18'>Mechanical Engineering</option>
+							<option value='19'>Metallurgical & Materials Engineering</option>
+							<option value='20'>Mining Engineering</option>
+							<option value='21'>Ocean Engineering & Naval Architecture</option>
+							<option value='22'>Physics</option>
+						</select>
+					</div>
 				</div>
-			</div>
 			</div>
 			<h3 class="center"> Contact Details </h3>
 			<div class="form-group">
@@ -784,7 +824,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					?>
 				</div>
 			</div>
-		
+
 
 		</div>
 		<div class="form-group"	>	
