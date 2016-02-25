@@ -599,7 +599,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<option value="PH">Physics</option>
 					<option value="ATDC">Advanced Techology Development Center</option>
 					<option value="CET">Center for Educational Technology</option>
-					<option value=CYE"">Cryogenic Engineering</option>
+					<option value="CYE">Cryogenic Engineering</option>
 					<option value="MS">Materials Science</option>
 					<option value="ORALS">Oceans, Rivers, Atmosphere and Land Sciences</option>
 					<option value="CBE">P K Sinha Centre for Bio Energy</option>
@@ -684,7 +684,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="form-group">
 				<div class="col-sm-12">
 					<select  onchange="f1(this)" class='form-control'>
-						<option value='-1'>Do You Waant More Preferences</option>
+						<option value='-1'>Do You Want More Preferences</option>
 								<option >Yes</option>
 									<option>No</option>
 					</select>
