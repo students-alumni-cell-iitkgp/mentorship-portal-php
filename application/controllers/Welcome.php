@@ -102,7 +102,10 @@ if(!isset($_POST['logout'])){
 
 		}
 		else header('Location:index/?err=user');
+	
+
 	}
+	
 	else header('Location:index');
 
 	$this->load->model('member_area');
@@ -134,6 +137,29 @@ public function validate_credentials()
 		$this->index();
 	}
 
+}
+public function member_area1()
+{
+	//$this->load->database();
+	$this->load->model('update_model');
+		$data = array(
+		
+			'name' => $this->input->post('name'),
+			//'email' => $this->input->post('email'),
+			'password' => $this->input->post('password'),
+			'department' => $this->input->post('department'),
+			'hall' => $this->input->post('hall'),
+			'roll' => $this->input->post('roll'),
+			'cgpa' => $this->input->post('cgpa'),
+			'current_acad_year' => $this->input->post('current'),
+			'join_year' => $this->input->post('join'),
+			'passout_year' => $this->input->post('pout'),
+			'no_of_mentees' => $this->input->post('mentee') 
+			);
+
+			$this->update_model->form_update($data);
+			
+			//$this->load->view('users',$row);
 }
 
 }
