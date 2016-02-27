@@ -204,14 +204,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<!-- Add tabs here-->
 				<div id="menu1" class="tab-pane fade">
 					<div class ="al">
-						<h3>Menu 1</h3>
-						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<h3></h3>
+						<p>We are updating data soon !</p>
 					</div>
 				</div>
 				<div id="menu2" class="tab-pane fade">
 					<div class ="al">
-						<h3>Menu 2</h3>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+						<h3></h3>
+						<p>We are updating data soon !</p>
 					</div>
 				</div>
 				<div id="menu3" class="tab-pane fade">
