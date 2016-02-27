@@ -141,7 +141,7 @@ public function validate_credentials()
 public function member_area_updated()
 {
 	$this->load->database();
-	$this->load->model('update_model');
+	$this->load->model('Update_model');
 		$data = array(
 		
 			'name' => $this->input->post('name'),
@@ -156,8 +156,13 @@ public function member_area_updated()
 			'passout_year' => $this->input->post('pout'),
 			'no_of_mentees' => $this->input->post('mentee') 
 			);
-
-			$this->update_model->form_update($data);
+		$data1 = array(
+			'phone' => $this->input->post('phone'),
+			//'organisation' => $this->input->post('firm'),
+			//'designation' => $this->input->post('des'),
+			//'email' => $this->input->post('email') 
+			);
+			$this->Update_model->form_update($data,$data1);
 			
 			//$this->load->view('users',$row);
 }
