@@ -119,12 +119,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										$a = array('class'=>'form-horizontal',
 											'method'=>'post',
 											'role'=>'form');
-										echo form_open('index.php/welcome/member_area1',$a);					
+										echo form_open('index.php/welcome/member_area_updated',$a);					
 										?>
+										<div class="form-group">
+											<div class="col-md-4"><h4></h4></div>
+											<div class="col-sm-8">
+												<input type="hidden" class="form-control" name="eid" value='<?php echo $email;?>' placeholder='<?php echo $email;?>'  />
+												
+											</div>
+
+
+
+										</div>
 										<div class="form-group">
 											<div class="col-md-4"><h4>Update Name</h4></div>
 											<div class="col-sm-8">
-												<input type="text" class="form-control" value='<?php echo $name;?>' placeholder='<?php echo $name;?>'  />
+												<input type="text" class="form-control" name="name" value='<?php echo $name;?>' placeholder='<?php echo $name;?>'  />
 												
 											</div>
 
@@ -134,7 +144,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<div class="form-group">
 											<div class="col-md-4"><h4>Update Password</h4></div>
 											<div class="col-sm-8">
-												<input type="password" class="form-control" value='<?php echo $password;?>' placeholder='<?php echo $password;?>'  />
+												<input type="password" class="form-control" name="pass" value='<?php echo $password;?>' placeholder='<?php echo $password;?>'  />
 												
 											</div>
 
@@ -144,7 +154,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<div class="form-group">
 											<div class="col-md-4"><h4>Update Department</h4></div>
 											<div class="col-sm-8">
-												<input type="text" class="form-control" value='<?php echo $department;?>' placeholder='<?php echo $department;?>'  />
+												<input type="text" class="form-control" name="department" value='<?php echo $department;?>' placeholder='<?php echo $department;?>'  />
 												
 											</div>
 
@@ -156,7 +166,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<div class="col-sm-8">
 												<?php	$query = $this->db->get_where('contact', array('email' => $email));
 												$row=$query->row_array();	?>
-												<input type="text" class="form-control" value='<?php echo $row['phone'];?>' placeholder='<?php echo $row['phone'];?>'  />
+												<input type="text" class="form-control" name="phone" value='<?php echo $row['phone'];?>' placeholder='<?php echo $row['phone'];?>'  />
 												
 											</div>
 
@@ -166,7 +176,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<div class="form-group">
 											<div class="col-md-4"><h4>Update Hall</h4></div>
 											<div class="col-sm-8">
-												<input type="text" class="form-control" value='<?php echo $hall;?>' placeholder='<?php echo $hall;?>'  />
+												<input type="text" class="form-control" name="hall" value='<?php echo $hall;?>' placeholder='<?php echo $hall;?>'  />
 												
 											</div>
 
@@ -176,7 +186,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<div class="form-group">
 											<div class="col-md-4"><h4>Update Cgpa</h4></div>
 											<div class="col-sm-8">
-												<input type="text" class="form-control" value='<?php echo $cgpa;?>' placeholder='<?php echo $cgpa;?>'  />
+												<input type="text"  name ="cgpa" class="form-control" value='<?php echo $cgpa;?>' placeholder='<?php echo $cgpa;?>'  />
 												
 											</div>
 
@@ -186,7 +196,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<div class="form-group">
 											<div class="col-md-4"><h4>Update Current Year</h4></div>
 											<div class="col-sm-8">
-												<input type="text" class="form-control" value='<?php echo $current_acad_year;?>' placeholder='<?php echo $current_acad_year;?>'  />
+												<input type="text" name="current" class="form-control" value='<?php echo $current_acad_year;?>' placeholder='<?php echo $current_acad_year;?>'  />
 												
 											</div>
 

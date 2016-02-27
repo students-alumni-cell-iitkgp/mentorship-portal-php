@@ -138,15 +138,15 @@ public function validate_credentials()
 	}
 
 }
-public function member_area1()
+public function member_area_updated()
 {
-	//$this->load->database();
+	$this->load->database();
 	$this->load->model('update_model');
 		$data = array(
 		
 			'name' => $this->input->post('name'),
 			//'email' => $this->input->post('email'),
-			'password' => $this->input->post('password'),
+			'password' => $this->input->post('pass'),
 			'department' => $this->input->post('department'),
 			'hall' => $this->input->post('hall'),
 			'roll' => $this->input->post('roll'),
