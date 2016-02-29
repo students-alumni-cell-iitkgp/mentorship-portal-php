@@ -174,11 +174,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="col-md-3" id="box2">
 			<br><br>
 			<!--h2 style="text-align:center;">Register Here</h2-->
-			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#registermentor">
+			<button type="button" class="btn btn-primary btn-lg" name="add" data-toggle="modal" data-target="#registermentor">
 				I want to be a Mentor
 			</button>
 			<br><hr><br>
-			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#registerstudent">
+			<button type="button" class="btn btn-primary btn-lg" name="add" data-toggle="modal" data-target="#registerstudent">
 				I want to be a Mentee
 			</button>
 		</div>
