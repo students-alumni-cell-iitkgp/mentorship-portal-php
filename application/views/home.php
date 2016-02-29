@@ -51,6 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<br/>
 
 				<div style="">
+				<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/user.png" class="img img-rounded" style="position:relative;left:20px;" width="200" height="180" /><br/><br/>
 					<div class="list-group"><?php
 						if($this->input->post('cgpa')==''){
 							echo '<li class="list-group-item">'.'<strong>Email </strong>'.'<span class="pull-right">' .$email .'</span>'.'</li>';
