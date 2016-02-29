@@ -57,7 +57,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							echo '<li class="list-group-item">'.'<strong>Phone Number </strong>'.'<span class="pull-right">'. $phone .'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Year Of Graduation</strong>'.'<span class="pull-right">'.$pout .'</span>'.'</li>';
 							echo '<li class="list-group-item">'.'<strong>Department  </strong>'.'<span class="pull-right">' .$department.'</span>'.'</li>';
-							echo '<li class="list-group-item">'.'<strong>Hall </strong>'.'<span class="pull-right">'. $hall .'</span>'.'</li>';			
+							//echo '<li class="list-group-item">'.'<strong>Hall </strong>'.'<span class="pull-right">'. $hall .'</span>'.'</li>';			
 
 
 						}
