@@ -329,11 +329,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 	</div>
 
-	<div class="col-sm-3" id="Demo" style="background-color:#ffcc99">
+	<div class="col-md-3" id="Demo" >
 		<div style="">
-			<br><br><h3 class="center"> Prominent Alumni Registered for this Programme </h3>
-			<marquee behavior="scroll" direction="up" scrollamount="12" height="400" >
-				<div class="marquee">					
+			<br><br><h3 class="center" style="background-color:lightgrey;padding:10px;border-radius:8px;"> Prominent Alumni Registered for this Programme </h3>
+			<marquee behavior="scroll" direction="up" scrollamount="12" height="300" >
+				<div class="marquee" >					
 					<ul class="list-group" data-spy="scroll" data-target=".navbar" data-offset="50" >
 						<li class="list-group-item prominent" id="1">Hardward Business School</li>
 						<li class="list-group-item prominent" id="4">Bank fo America</li>
@@ -412,7 +412,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <?php echo $id;?>
-<footer style="background-color:black; color:white; text-align:center; padding:10px; position:relative; bottom:0px; width:100%">&copy; Students' Alumni Cell</footer>
+<footer style="background-color:black; color:white; text-align:center; padding:10px; position:fixed; bottom:0px; width:100%">&copy; Students' Alumni Cell</footer>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -425,10 +425,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		}
 
 	</script>
-	
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-	<script type='text/javascript' src='http://cdn.jsdelivr.net/jquery.marquee/1.3.1/jquery.marquee.min.js'></script>
-	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script>
+//proporcional speed counter (for responsive/fluid use)
+var widths = $('.marquee').width()
+var duration = widths * 56;
 
+$('.marquee').marquee({
+    //speed in milliseconds of the marquee
+    duration:5000, // for responsive/fluid use
+    //duration: 8000000, // for fixed container
+    //gap in pixels between the tickers
+    gap: $('.marquee').width(),
+    //time in milliseconds before the marquee will start animating
+    delayBeforeStart: 0,
+    //'left' or 'right'
+    direction: 'up',
+    //true or false - should the marquee be duplicated to show an effect of continues flow
+    duplicated: true
+});
+</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type='text/javascript' src='http://cdn.jsdelivr.net/jquery.marquee/1.3.1/jquery.marquee.min.js'></script>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="js/dw_con_scroller.js" type="text/javascript"></script>
 </body>
 </html>
