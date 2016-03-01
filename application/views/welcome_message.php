@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			position: relative;
 			top: 20px;
 
-		}
+		} 
 		#box {
 			padding: 10px;
 			width: 100%;
@@ -204,8 +204,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<!-- Add tabs here-->
 				<div id="menu1" class="tab-pane fade">
 					<div class ="al">
-						<h3></h3>
-						<p>We are updating data soon !</p>
+						<h3  style="text-align:center;background-color:	#7FFFD4;color:white;border-radius:8px;">For Mentors</h3>
+						<p>As a successful member of the IIT Kharagpur alumni community, you have the power to inspire, motivate, and support IIT KGP students. Your knowledge, experience, and insight will help students open their eyes to the opportunities and challenges they will face after graduation.
+
+							When you serve as a mentor, you form meaningful, rewarding relationships that prepare students to be better employees and leaders, inspire them to stay connected with IIT Kharagpur, and motivate them to support the next generation of students. Mentors help perpetuate, grow, and strengthen IIT Kharagpur’s global alumni network.
+						</p>
+						<h3 style="text-align:center;background-color:	#7FFFD4;color:white;border-radius:8px;">For Mentees</h3>
+						<p>Mentees can expect to receive guidance to help them navigate various career options, learn invaluable skills for professional development and make new contacts expand their network.
+
+							Mentors and students form supportive relationships built on the shared experience of the KGP way of life, and connect one-on-one in a relaxed, informal way. It’s a valuable relationship that serves as an important complement to your classroom and action learning experiences, and makes for a richer KGP experience.
+						</p>
 					</div>
 				</div>
 				<div id="menu2" class="tab-pane fade">
@@ -1164,6 +1172,7 @@ if(isset($_GET['err'])) {
 		}
 	}
 </script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
