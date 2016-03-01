@@ -332,7 +332,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="col-md-3" id="Demo" >
 		<div style="">
 			<br><br><h3 class="center" style="background-color:lightgrey;padding:10px;border-radius:8px;"> Prominent Alumni Registered for this Programme </h3>
-			<marquee behavior="scroll" direction="up" scrollamount="12" height="300" >
+			<marquee behavior="scroll" direction="up" scrollamount="8" height="302" >
 				<div class="marquee" >					
 					<ul class="list-group" data-spy="scroll" data-target=".navbar" data-offset="50" >
 						<li class="list-group-item prominent" id="1">Hardward Business School</li>
