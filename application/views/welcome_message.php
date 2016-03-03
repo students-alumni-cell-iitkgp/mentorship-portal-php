@@ -21,6 +21,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			top: 20px;
 
 		} 
+		#quotes {
+			width: 60px;
+			height: 60px;
+		}
 		#box {
 			padding: 10px;
 			width: 100%;
@@ -218,35 +222,47 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div id="menu2" class="tab-pane fade">
 					<div class ="al">
-						<div class="row">
-							<div class="col-md-7"><p>Mentorship is crucial for any individual whether a student or professional, and its importance is essential especially during the formative years in college. I signed up for this program with the objective to gain perspective and seek help from our experienced and extremely friendly alumni. His guidance helped me think and understand about the outside world, gain industry knowledge and valuable fundas which helped me perform well in college and outside. They know what is valued more when it comes to the professional world, hence I always prioritized my mentors advice - specifically maintaining a good CGPA. Interacting and keeping in touch with my mentor also helped improving my networking skills and connecting to more people.   
-								<br>
-								---Ankit Gupta
-							</p>
-						</div>
-						<div class="col-md-1"></div>
-						<div class="col-md-4" >	</div>
-					</div>
-					<div class="row">
-						<div class="col-md-7">
-							<p>The Alumni Student mentorship program is a nice initiative by the Students’ Alumni Cell. In today’s time a direction and support from an esteemed mentor can go a long way in helping someone. It was a great experience for me as I got to learn a lot from my mentor who provided me with insight into the world after college as well as their experience as a student and in the professional sphere. Getting mentorship from an Alumni is a great thing as they can provide better help as they have been a part of the same institution as you."
-								<br>
-								---Pranshu Agrawal
-							</p></div>
-							<div class="col-md-1"></div>
-							<div class="col-md-4"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-7">
-								<p>The Student Alumni Mentorship Programme is probably one of the best
-									initiatives taken by our institution in recent years. Through my
-									association with it, I can only say that although the path was clear for
-									me, it was dark. My mentor came in the form a torchlight.
+						<div class="row" >
+							<div class="col-md-8" style="background-color:;">
+								<img src="http://www.mentorship.iitkgp.ernet.in/img/a.png" alt="" id="quotes" />
 
-									---Gobind Singh</p>
+								<p>    Mentorship is crucial for any individual whether a student or professional, and its importance is essential especially during the formative years in college. I signed up for this program with the objective to gain perspective and seek help from our experienced and extremely friendly alumni. His guidance helped me think and understand about the outside world, gain industry knowledge and valuable fundas which helped me perform well in college and outside. They know what is valued more when it comes to the professional world, hence I always prioritized my mentors advice - specifically maintaining a good CGPA. Interacting and keeping in touch with my mentor also helped improving my networking skills and connecting to more people.   
+									<br>
+									<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/b.png" alt="" id="quotes" class="pull-right" />
+
+									
+								</p>
+							</div>
+							
+							<div class="col-md-4" >	<br><br><img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/t1.jpg" class="img img-circle" width="100%" height="80%">
+								<br><br><br>	<b style="position:relative;left:60px;">Ankit Gupta</b>
+							</div>
+						</div><hr>
+						<div class="row">
+							<div class="col-md-8">
+								<img src="http://www.mentorship.iitkgp.ernet.in/img/a.png" alt="" id="quotes" />
+								<p>      The Alumni Student mentorship program is a nice initiative by the Students’ Alumni Cell. In today’s time a direction and support from an esteemed mentor can go a long way in helping someone. It was a great experience for me as I got to learn a lot from my mentor who provided me with insight into the world after college as well as their experience as a student and in the professional sphere. Getting mentorship from an Alumni is a great thing as they can provide better help as they have been a part of the same institution as you."
+									<br>
+									<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/b.png" alt="" id="quotes" class="pull-right" />
+
+									
+								</p></div>
+								
+								<div class="col-md-4"><br><img src="http://www.mentorship.iitkgp.ernet.in/img/t3.jpg" class="img img-circle" width="100%" height="80%"><br><br><b style="position:relative;left:60px;">Pranshu Agrawal</b></div>
+							</div><hr>
+							<div class="row">
+								<div class="col-md-8">
+									<img src="http://www.mentorship.iitkgp.ernet.in/img/a.png" alt="" id="quotes" />
+									<p>The Student Alumni Mentorship Programme is probably one of the best
+										initiatives taken by our institution in recent years. Through my
+										association with it, I can only say that although the path was clear for
+										me, it was dark. My mentor came in the form a torchlight.
+										<br>
+										<img src="http://www.mentorship.iitkgp.ernet.in/img/b.png" alt="" id="quotes" class="pull-right" />	
+									</p>
 								</div>
-								<div class="col-md-1"></div>
-								<div class="col-md-4"></div>
+								
+								<div class="col-md-4"><img src="http://www.mentorship.iitkgp.ernet.in/img/t2.jpg" class="img img-circle" width="100%" height="80%"><br><br><b style="position:relative;left:60px;">Gobind Singh</b></div>
 							</p>
 						</div>
 					</div>
