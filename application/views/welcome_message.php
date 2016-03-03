@@ -182,7 +182,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				I want to be a Mentee
 			</button>
 		</div>
-		<div class="col-md-8" style="position:relative;left:25px;">
+		<div class="col-md-7" style="position:relative;left:25px;">
 			<ul class="nav nav-tabs">
 				<li class="active"><a data-toggle="tab" href="#home">About Mentorship Program</a></li>
 				<li><a data-toggle="tab" href="#menu1">Why choose this program</a></li>
@@ -191,7 +191,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<li><a data-toggle="tab" href="#menu4">Contact Us</a></li>
 			</ul>
 			<br>
-			<div class="tab-content" style="width:80%">
+			<div class="tab-content" style="width:100%">
 				<div id="home" class="tab-pane fade in active">
 					<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/p.jpg" style="position:relative;" width="100%" height="100" class="img img-rounded" />
 					<br/><br/>
@@ -462,12 +462,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</a>
 	</div>
 	<br/>
+	<div class="row" style="position:relative;left:20px;font:bold 15px Calibri; text-align:center">
+		Pranshu Jain<br>pranshu.iitkgp@gmail.com <br>+919800189955 
+	</div>
 	<div class="row">
-		<div class="col-md-3" style="font:bold 20px Calibri; text-align:center">
-			Sanket <br> sanket0495@gmail.com<br>+918609267395</div>
-			<div class="col-md-4"></div>
-			<div class="col-md-3" style="font:bold 20px Calibri; text-align:center">
-				Akash Tulsani<br>akashtulsani08@gmail.com<br>+918967681614</div>
+
+		<div class="col-md-3" style="font:bold 15px Calibri; text-align:center">
+			Akash Tulsani<br>akashtulsani08@gmail.com<br>+918967681614</div>
+			
+			<div class="col-md-5"></div>
+			<div class="col-md-3" style="position:relative;left:70px;font:bold 15px Calibri; text-align:center">
+				Sanket <br> sanket0495@gmail.com<br>+918609267395</div>	
 			</div>
 	<!-- <div class="container">
 		<h2>Students' Alumni Cell</h2>

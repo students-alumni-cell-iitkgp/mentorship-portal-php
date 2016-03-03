@@ -411,7 +411,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 </div>
 
-<?php echo $id;?>
+
 <footer style="background-color:black; color:white; text-align:center; padding:10px; position:fixed; bottom:0px; width:100%">&copy; Students' Alumni Cell</footer>
 
 
