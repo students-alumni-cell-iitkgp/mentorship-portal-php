@@ -218,8 +218,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div id="menu2" class="tab-pane fade">
 					<div class ="al">
-						<h3></h3>
-						<p>We are updating data soon !</p>
+						<div class="row">
+							<div class="col-md-7"><p>Mentorship is crucial for any individual whether a student or professional, and its importance is essential especially during the formative years in college. I signed up for this program with the objective to gain perspective and seek help from our experienced and extremely friendly alumni. His guidance helped me think and understand about the outside world, gain industry knowledge and valuable fundas which helped me perform well in college and outside. They know what is valued more when it comes to the professional world, hence I always prioritized my mentors advice - specifically maintaining a good CGPA. Interacting and keeping in touch with my mentor also helped improving my networking skills and connecting to more people.   
+								<br>
+								---Ankit Gupta
+							</p>
+						</div>
+						<div class="col-md-1"></div>
+						<div class="col-md-4" >	</div>
+					</div>
+					<div class="row">
+						<div class="col-md-7">
+							<p>The Alumni Student mentorship program is a nice initiative by the Students’ Alumni Cell. In today’s time a direction and support from an esteemed mentor can go a long way in helping someone. It was a great experience for me as I got to learn a lot from my mentor who provided me with insight into the world after college as well as their experience as a student and in the professional sphere. Getting mentorship from an Alumni is a great thing as they can provide better help as they have been a part of the same institution as you."
+								<br>
+								---Pranshu Agrawal
+							</p></div>
+							<div class="col-md-1"></div>
+							<div class="col-md-4"></div>
+						</div>
+						<div class="row">
+							<div class="col-md-7">
+								<p>The Student Alumni Mentorship Programme is probably one of the best
+									initiatives taken by our institution in recent years. Through my
+									association with it, I can only say that although the path was clear for
+									me, it was dark. My mentor came in the form a torchlight.
+
+									---Gobind Singh</p>
+								</div>
+								<div class="col-md-1"></div>
+								<div class="col-md-4"></div>
+							</p>
+						</div>
 					</div>
 				</div>
 				<div id="menu3" class="tab-pane fade">
@@ -241,205 +270,179 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 									<div class="collapse well" id="collapseOne">
 										As an Alumni Mentor you are a guide, friend and resource who shares your Kgp education and professional experience to help pave the way for current students to succeed at Kgp and beyond. A Kgp Alumni Mentor derives satisfaction from helping Kgp students fulfill their potential.<br>
-					<!-- Role of A Mentor:
-					<div class="list-group">
-						<li class="list-group-item">
-							<span class="label label-primary">Motivator:</span> 
-							Expresses belief and confidence in the mentee’s abilities, and encourages the mentee to try new things.
-						</li>
-						<li class="list-group-item">
-							<span class="label label-info">Resource:</span>
-							Teaches and advises the mentee on how to make professional contacts, and introduces the mentee to new ideas and own experiences.
-						</li>
-						<li class="list-group-item">
-							<span class="label label-primary">Supporter:</span>
-							Encourages open and honest dialogue, and listens to and responds to the needs of the mentee.
-						</li>
-						<li class="list-group-item">
-							<span class="label label-success">Coach:</span>
-							Helps the mentee develop, and work to achieve, realistic and meaningful goals.
-						</li>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							The Mentoring Relationship
+
+									</div>
+								</div>
+
+								<div class="">
+									<a href="#collapseTwo" data-toggle="collapse" aria-controls="collapseTwo" aria-expanded="false">
+										How Will I Benefit as a Mentor?
+									</a>
+
+									<hr>
+
+									<div class="well collapse" id="collapseTwo">
+										We believe that mentoring will be a positive and enriching experience for you. Specifically, we hope you will:
+
+										Refine your coaching and mentoring skills 
+										Develop meaningful connections with students 
+
+										Learn about the Kgp of today and the next generation<hr>
+
+										Experience a reconnection with your Alma Mater
+									</div>
+								</div><!--Container12 Ends -->
+
+								<div class="">
+									<a href="#collapseThree" data-toggle="collapse" aria-controls="collapseThree" aria-expanded="false">
+										How will the Mentee Benefit?
+									</a>
+
+									<hr>
+
+									<div class="well collapse" id="collapseThree">
+										Following are some general ways we hope the students will benefit from being in a mentoring relationship:
+										<div class="list-group">
+											<li class="list-group-item">
+												•	Build a professional network 
+											</li>
+											<li class="list-group-item">
+												•	Develop and enhance professional and communication skills 
+											</li>
+											<li class="list-group-item">
+												•	Connect academics and career; acquire advice on experiences and courses that would be of greatest benefit 
+											</li>
+											<li class="list-group-item">
+												•	Explore new ideas and areas of interest 
+											</li>
+											<li class="list-group-item">
+												•	Gain exposure to career options, advice and job search tips 
+											</li>
+										</div><!--list-group-item ends -->
+									</div>
+								</div><!--container13 ends -->
+
+								<div>
+									<a href="#oneFour" data-toggle="collapse" aria-controls="oneFour" aria-expanded="false">
+										Role of A Mentor?
+									</a>
+									<hr>
+									<div class="well collapse" id="oneFour">
+										<div class="list-group">
+											<li class="list-group-item">
+												<span class="label label-primary">Motivator:</span> 
+												Expresses belief and confidence in the mentee’s abilities, and encourages the mentee to try new things.
+											</li>
+											<li class="list-group-item">
+												<span class="label label-info">Resource:</span>
+												Teaches and advises the mentee on how to make professional contacts, and introduces the mentee to new ideas and own experiences.
+											</li>
+											<li class="list-group-item">
+												<span class="label label-primary">Supporter:</span>
+												Encourages open and honest dialogue, and listens to and responds to the needs of the mentee.
+											</li>
+											<li class="list-group-item">
+												<span class="label label-success">Coach:</span>
+												Helps the mentee develop, and work to achieve, realistic and meaningful goals.
+											</li>
+										</div><!--list-group ends -->
+									</div>
+								</div><!--container14 ends -->
+
+							</div><!--col-md-6 ends -->
+
+							<div class="col-md-6">
+								<div class="">
+									<a href="#collapseFour" data-toggle="collapse" aria-controls="collapseFour" aria-expanded="false">
+										What is Expected of the Mentee?
+									</a>
+									<hr>
+									<div class="well collapse" id="collapseFour">
+										Before a student can search for a mentor, they must attend a mandatory orientation in which they are instructed to think about what they want out of a mentoring relationship. They are informed of our expectations, which include:
+										<div class="list-group">
+											<li class="list-group-item">
+												•	Spend at least two hours per month building the mentoring relationship 
+											</li>
+											<li class="list-group-item">
+												•	Make the first contact with the selected mentor and respond to all communication 
+											</li>
+											<li class="list-group-item">
+												•	Set specific goals for the mentoring relationship with mentor 
+											</li>
+											<li class="list-group-item">
+												•	Agree and commit to expectations and goals set with the mentor 
+											</li>
+											<li class="list-group-item">
+												•	Be appropriate in their requests of their mentor, in particular, in NOT asking for a job or sponsorship
+											</li>
+											<li class="list-group-item">
+												•	Approach the mentoring relationship with an open mind, professionalism and respect 
+											</li>
+										</div>
+										<footer>Be receptive to suggestions and feedback</footer>
+									</div>
+								</div><!--container21 ends -->
+
+								<div class="">
+									<a href="#collapseFive" data-toggle="collapse" aria-controls="collapseFive" aria-expanded="false">
+										The Matching process
+									</a>
+									<hr>
+									<div class="well collapse" id="collapseFive">
+										<div class="list-group">
+											<li class="list-group-item">
+												•	Both the mentee and the mentor register for the program through an online form .
+											</li>
+											<li class="list-group-item">
+												•	Based on the preferences filled in the form and factors like place, year and grades, Mentors are allotted to the mentees on the basis of a predefined code.
+											</li>
+											<li class="list-group-item">
+												•	There can be situations where the mentor is not allotted any mentee or vice versa due to the preferences made, in such a case the mentor would be notified through an email and the allotment shall then be done manually.
+											</li>
+										</div>
+									</div>
+								</div><!--container22 ends -->
+
+								<div class="">
+									<a href="#collapseSixth" data-toggle="collapse" aria-controls="collapseSixth" aria-expanded="false">
+										<!-- ONCE A MATCH IS MADE -->Once a Match is made
+									</a>
+									<hr>
+									<div class="well collapse" id="collapseSixth">
+										<div class="list-group">
+											<li class="list-group-item">
+												•	We advise you to connect with your mentee through social networking platforms.
+											</li>
+											<li class="list-group-item">
+												•	Have few informal sessions with your mentee for ice breaking.
+											</li>
+											<li class="list-group-item">
+												•	If the mentee does not respond to your conversations do write to us.
+											</li>
+											<li class="list-group-item">
+												•	Your feedback is our prime critic, do respond to our feedback forms to make this program a success.
+											</li>
+										</div>
+									</div>
+								</div><!--container23 -->
+
+								<div>
+									<a href="#twoFour" data-toggle="collapse" aria-controls="twoFour" aria-expanded="false">
+										The Mentoring Relationship
+									</a>
+									<hr>
+									<div class="well collapse" id="twoFour">
+										For mentoring to be successful there must be a reciprocal and comfortable relationship between the mentor and the mentee. Both parties must work to make the relationship successful by being open-minded, respectful and keeping to the expectations they have set for the relationship. Ideally, the mentor-mentee relationship will be a mutually beneficial one, as the mentor learns from the mentee and the mentee from the mentor.
+									</div>
+								</div><!--container24 ends -->
+							</div><!--col-md-6 ends -->
 						</div>
-						<div class="panel-body">
-							For mentoring to be successful there must be a reciprocal and comfortable relationship between the mentor and the mentee. Both parties must work to make the relationship successful by being open-minded, respectful and keeping to the expectations they have set for the relationship. Ideally, the mentor-mentee relationship will be a mutually beneficial one; as the mentor learns from the mentee and the mentee from the mentor.
-						</div>
-					</div> -->
-				</div><!--CollapseOne ends -->
-			</div><!--Container11 ends -->
 
-			<div class="">
-				<a href="#collapseTwo" data-toggle="collapse" aria-controls="collapseTwo" aria-expanded="false">
-					How Will I Benefit as a Mentor?
-				</a>
-
-				<hr>
-
-				<div class="well collapse" id="collapseTwo">
-					We believe that mentoring will be a positive and enriching experience for you. Specifically, we hope you will:
-
-					Refine your coaching and mentoring skills 
-					Develop meaningful connections with students 
-
-					Learn about the Kgp of today and the next generation<hr>
-
-					Experience a reconnection with your Alma Mater
-				</div>
-			</div><!--Container12 Ends -->
-
-			<div class="">
-				<a href="#collapseThree" data-toggle="collapse" aria-controls="collapseThree" aria-expanded="false">
-					How will the Mentee Benefit?
-				</a>
-
-				<hr>
-
-				<div class="well collapse" id="collapseThree">
-					Following are some general ways we hope the students will benefit from being in a mentoring relationship:
-					<div class="list-group">
-						<li class="list-group-item">
-							•	Build a professional network 
-						</li>
-						<li class="list-group-item">
-							•	Develop and enhance professional and communication skills 
-						</li>
-						<li class="list-group-item">
-							•	Connect academics and career; acquire advice on experiences and courses that would be of greatest benefit 
-						</li>
-						<li class="list-group-item">
-							•	Explore new ideas and areas of interest 
-						</li>
-						<li class="list-group-item">
-							•	Gain exposure to career options, advice and job search tips 
-						</li>
-					</div><!--list-group-item ends -->
-				</div>
-			</div><!--container13 ends -->
-
-			<div>
-				<a href="#oneFour" data-toggle="collapse" aria-controls="oneFour" aria-expanded="false">
-					Role of A Mentor?
-				</a>
-				<hr>
-				<div class="well collapse" id="oneFour">
-					<div class="list-group">
-						<li class="list-group-item">
-							<span class="label label-primary">Motivator:</span> 
-							Expresses belief and confidence in the mentee’s abilities, and encourages the mentee to try new things.
-						</li>
-						<li class="list-group-item">
-							<span class="label label-info">Resource:</span>
-							Teaches and advises the mentee on how to make professional contacts, and introduces the mentee to new ideas and own experiences.
-						</li>
-						<li class="list-group-item">
-							<span class="label label-primary">Supporter:</span>
-							Encourages open and honest dialogue, and listens to and responds to the needs of the mentee.
-						</li>
-						<li class="list-group-item">
-							<span class="label label-success">Coach:</span>
-							Helps the mentee develop, and work to achieve, realistic and meaningful goals.
-						</li>
-					</div><!--list-group ends -->
-				</div>
-			</div><!--container14 ends -->
-
-		</div><!--col-md-6 ends -->
-
-		<div class="col-md-6">
-			<div class="">
-				<a href="#collapseFour" data-toggle="collapse" aria-controls="collapseFour" aria-expanded="false">
-					What is Expected of the Mentee?
-				</a>
-				<hr>
-				<div class="well collapse" id="collapseFour">
-					Before a student can search for a mentor, they must attend a mandatory orientation in which they are instructed to think about what they want out of a mentoring relationship. They are informed of our expectations, which include:
-					<div class="list-group">
-						<li class="list-group-item">
-							•	Spend at least two hours per month building the mentoring relationship 
-						</li>
-						<li class="list-group-item">
-							•	Make the first contact with the selected mentor and respond to all communication 
-						</li>
-						<li class="list-group-item">
-							•	Set specific goals for the mentoring relationship with mentor 
-						</li>
-						<li class="list-group-item">
-							•	Agree and commit to expectations and goals set with the mentor 
-						</li>
-						<li class="list-group-item">
-							•	Be appropriate in their requests of their mentor, in particular, in NOT asking for a job or sponsorship
-						</li>
-						<li class="list-group-item">
-							•	Approach the mentoring relationship with an open mind, professionalism and respect 
-						</li>
-					</div>
-					<footer>Be receptive to suggestions and feedback</footer>
-				</div>
-			</div><!--container21 ends -->
-
-			<div class="">
-				<a href="#collapseFive" data-toggle="collapse" aria-controls="collapseFive" aria-expanded="false">
-					The Matching process
-				</a>
-				<hr>
-				<div class="well collapse" id="collapseFive">
-					<div class="list-group">
-						<li class="list-group-item">
-							•	Both the mentee and the mentor register for the program through an online form .
-						</li>
-						<li class="list-group-item">
-							•	Based on the preferences filled in the form and factors like place, year and grades, Mentors are allotted to the mentees on the basis of a predefined code.
-						</li>
-						<li class="list-group-item">
-							•	There can be situations where the mentor is not allotted any mentee or vice versa due to the preferences made, in such a case the mentor would be notified through an email and the allotment shall then be done manually.
-						</li>
 					</div>
 				</div>
-			</div><!--container22 ends -->
-
-			<div class="">
-				<a href="#collapseSixth" data-toggle="collapse" aria-controls="collapseSixth" aria-expanded="false">
-					<!-- ONCE A MATCH IS MADE -->Once a Match is made
-				</a>
-				<hr>
-				<div class="well collapse" id="collapseSixth">
-					<div class="list-group">
-						<li class="list-group-item">
-							•	We advise you to connect with your mentee through social networking platforms.
-						</li>
-						<li class="list-group-item">
-							•	Have few informal sessions with your mentee for ice breaking.
-						</li>
-						<li class="list-group-item">
-							•	If the mentee does not respond to your conversations do write to us.
-						</li>
-						<li class="list-group-item">
-							•	Your feedback is our prime critic, do respond to our feedback forms to make this program a success.
-						</li>
-					</div>
-				</div>
-			</div><!--container23 -->
-
-			<div>
-				<a href="#twoFour" data-toggle="collapse" aria-controls="twoFour" aria-expanded="false">
-					The Mentoring Relationship
-				</a>
-				<hr>
-				<div class="well collapse" id="twoFour">
-					For mentoring to be successful there must be a reciprocal and comfortable relationship between the mentor and the mentee. Both parties must work to make the relationship successful by being open-minded, respectful and keeping to the expectations they have set for the relationship. Ideally, the mentor-mentee relationship will be a mutually beneficial one, as the mentor learns from the mentee and the mentee from the mentor.
-				</div>
-			</div><!--container24 ends -->
-		</div><!--col-md-6 ends -->
-	</div>
-
-</div>
-</div>
-<div id="menu4" class="tab-pane fade">
-	<div class ="al">
-		<div class="">
+				<div id="menu4" class="tab-pane fade">
+					<div class ="al">
+						<div class="">
 	<!-- <div class="jumbotron">
 		<h1>StaticPages#contact</h1>
 		<p>Find me in app/views/static_pages/contact.html.erb</p>

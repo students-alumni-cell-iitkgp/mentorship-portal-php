@@ -4,7 +4,7 @@ class Insert_model extends CI_Model{
 		parent::__construct();
 	}
 	function form_insert($data,$data1,$data2){
-		if (!isset($_POST['logout'])&&isset($_POST['add'])) {
+		if (!isset($_POST['logout'])){
 			# code...
 			
 			$this->db->insert('users', $data);
