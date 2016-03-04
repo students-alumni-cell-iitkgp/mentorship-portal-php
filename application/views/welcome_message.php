@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Welcome to Mentorship-Portal</title>
-	<link rel='stylesheet' href='css/social_icon.css'>
+	<link rel='stylesheet' href='http://mentorship.iitkgp.ernet.in/css/social_icon.css'>
 
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<!-- Generic page styles -->
