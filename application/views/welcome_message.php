@@ -234,7 +234,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</p>
 							</div>
 							
-							<div class="col-md-4" >	<br><br><img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/t1.jpg" class="img img-circle" width="100%" height="80%">
+							<div class="col-md-4" >	<br><br><img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/t2.jpg" class="img img-circle" width="100%" height="80%">
 								<br><br><br>	<b style="position:relative;left:60px;">Ankit Gupta</b>
 							</div>
 						</div><hr>
@@ -262,7 +262,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									</p>
 								</div>
 								
-								<div class="col-md-4"><img src="http://www.mentorship.iitkgp.ernet.in/img/t2.jpg" class="img img-circle" width="100%" height="80%"><br><br><b style="position:relative;left:60px;">Gobind Singh</b></div>
+								<div class="col-md-4"><img src="http://www.mentorship.iitkgp.ernet.in/img/t1.jpg" class="img img-circle" width="100%" height="80%"><br><br><b style="position:relative;left:60px;">Gobind Singh</b></div>
 							</p>
 						</div>
 					</div>
