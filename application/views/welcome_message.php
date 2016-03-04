@@ -5,9 +5,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Welcome to Mentorship-Portal</title>
+	<link rel='stylesheet' href='css/social_icon.css'>
+
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<!-- Generic page styles -->
 	<style type="text/css">
+
 		::selection { background-color: #E13300; color: white; }
 		::-moz-selection { background-color: #E13300; color: white; }
 		#bg {
@@ -513,7 +516,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 </div>
 <br>
-<footer style="background-color:black; color:white; text-align:center; padding:10px; position:relative; bottom:0px; width:100%">&copy; Students' Alumni Cell</footer>
+<footer style="background-color:black; color:white; text-align:center; padding:10px; position:relative; bottom:0px; width:100%">&copy; Students' Alumni Cell
+<ul class="soc">
+	<li><a class="soc-facebook"  href="//www.facebook.com/iitkgp.alumnicell?fref=ts&ref=br_tf" target="_blank"></a></li>
+	<li><a class="soc-twitter"   href="//twitter.com/IITKgpAlumni"target="_blank"></a></li>
+	<li><a class="soc-linkedin"  href="//www.linkedin.com/edu/school?id=13500&trk=prof-following-school-logo"target="_blank"></a></li>
+	<li><a class="soc-wikipedia" href=""target="_blank"></a></li>
+	<li><a class="soc-youtube soc-icon-last" href="//www.youtube.com/channel/UCtnSs1CT59Rd8L6VlOAxzRA"target="_blank"></a></li>
+</ul>
+</footer>
 <div class="modal fade" id="registerstudent" role="dialog">
 	<div class="modal-dialog">
 
