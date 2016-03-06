@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Welcome to Mentorship-Portal</title>
-	<link rel='stylesheet' href='http://mentorship.iitkgp.ernet.in/css/social_icon.css'>
+	<link rel='stylesheet' href='http://www.mentorship.iitkgp.ernet.in/css/social_icon.css'>
 
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<!-- Generic page styles -->
@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		#bg {
 			height: 400px;
 			width: 100%;
-			background-image: url('http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/gym1.jpg');
+			background-image: url('http://www.mentorship.iitkgp.ernet.in/img/gym1.jpg');
 			background-size:100% 100%;
 		}
 		#nav {
@@ -142,10 +142,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<?php 
 			$this->load->helper('form');
 			$for=array('class' => 'form-horizontal',
+
 				'method' => 'post',
 				'role' => 'form',
 				);		
-			echo form_open('index.php/welcome/member_area',$for);
+			echo form_open('/welcome/member_area',$for);
 			?>
 			<div class="col-md-3">
 				<?php
@@ -200,7 +201,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<br>
 			<div class="tab-content" style="width:100%">
 				<div id="home" class="tab-pane fade in active">
-					<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/p.jpg" style="position:relative;" width="100%" height="100" class="img img-rounded" />
+					<img src="http://www.mentorship.iitkgp.ernet.in/img/p.jpg" style="position:relative;" width="100%" height="100" class="img img-rounded" />
 					<br/><br/>
 					<div class ="all">
 						The Student Alumni Mentorship programme was started in session 2010-11 by the Students’ Alumni Cell as an initiative to create a platform for the exchange of ideas and experience between the alumni and the current students of IIT Kharagpur.<br><br>
@@ -231,13 +232,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 								<p>    Mentorship is crucial for any individual whether a student or professional, and its importance is essential especially during the formative years in college. I signed up for this program with the objective to gain perspective and seek help from our experienced and extremely friendly alumni. His guidance helped me think and understand about the outside world, gain industry knowledge and valuable fundas which helped me perform well in college and outside. They know what is valued more when it comes to the professional world, hence I always prioritized my mentors advice - specifically maintaining a good CGPA. Interacting and keeping in touch with my mentor also helped improving my networking skills and connecting to more people.   
 									<br>
-									<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/b.png" alt="" id="quotes" class="pull-right" />
+									<img src="http://www.mentorship.iitkgp.ernet.in/img/b.png" alt="" id="quotes" class="pull-right" />
 
 									
 								</p>
 							</div>
 							
-							<div class="col-md-4" >	<br><br><img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/t2.jpg" class="img img-circle" width="100%" height="80%">
+							<div class="col-md-4" >	<br><br><img src="http://www.mentorship.iitkgp.ernet.in/img/t2.jpg" class="img img-circle" width="100%" height="80%">
 								<br><br><br>	<b style="position:relative;left:60px;">Ankit Gupta</b>
 							</div>
 						</div><hr>
@@ -246,7 +247,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<img src="http://www.mentorship.iitkgp.ernet.in/img/a.png" alt="" id="quotes" />
 								<p>      The Alumni Student mentorship program is a nice initiative by the Students’ Alumni Cell. In today’s time a direction and support from an esteemed mentor can go a long way in helping someone. It was a great experience for me as I got to learn a lot from my mentor who provided me with insight into the world after college as well as their experience as a student and in the professional sphere. Getting mentorship from an Alumni is a great thing as they can provide better help as they have been a part of the same institution as you."
 									<br>
-									<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/b.png" alt="" id="quotes" class="pull-right" />
+									<img src="http://www.mentorship.iitkgp.ernet.in/img/b.png" alt="" id="quotes" class="pull-right" />
 
 									
 								</p></div>
@@ -540,7 +541,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				$a = array('class'=>'form-horizontal',
 					'method'=>'post',
 					'role'=>'form');
-				echo form_open('index.php/welcome/users',$a);					
+				echo form_open('/welcome/users',$a);					
 				?>
 				<div class="form-group">
 					<div class="col-sm-12">
@@ -888,7 +889,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				$a = array('class'=>'form-horizontal',
 					'method'=>'post',
 					'role'=>'form');
-				echo form_open('index.php/welcome/users',$a);					
+				echo form_open('/welcome/users',$a);					
 				?>
 				<div class="form-group">
 					<div class="col-sm-12">
