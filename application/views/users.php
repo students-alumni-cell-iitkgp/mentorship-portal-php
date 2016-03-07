@@ -15,7 +15,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			overflow: hidden;
 			padding: 20px 0px;
 		}
-
+			body {
+			background-image: url('http://www.mentorship.iitkgp.ernet.in/img/bg.jpg');
+		}
 		::selection { background-color: #E13300; color: white; }
 		::-moz-selection { background-color: #E13300; color: white; }
 	</style>
