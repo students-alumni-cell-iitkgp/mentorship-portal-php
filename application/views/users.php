@@ -122,7 +122,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									$a = array('class'=>'form-horizontal',
 										'method'=>'post',
 										'role'=>'form');
-									echo form_open('www.mentorship.iitkgp.ernet.in/index.php/welcome/member_area_updated',$a);					
+									echo form_open('/index.php/welcome/member_area_updated',$a);					
 									?>
 									<div class="form-group">
 										<div class="col-md-4"><h4></h4></div>
