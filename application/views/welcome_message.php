@@ -239,7 +239,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							
 							<div class="col-md-4" >	<br><br><img src="http://www.mentorship.iitkgp.ernet.in/img/t2.jpg" class="img img-circle" width="100%" height="80%">
-								<br>	<b style="position:relative;left:60px;">Ankit Gupta</b>
+								<br><br>	<b style="position:relative;left:60px;">Ankit Gupta</b>
 							</div>
 						</div><hr>
 						<div class="row">

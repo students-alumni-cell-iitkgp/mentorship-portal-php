@@ -166,5 +166,9 @@ public function member_area_updated()
 			
 			//$this->load->view('users',$row);
 }
+public function f()
+{
+	$this->load->view('viewall');
+}
 
 }
