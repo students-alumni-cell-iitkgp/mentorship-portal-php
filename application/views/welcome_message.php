@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		#bg {
 			height: 400px;
 			width: 100%;
-			background-image: url('http://www.mentorship.iitkgp.ernet.in/img/gym1.jpg');
+			background-image: url('http://www.mentorship.iitkgp.ernet.in/img/slider.jpg');
 			background-size:100% 100%;
 		}
 		#nav {
