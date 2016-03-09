@@ -30,8 +30,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-
+				<img src="http://www.mentorship.iitkgp.ernet.in/img/hand.jpg" class="img img-rounded" height="40">
+				
 				<ul class="nav navbar-nav navbar-right">
 
 					<li class="dropdown">
