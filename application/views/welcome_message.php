@@ -485,7 +485,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</a>
 	</div>
 	<br/>
-	<div class="row" style="position:relative;left:20px;font:bold 15px Calibri; text-align:center">
+	<div class="row" style="position:relative;font:bold 15px Calibri; text-align:center">
 		Pranshu Jain<br>pranshu.iitkgp@gmail.com <br>+919800189955 
 	</div>
 	<div class="row">
@@ -493,8 +493,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="col-md-3" style="font:bold 15px Calibri; text-align:center">
 			Akash Tulsani<br>akashtulsani08@gmail.com<br>+918967681614</div>
 			
-			<div class="col-md-5"></div>
-			<div class="col-md-3" style="position:relative;left:70px;font:bold 15px Calibri; text-align:center">
+			<div class="col-md-6"></div>
+			<div class="col-md-3" style="position:relative;font:bold 15px Calibri; text-align:center">
 				Sanket <br> sanket0495@gmail.com<br>+918609267395</div>	
 			</div>
 	<!-- <div class="container">
