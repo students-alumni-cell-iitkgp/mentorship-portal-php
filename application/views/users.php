@@ -60,7 +60,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 				<div style="">
 					<img src="http://www.alumnimeet.iitkgp.ernet.in/other/mentorship/img/user.png" class="img img-rounded" style="position:relative;left:20px;" width="200" height="180" /><br/><br/>
-					<div class="list-group"><?php
+					<div class="list-group" style="width:115%"><?php
 						$query = $this->db->get_where('contact', array('email' => $email));
 						$row=$query->row_array();		
 						if($cgpa == ''&&!isset($_POST['update'])) {
@@ -304,7 +304,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div><!--col-md-3 ends -->
 
-		<div class="col-md-6">
+		<div class="col-md-6" style="position:relative;left:20px;">
 			<br/>
 
 
