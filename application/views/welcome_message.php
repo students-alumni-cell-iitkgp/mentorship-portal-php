@@ -786,6 +786,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<option value='11'>Chemistry</option>
 						<option value='12'>Electrical Engineering</option>
 						<option value='13'>Electronics & Electrical Communication Engineering</option>
+						<option value='23'>Entrepreneurship</option>
 						<option value='14'>Geology & Geophysics</option>
 						<option value='15'>Humanities & Social Sciences</option>
 						<option value='16'>Industrial & Systems Engineering</option>
@@ -795,6 +796,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<option value='20'>Mining Engineering</option>
 						<option value='21'>Ocean Engineering & Naval Architecture</option>
 						<option value='22'>Physics</option>
+
 					</select>
 				</div>
 			</div>
@@ -815,6 +817,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<option value='11'>Chemistry</option>
 						<option value='12'>Electrical Engineering</option>
 						<option value='13'>Electronics & Electrical Communication Engineering</option>
+						<option value='23'>Entrepreneurship</option>
 						<option value='14'>Geology & Geophysics</option>
 						<option value='15'>Humanities & Social Sciences</option>
 						<option value='16'>Industrial & Systems Engineering</option>
@@ -844,6 +847,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<option value='11'>Chemistry</option>
 						<option value='12'>Electrical Engineering</option>
 						<option value='13'>Electronics & Electrical Communication Engineering</option>
+						<option value='23'>Entrepreneurship</option>
 						<option value='14'>Geology & Geophysics</option>
 						<option value='15'>Humanities & Social Sciences</option>
 						<option value='16'>Industrial & Systems Engineering</option>
@@ -1044,6 +1048,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<option value='11'>Chemistry</option>
 						<option value='12'>Electrical Engineering</option>
 						<option value='13'>Electronics & Electrical Communication Engineering</option>
+						<option value='23'>Entrepreneurship</option>
 						<option value='14'>Geology & Geophysics</option>
 						<option value='15'>Humanities & Social Sciences</option>
 						<option value='16'>Industrial & Systems Engineering</option>
@@ -1085,6 +1090,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<option value='11'>Chemistry</option>
 							<option value='12'>Electrical Engineering</option>
 							<option value='13'>Electronics & Electrical Communication Engineering</option>
+							<option value='23'>Entrepreneurship</option>
 							<option value='14'>Geology & Geophysics</option>
 							<option value='15'>Humanities & Social Sciences</option>
 							<option value='16'>Industrial & Systems Engineering</option>
@@ -1114,6 +1120,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<option value='11'>Chemistry</option>
 							<option value='12'>Electrical Engineering</option>
 							<option value='13'>Electronics & Electrical Communication Engineering</option>
+							<option value='23'>Entrepreneurship</option>
 							<option value='14'>Geology & Geophysics</option>
 							<option value='15'>Humanities & Social Sciences</option>
 							<option value='16'>Industrial & Systems Engineering</option>
