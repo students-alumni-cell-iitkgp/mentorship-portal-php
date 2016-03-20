@@ -29,10 +29,11 @@ class Allotment_controller extends CI_Controller
 	}
 	public function match($mentee,$mentor)
 	{
+		$matched=new array();
 
 		if($mentee['pref1']==$mentor['pref1'])
 		{
-
+			$matched($mentee['email'])=$mentor['email'];
 		}
 
 
