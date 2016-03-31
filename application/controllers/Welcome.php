@@ -80,70 +80,73 @@ class Welcome extends CI_Controller {
 		$this->load->view('home', $_POST);
 
 	}
-
+	public function contact()
+	{
+		$this->load->view('contact');
+	}
 	
-public function member_area()
-{
-	session_destroy();
-	$this->load->database();
-if(!isset($_POST['logout'])){
-	$email=$_POST['eid'];
+	public function member_area()
+	{
+		session_destroy();
+		$this->load->database();
+		if(!isset($_POST['logout'])){
+			$email=$_POST['eid'];
 		//var $query1,$query2;
-		$query = $this->db->get_where('users', array('email' => $email));
-		$query1 = $this->db->get_where('contact', array('email' => $email));
-		$query2 = $this->db->get_where('preferences', array('email' => $email));
-		$row=$query->row_array();		
-		if ($query->num_rows()>0) {
-			$row = $query->row_array();	$row1 = $query1->row_array();
-			if($row['password']==$_POST['pass']){
-				$this->load->view('users', $row );
+			$query = $this->db->get_where('users', array('email' => $email));
+			$query1 = $this->db->get_where('contact', array('email' => $email));
+			$query2 = $this->db->get_where('preferences', array('email' => $email));
+			$row=$query->row_array();		
+			if ($query->num_rows()>0) {
+				$row = $query->row_array();	$row1 = $query1->row_array();
+				if($row['password']==$_POST['pass']){
+					$this->load->view('users', $row );
+				}
+				else header('Location:index/?err=pass');
+
 			}
-			else header('Location:index/?err=pass');
+			else header('Location:index/?err=user');
+			
 
 		}
-		else header('Location:index/?err=user');
-	
-
-	}
-	
-	else header('Location:index');
-
-	$this->load->model('member_area');
-	//$this->load->view('member_area',$_POST);
-}
-
-
-
-public function validate_credentials()
-{			
-	$this->load->database();
-	//$this->form_validation->set_rules('password', 'Password', 'required|min_length[8]|max_length[20]');
-	$this->load->model('member_area');
-	$query=$this->membership_model->validate();
-
-	if($query)
-	{
-
-		$data=array(
-			'email'=>$this->input->post('eid'),
-			'is_logged_in'=>true
-			);
-		$this->session->set_userdata($data);
-						//$this->load->view('member_area');
-		redirect(member_area);
-	}
-	else
-	{
-		$this->index();
-	}
-
-}
-public function member_area_updated()
-{
-	$this->load->database();
-	$this->load->model('Update_model');
-		$data = array(
 		
+		else header('Location:index');
+
+		$this->load->model('member_area');
+	//$this->load->view('member_area',$_POST);
+	}
+
+
+
+	public function validate_credentials()
+	{			
+		$this->load->database();
+	//$this->form_validation->set_rules('password', 'Password', 'required|min_length[8]|max_length[20]');
+		$this->load->model('member_area');
+		$query=$this->membership_model->validate();
+
+		if($query)
+		{
+
+			$data=array(
+				'email'=>$this->input->post('eid'),
+				'is_logged_in'=>true
+				);
+			$this->session->set_userdata($data);
+						//$this->load->view('member_area');
+			redirect(member_area);
+		}
+		else
+		{
+			$this->index();
+		}
+
+	}
+	public function member_area_updated()
+	{
+		$this->load->database();
+		$this->load->model('Update_model');
+		$data = array(
+			
 			'name' => $this->input->post('name'),
 			//'email' => $this->input->post('email'),
 			'password' => $this->input->post('pass'),
@@ -162,13 +165,13 @@ public function member_area_updated()
 			//'designation' => $this->input->post('des'),
 			//'email' => $this->input->post('email') 
 			);
-			$this->Update_model->form_update($data,$data1);
-			
+		$this->Update_model->form_update($data,$data1);
+		
 			//$this->load->view('users',$row);
-}
-public function f()
-{
-	$this->load->view('viewall');
-}
+	}
+	public function f()
+	{
+		$this->load->view('viewall');
+	}
 
 }

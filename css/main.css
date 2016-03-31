@@ -1,0 +1,104 @@
+body {
+  /*background-color: black;*/
+  /*font-family: 'exomedium';*/
+}
+@media (min-width: 768px) {
+  #verticalLine {
+    border-right: thick solid #ff0000;
+  }
+}
+.logo {
+  margin-top: 20%;
+  padding-bottom: 20%;
+}
+.sac {
+  font-size: 18px;
+}
+#form {
+  /*border-left: thick solid #ff0000;*/
+  /*margin-top: 5%;*/
+  /*padding-left: 10%;*/
+}
+#background-black {
+  /*font-size: 14pt;
+  /*padding-top: 7px;*/
+  background-color: rgb(37, 55, 55);
+  /*position: absolute;*/
+  width: 100%;
+  z-index: 999;
+  opacity: 0.98;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.jumbotron {
+  background-color: transparent;
+  /*padding: 0px;*/
+}
+#quotes {
+  width: 60px;
+  height: 60px;
+}
+.topnav_home {
+  background-image: url('../img/home.png');
+  background-repeat: no-repeat;
+  background-position: 50% 46%;
+  color: transparent !important;
+  width: 50px;
+}
+.topnav a {
+  padding: 12px 18px;
+  color: #f5f5f5;
+}
+.topnav a:hover, .topnav a:active, .topnav a:focus {
+  background-color: #000000 !important;
+  text-decoration: none;
+  /*color:#ffffff !important;*/
+}
+#payment {
+  margin-top: 50px;
+  display: none;
+}
+
+/*
+.panel-body {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.panel-body:hover {
+  background-color: rgb(37, 55, 55);
+  cursor: pointer;
+  color: white;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+*/
+
+/*.spons {
+  border: 5px solid transparent;
+}
+.spons:hover {
+  border: 5px solid black;
+}*/
+
+.spons_head {
+ /* background-color: rgba(202, 65, 55, 0.9);
+  color: white;
+*/
+font-weight: bold;
+font-size: 32px;
+}
+
+@font-face {
+  font-family: 'exomedium';
+  src: url('../fonts/exo-medium-webfont.eot');
+  src: url('../fonts/exo-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/exo-medium-webfont.woff') format('woff'), url('../fonts/exo-medium-webfont.ttf') format('truetype'), url('../fonts/exo-medium-webfont.svg#exomedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: 'exomedium';
+}

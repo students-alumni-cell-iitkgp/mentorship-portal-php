@@ -480,7 +480,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 
 	<div class="" style="text-align:center;">
-		<a href="http://alumnimeet.iitkgp.ernet.in/contact.php" class="btn btn-success btn-block">
+		<a href="http://www.mentorship.iitkgp.ernet.in/index.php/welcome/contact" target="_blank" class="btn btn-success btn-block">
 			View Complete Team
 		</a>
 	</div>
@@ -518,13 +518,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <br>
 <footer style="background-color:black; color:white; text-align:center; padding:10px; position:relative; bottom:0px; width:100%">&copy; Students' Alumni Cell
-<ul class="soc">
-	<li><a class="soc-facebook"  href="//www.facebook.com/iitkgp.alumnicell?fref=ts&ref=br_tf" target="_blank"></a></li>
-	<li><a class="soc-twitter"   href="//twitter.com/IITKgpAlumni"target="_blank"></a></li>
-	<li><a class="soc-linkedin"  href="//www.linkedin.com/edu/school?id=13500&trk=prof-following-school-logo"target="_blank"></a></li>
-	<li><a class="soc-wikipedia" href=""target="_blank"></a></li>
-	<li><a class="soc-youtube soc-icon-last" href="//www.youtube.com/channel/UCtnSs1CT59Rd8L6VlOAxzRA"target="_blank"></a></li>
-</ul>
+	<ul class="soc">
+		<li><a class="soc-facebook"  href="//www.facebook.com/iitkgp.alumnicell?fref=ts&ref=br_tf" target="_blank"></a></li>
+		<li><a class="soc-twitter"   href="//twitter.com/IITKgpAlumni"target="_blank"></a></li>
+		<li><a class="soc-linkedin"  href="//www.linkedin.com/edu/school?id=13500&trk=prof-following-school-logo"target="_blank"></a></li>
+		<li><a class="soc-wikipedia" href=""target="_blank"></a></li>
+		<li><a class="soc-youtube soc-icon-last" href="//www.youtube.com/channel/UCtnSs1CT59Rd8L6VlOAxzRA"target="_blank"></a></li>
+	</ul>
 </footer>
 <div class="modal fade" id="registerstudent" role="dialog">
 	<div class="modal-dialog">
